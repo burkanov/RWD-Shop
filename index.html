@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	
+	<title>Fressnapf Style Tiles</title>
+	
+	<meta charset="utf-8">
+	<meta name="author" content="Jurij Burkanov">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/composition.css">
+
+</head>
+
+<body class="page-home">
+
+	<header class="module header">
+		<a class="toggle-navigation" data-icon="&#xe6b4;"></a>
+		<a class="fressnapf-logo">
+			<img src="img/fressnapf-logo.svg" alt="Fressnapf Logo"/>
+		</a>
+	</header>
+
+	<div class="module navi">
+		<ul class="navigation-content">
+			<li class="home"><a href="#"><span data-icon="&#xe66c;">Home</span></a></li>
+			<li class="login"><a href="#"><span data-icon="&#xe1ce;">Login</span></a></li>
+			<li class="find"><a href="#"><span data-icon="&#xe60d;">Produkte finden</span></a></li>
+			<li class="wishlist"><a href="#"><span data-icon="&#xe60b;">Wunschliste</span></a></li>
+			<li class="store-locator"><a href="#"><span data-icon="&#xe6b3;">Marktfinder</span></a></li>
+			<li class="cats"><a href="#"><span data-icon="&#xe65a;">Katze</span></a></li>
+			<li class="dogs"><a href="#"><span data-icon="&#xe659;">Hund</span></a></li>
+			<li class="rodents"><a href="#"><span data-icon="&#xe67e;">Nager</span></a></li>
+			<li class="birds"><a href="#"><span data-icon="&#xe65b;">Vögel</span></a></li>
+			<li class="aquarium"><a href="#"><span data-icon="&#xe67d;">Aquarium</span></a></li>
+			<li class="reptile"><a href="#"><span data-icon="&#xe67c;">Reptil</span></a></li>
+			<li class="garden"><a href="#"><span data-icon="&#xe61d;">Teich &amp; Garten</span></a></li>
+		</ul>
+	</div>
+
+	<div class="module main">
+		<ul class="listing">
+			<li><a href="http://dbushell.github.io/Responsive-Off-Canvas-Menu/step4.html">Changes since version 0.1</a></li>
+			<li>See previous (outdated) <a href="http://demo.astronautweb.co/css/off-canvas/">Version: 0.2</a></li>
+			<li>See the upcoming (not yet approved) <a href="#">Version 0.3</a></li>
+		</ul>
+
+		<h2>About</h2>
+
+		<p>Hello. These are the style tiles, that we use (or want to use) in all Fressnapf-related the digital projects. Though incomplete (style guides never cover 100% of all possible cases), this set of styles should provide you with the solid ground for both design and development decisions. You're not obliged to follow this guides exactly, but it's just because of our misbelief in the effeciency of the strict rules in design. We hope that you share our convenience of the importancy of single branding image and so your choice of alignment with these styles will be made by your free will.</p>
+		<p>The style tiles are intended to be updated regulary, and if you had to make something new (a new component, add a new color, etc.,) or modify an existing one &ndash; please, let us know. We will check your commitment and &ndash; if it complies with our point of view &ndash; add it to this style tiles set.</p>
+
+		<ul>
+			<li><a href="colors.html">Colors &amp; Gradients</a></li>
+			<li><a href="fonts.html">Fonts</a></li>
+			<li><a href="forms.html">Form Components</a></li>
+			<li><a href="links-and-buttons.html">Links and Buttons</a></li>
+			<li><a href="header-variant.html">Header Variant 1</a></li>
+		</ul>
+	</div>
+
+	<script src="js/vendor/modernizr/modernizr.js"></script>
+	<script>
+
+		loadMobileScripts = function() {
+			Modernizr.load([
+			]);
+		};
+
+		loadNonMobileScripts = function() {
+			Modernizr.load([
+				// Put here scripts that should be used in desktop version only
+			]);
+		};
+
+		Modernizr.load([
+			// Loading basic stuff that we'll need anyways
+			{
+				load: [
+					'js/vendor/jquery/jquery-2.1.1.min.js',
+					'js/vendor/enquire/enquire.min.js', // Plugin to detect media queries
+					'js/project/browser-detection.js', // UA Sniffing (used for greater good)
+					'js/vendor/fast-click/fast-click.js', // Eliminating 300ms delay
+					'js/project/detector.js', // Populating DOM with context-description classes
+				],
+			},{
+				load: [
+					'js/project/things.js' // Different things (why not)
+				]
+			}
+		]);
+		
+	</script>
+
+</body>
+</html>

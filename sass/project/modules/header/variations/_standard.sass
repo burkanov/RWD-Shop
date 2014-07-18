@@ -1,0 +1,55 @@
+// Standard styles for module - mobile first
+
+.header
+	@extend %clearfix
+	+transition(500ms ease)
+	margin: 0
+	display: block
+	text-align: center
+	height: $base-mass * 2
+	background: $fn-green url('../img/big-green-bar.jpg') repeat-x left center
+	background-size: auto $base-mass * 2
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 10
+	> .toggle-navigation
+		display: block
+		padding: 0
+		margin: 0
+		outline: none
+		border: 0
+		font-size: 2rem
+		width: $base-mass * 2
+		height: $base-mass * 2
+		overflow: hidden
+		line-height: 1.7
+		position: absolute
+		z-index: 11
+		left: 0
+		top: 0
+		color: $white
+		cursor: pointer
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+		&:hover,
+		&:focus,
+		&:active
+			background-color: transparent
+		&:active
+			color: $fn-green-yellow
+	> .fressnapf-logo
+		display: inline-block
+		height: $base-mass * 2
+		width: 144px
+		background: transparent url('../img/fressnapf-text-logo.svg') no-repeat center center
+		background-size: 100% auto
+		padding: 0
+		margin: 0
+		> img
+			display: none
+		&:hover,
+		&:focus
+			background-color: transparent
+	.navi-open &
+		+translate3d(80%, 0, 0)

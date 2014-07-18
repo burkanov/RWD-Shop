@@ -1,0 +1,19 @@
+html
+	-webkit-text-size-adjust: 100%
+	overflow-y: scroll
+body
+	font-family: $sans-font-family
+	font-size: $base-font-size
+	line-height: $line-height
+	background-color: $bodyBackground
+	color: $textColor
+	overflow-x: hidden
+	position: relative
+	&.navi-open
+		position: absolute
+		overflow: hidden
+
+// CI constants
+
+%ci-radius
+	+border-radius($fn-radius)

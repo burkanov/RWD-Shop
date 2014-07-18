@@ -1,0 +1,12 @@
+// Standard styles for module
+
+.main
+	@extend %clearfix
+	padding: $base-mass * 3 $base-mass $base-mass $base-mass
+	+transition(500ms ease)
+	+backface-visibility(hidden)
+	+translate3d(0, 0, 0)
+	position: relative
+	.navi-open &
+		+translate3d(80%, 0, 0)
+		+opacity(25)
