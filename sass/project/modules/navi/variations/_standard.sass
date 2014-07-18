@@ -79,6 +79,7 @@
 			&.aquarium,
 			&.reptile,
 			&.garden
+				border-top: none
 				> a > span,
 				> span
 					&:before
@@ -91,5 +92,23 @@
 						position: absolute
 						right: 1rem
 						top: 1.15rem
+			&.cats
+				border-top: 1px solid $fn-gray-medium
+			&.current
+				> a > span,
+				> span
+					background-color: $fn-red
+					color: $white
+				&.cats,
+				&.dogs,
+				&.rodents,
+				&.birds,
+				&.aquarium,
+				&.reptile,
+				&.garden
+					> a > span,
+					> span
+						&:after
+							content: "\e3b2"
 			&:first-child
 				border-top: 0

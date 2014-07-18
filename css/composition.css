@@ -545,7 +545,7 @@ body {
   overflow-x: hidden;
   position: relative; }
   body.navi-open {
-    position: absolute;
+    position: fixed;
     overflow: hidden; }
 
 a {
@@ -616,7 +616,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; }
+  z-index: 20; }
   .header > .toggle-navigation {
     display: block;
     padding: 0;
@@ -765,27 +765,44 @@ h2 {
         font-size: 1.35rem;
         left: 1.1rem;
         top: 0.8rem; }
-      .navi > ul > li.cats > a > span:before,
-      .navi > ul > li.cats > span:before, .navi > ul > li.dogs > a > span:before,
-      .navi > ul > li.dogs > span:before, .navi > ul > li.rodents > a > span:before,
-      .navi > ul > li.rodents > span:before, .navi > ul > li.birds > a > span:before,
-      .navi > ul > li.birds > span:before, .navi > ul > li.aquarium > a > span:before,
-      .navi > ul > li.aquarium > span:before, .navi > ul > li.reptile > a > span:before,
-      .navi > ul > li.reptile > span:before, .navi > ul > li.garden > a > span:before,
-      .navi > ul > li.garden > span:before {
-        top: 0.5rem; }
-      .navi > ul > li.cats > a > span:after,
-      .navi > ul > li.cats > span:after, .navi > ul > li.dogs > a > span:after,
-      .navi > ul > li.dogs > span:after, .navi > ul > li.rodents > a > span:after,
-      .navi > ul > li.rodents > span:after, .navi > ul > li.birds > a > span:after,
-      .navi > ul > li.birds > span:after, .navi > ul > li.aquarium > a > span:after,
-      .navi > ul > li.aquarium > span:after, .navi > ul > li.reptile > a > span:after,
-      .navi > ul > li.reptile > span:after, .navi > ul > li.garden > a > span:after,
-      .navi > ul > li.garden > span:after {
-        content: "\e3b1";
-        font-size: 0.75rem;
-        position: absolute;
-        right: 1rem;
-        top: 1.15rem; }
+      .navi > ul > li.cats, .navi > ul > li.dogs, .navi > ul > li.rodents, .navi > ul > li.birds, .navi > ul > li.aquarium, .navi > ul > li.reptile, .navi > ul > li.garden {
+        border-top: none; }
+        .navi > ul > li.cats > a > span:before,
+        .navi > ul > li.cats > span:before, .navi > ul > li.dogs > a > span:before,
+        .navi > ul > li.dogs > span:before, .navi > ul > li.rodents > a > span:before,
+        .navi > ul > li.rodents > span:before, .navi > ul > li.birds > a > span:before,
+        .navi > ul > li.birds > span:before, .navi > ul > li.aquarium > a > span:before,
+        .navi > ul > li.aquarium > span:before, .navi > ul > li.reptile > a > span:before,
+        .navi > ul > li.reptile > span:before, .navi > ul > li.garden > a > span:before,
+        .navi > ul > li.garden > span:before {
+          top: 0.5rem; }
+        .navi > ul > li.cats > a > span:after,
+        .navi > ul > li.cats > span:after, .navi > ul > li.dogs > a > span:after,
+        .navi > ul > li.dogs > span:after, .navi > ul > li.rodents > a > span:after,
+        .navi > ul > li.rodents > span:after, .navi > ul > li.birds > a > span:after,
+        .navi > ul > li.birds > span:after, .navi > ul > li.aquarium > a > span:after,
+        .navi > ul > li.aquarium > span:after, .navi > ul > li.reptile > a > span:after,
+        .navi > ul > li.reptile > span:after, .navi > ul > li.garden > a > span:after,
+        .navi > ul > li.garden > span:after {
+          content: "\e3b1";
+          font-size: 0.75rem;
+          position: absolute;
+          right: 1rem;
+          top: 1.15rem; }
+      .navi > ul > li.cats {
+        border-top: 1px solid #999999; }
+      .navi > ul > li.current > a > span,
+      .navi > ul > li.current > span {
+        background-color: #e7001f;
+        color: white; }
+      .navi > ul > li.current.cats > a > span:after,
+      .navi > ul > li.current.cats > span:after, .navi > ul > li.current.dogs > a > span:after,
+      .navi > ul > li.current.dogs > span:after, .navi > ul > li.current.rodents > a > span:after,
+      .navi > ul > li.current.rodents > span:after, .navi > ul > li.current.birds > a > span:after,
+      .navi > ul > li.current.birds > span:after, .navi > ul > li.current.aquarium > a > span:after,
+      .navi > ul > li.current.aquarium > span:after, .navi > ul > li.current.reptile > a > span:after,
+      .navi > ul > li.current.reptile > span:after, .navi > ul > li.current.garden > a > span:after,
+      .navi > ul > li.current.garden > span:after {
+        content: "\e3b2"; }
       .navi > ul > li:first-child {
         border-top: 0; }
