@@ -544,9 +544,6 @@ body {
   color: #333333;
   overflow-x: hidden;
   position: relative; }
-  body.navi-open {
-    position: fixed;
-    overflow: hidden; }
 
 a, .search > label > .search-field {
   -webkit-transition: all linear 0.2s;
