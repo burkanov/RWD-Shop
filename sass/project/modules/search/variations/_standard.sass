@@ -1,0 +1,59 @@
+// Standard styles for module
+
+.search
+	display: block
+	margin: $base-mass * -1
+	margin-bottom: 0
+	> label
+		display: block
+		padding: $base-mass / 4 $base-mass * 2 $base-mass / 4 $base-mass / 4
+		position: relative
+		&:before
+			[data-icon]:before
+			@extend [class^="icon-"]
+			content: "\e60d"
+			position: absolute
+			left: 0.75rem
+			top: 0.85rem
+			z-index: 2
+			font-size: 1.5rem
+			color: $fn-green
+		> span
+			@extend %away
+		> .search-field
+			display: block
+			@extend %pure
+			@extend %insider
+			@extend %placeholder
+			@extend %common-transition
+			width: 100%
+			height: 2.5rem
+			font-size: 1rem
+			+border-radius(0)
+			@extend %fe-norm
+			color: $fn-green
+			font-weight: bold
+			border: 1px solid $white
+			padding-left: 2.25rem
+		> .form-submit
+			display: block
+			@extend %fe-norm
+			border: 0
+			position: absolute
+			right: $base-mass / 4
+			top: $base-mass / 4
+			width: 2.5rem
+			height: 2.5rem
+			background-color: $fn-gray-light
+			color: $fn-green
+			font-size: 1rem
+			line-height: 1
+			&:before
+				[data-icon]:before
+				@extend [class^="icon-"]
+				content: "\e3b1"
+				position: absolute
+				display: block
+				line-height: 1
+				left: 0.75rem
+				top: 0.75rem

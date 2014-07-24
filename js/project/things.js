@@ -8,12 +8,15 @@
 	var pageBody = $("body");
 	var naviSwitch = $(".toggle-navigation");
 	var naviStatus = "navi-open";
+	var searchField = $(".search-field");
 
 	var naviPanel = {};
 		naviPanel.selector = $(".navi");
 
 	var contentPanel = {};
 		contentPanel.selector = $(".main");
+
+	var searchMenuItem = naviPanel.selector.find('.find > a');
 	//
 	/*--------------------------*/
 
@@ -25,10 +28,6 @@
 	var closeNavigationPanel = function() {
 		pageBody.removeClass(naviStatus);
 		naviPanel.selector.blur();
-	};
-
-	var naviOff = function(event){
-		alert("you clicked " + event.target.nodeName);
 	};
 
 	var prepareNavigationToggle = function() {
@@ -49,12 +48,20 @@
 
 	};
 
+	var prepareSearchFocus = function() {
+		searchMenuItem.click(function(event) {
+			closeNavigationPanel();
+			searchField.focus();
+		});
+	};
+
 	$(document).ready(function () {
+		$(function() {FastClick.attach(document.body);});
 		prepareNavigationToggle();
+		prepareSearchFocus();
 	});
 
-	window.addEventListener('load', function() {
-    	new FastClick(document.body);
-	}, false);
+
+
 
 })(jQuery);
