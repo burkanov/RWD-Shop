@@ -55,10 +55,15 @@
 		});
 	};
 
+	var prepareScrollingGallery = function() {
+		$(".m-carousel").carousel();
+	};
+
 	$(document).ready(function () {
-		$(function() {FastClick.attach(document.body);});
+		FastClick.attach(document.body);
 		prepareNavigationToggle();
 		prepareSearchFocus();
+		prepareScrollingGallery();
 	});
 
 

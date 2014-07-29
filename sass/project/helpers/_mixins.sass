@@ -94,6 +94,27 @@
 	box-shadow: $shadow
 
 // Transitions
+=transition-property()
+	-webkit-transition-property: -webkit-transform
+	-moz-transition-property: -moz-transform
+	-ms-transition-property: -ms-transform
+	-o-transition-property: -o-transform
+	transition-property: transform
+
+=transition-timing($v1: 0.33, $v2: 0.66, $v3: 0.66, $v4: 1)
+	-webkit-transition-timing-function:  cubic-bezier($v1, $v2, $v3, $v4)
+	-moz-transition-timing-function:  cubic-bezier($v1, $v2, $v3, $v4)
+	-ms-transition-timing-function:  cubic-bezier($v1, $v2, $v3, $v4)
+	-o-transition-timing-function:  cubic-bezier($v1, $v2, $v3, $v4)
+	transition-timing-function:  cubic-bezier($v1, $v2, $v3, $v4)
+
+=transition-duration($tdv: 0.5s)
+	-webkit-transition-duration: $tdv
+	-moz-transition-duration: $tdv
+	-ms-transition-duration: $tdv
+	-o-transition-duration: $tdv
+	transition-duration: $tdv
+
 =transition($transition...)
 	-webkit-transition: $transition
 	-moz-transition: $transition

@@ -1,0 +1,106 @@
+/* Mobile Carousel by Mobify.js: https://www.mobify.com/mobifyjs/modules/carousel/ Translated into SASS & Refactored by Jurij Burkanov */
+
+.m-carousel
+	position: relative
+	overflow: hidden
+	-webkit-font-smoothing: antialiased
+	&.m-left
+		text-align: left
+	&.m-center
+		text-align: center
+	&.m-fluid
+		> .m-carousel-inner
+			> *
+				width:  100%
+		&.m-center >
+			.m-carousel-inner
+				> *
+					&:first-child
+						margin-left: 0%
+	&.m-fluid-2
+		> .m-carousel-inner
+			> *
+				width: 50%
+		&.m-center
+			> .m-carousel-inner
+				> *
+					&:first-child
+						margin-left: 25%
+	&.m-fluid-3
+		> .m-carousel-inner
+			> *
+				width: 33.333%
+		&.m-center
+			> .m-carousel-inner
+				> *
+					&:first-child
+						margin-left:  33.333%
+	&.m-fluid-4
+		> .m-carousel-inner
+			> *
+				width: 25%
+		&.m-center
+			> .m-carousel-inner
+				> *
+					&:first-child
+						margin-left: 37.5%
+	&.m-fluid-5
+		> .m-carousel-inner
+			> *
+				width: 20%
+		&.m-center
+			> .m-carousel-inner
+				> *
+					&:first-child
+						margin-left: 40%
+	&.m-fluid-6
+		> .m-carousel-inner
+			> *
+				width: 16.667%
+		&.m-center
+			> .m-carousel-inner
+				> *
+					&:first-child
+						margin-left: 41.667%
+	img
+		-ms-interpolation-mode: bicubic
+
+.m-carousel-inner
+	position: relative
+	white-space: nowrap
+	text-align: left
+	/*  Removes  inline-block  gaps  due  to  whitespace  */
+	font-size:  0
+	/*  Configure  animations  */
+	+transition-property()
+	/*  iOS  like  slide  timings  */
+	+transition-timing()
+	+transition-duration()
+	> *
+		display: inline-block
+		vertical-align: top
+		white-space:  normal
+		/*  We  must  reset  the  font-size  here  */
+		font-size: $base-font-size
+
+.m-fluid
+	> .m-carousel-inner
+		> *
+			@extend %insider
+
+.m-center:not(.m-fluid)
+	> .m-carousel-inner
+		display: inline-block
+		margin-right: -20000px !important
+		margin-left: 0 !important
+		> *
+			position: relative
+			left: -20000px
+			&:first-child
+				float: left
+				margin-right: 20000px
+				left: 0
+				&:last-child
+					margin-right: 0
+			&:last-child
+				margin-right: -30000px

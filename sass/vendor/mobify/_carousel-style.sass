@@ -1,0 +1,191 @@
+/* Mobile Carousel by Mobify.js: https://www.mobify.com/mobifyjs/modules/carousel/ Translated into SASS & Refactored by Jurij Burkanov */
+
+/* Carousel control base styling */
+
+.m-carousel-controls
+	padding-top: 10px
+	text-align: center
+	a
+		padding: 5px
+		-webkit-user-select: none
+		-moz-user-select: -moz-none
+		user-select: none
+		-webkit-user-drag: none
+		-moz-user-drag: -moz-none
+		user-drag: none
+
+/* Carousel controls: Bulleted */
+.m-carousel-bulleted
+	a
+		line-height: 0
+		text-decoration: none
+		text-indent: -999px
+		overflow: hidden
+		display: inline-block
+		padding: 6px
+		width: 0
+		height: 0
+		margin: 0 3px
+		color: #333
+		background-color: rgba(255, 255, 255, 0.3)
+		+addTransition(background-color, ease-in, 0.1s)
+		+box-shadow(inset rgba(0, 0, 0, 0.25) 0 1px 2px)
+		@extend %ci-radius
+		&:hover,
+		&:focus
+			text-decoration: none
+			background-color: rgba(255, 255, 255, 0.6)
+		&.m-active
+			background-color: rgba(255, 255, 255, 1)
+			+box-shadow(rgba(0, 0, 0, 0.25) 0 1px 2px)
+
+/* Carousel controls: Pagination */
+.m-carousel-pagination
+	padding-top: 10px
+	a
+		text-decoration: none
+		display: inline-block
+		padding: 3px 10px
+		margin: 1px 0
+		color: #333
+		background-color: rgba(255,255,255,0.3)
+		+addTransition(background-color, ease-in, 0.1s)
+		+border-radius(2px)
+		&:hover,
+		&:focus
+			text-decoration: none
+			background-color: rgba(255, 255, 255, 0.6)
+		&.m-active
+			background-color: rgba(255,255,255,1)
+
+/* Carousel controls: HUD */
+.m-carousel-hud
+	padding-top: 0
+	a
+		z-index: 2
+		opacity: 0
+		display: block
+		position: absolute
+		top: 50%
+		width: 50px
+		height: 50px
+		margin: -25px 0 0 0
+		padding: 0
+		text-decoration: none
+		text-indent: -999px
+		overflow: hidden
+		color: rgba(255, 255, 255, 0.8)
+		background: rgba(0, 0, 0, 0.8)
+		+addTransition(opacity, ease-in, 0.1s)
+		+border-radius(25px)
+		&:after
+			color: rgba(255,255,255,0.85)
+			content: "\25c0"
+			font-size: 25px
+			font-weight: bold
+			text-indent: 0
+			text-align: center
+			display: block
+			position: absolute
+			top: 10px
+			left: 0
+			width: 47px
+			height: 50px
+			z-index: 9
+	.m-carousel-prev
+		left: 10px
+	.m-carousel-next
+		right: 10px
+		&:after
+			left: auto
+			right: 0
+			content: "\25b6"
+
+.m-carousel:hover
+	.m-carousel-hud
+		a
+			opacity: 0.3
+
+.m-carousel
+	.m-carousel-hud
+		a
+			&:hover,
+			&:focus
+				opacity: 1
+
+/* extra bits */
+
+/* captions */
+.m-caption
+	margin: 0
+	padding: 10px
+	height: auto
+	text-align: center
+
+/* scaled slides */
+.m-scaled
+	.m-item
+		opacity: 0.7
+		+backface-visibility(hidden)
+		+scale(0.75)
+		-webkit-transition: -webkit-transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s
+		-moz-transition-timing-function: -moz-transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s
+		-o-transition-timing-function: -o-transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s
+		transition-timing-function: transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s
+	.m-active
+		opacity: 1
+		+scale(1)
+
+/* Default Themes/Sytles for Slider */
+
+.m-fluid
+	.m-item
+		margin-right: 20px
+
+/* Fluid Width Photo Carousel
+ * .m-carousel.m-fluid.m-carousel-photos
+ */
+
+.m-carousel-photos
+	margin: 0 -10px
+	padding: 0 10px
+
+.m-carousel-photos
+	.m-item
+		> img
+			margin: 0
+			padding: 0
+			max-width: none
+			width: 100%
+			height: auto
+			+box-shadow(rgba(0, 0, 0, 0.5) 0 5px 10px)
+	.m-caption
+		background: rgba(0,0,0,0.7)
+		bottom: 0
+		position: absolute
+		z-index: 9
+		width: 100%
+		@extend %insider
+
+
+/* Inner Cards for Carousel */
+
+.m-card-dark,
+.m-card-light
+	padding: 20px
+	@extend %ci-radius
+	+box-shadow(rgba(0, 0, 0, 0.5) 0 5px 10px)
+	.m-caption
+		margin: 0
+		padding: 10px 0 0 0
+
+.m-card-dark
+	background: rgba(0, 0, 0, 0.5)
+	color: #FFF
+
+.m-card-light
+	background: rgba(255, 255, 255, 0.9)
+	color: #000
+
+.m-fade-out
+	-webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%)

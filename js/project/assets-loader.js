@@ -19,8 +19,10 @@ Modernizr.load([
 			'js/vendor/fast-click/fast-click.js', // Eliminating 300ms delay
 			'js/project/detector.js', // Populating DOM with context-description classes
 		],
-	},{
+	},
+	{
 		load: [
+			'js/vendor/mobify/carousel.js',
 			'js/project/things.js' // Different things (why not)
 		]
 	}
