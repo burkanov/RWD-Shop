@@ -10,6 +10,23 @@
 	border: 0
 	outline: none
 
+%but-link-container
+	display: block
+	@extend %pure
+	text-decoration: none
+
+%but-link-insider
+	display: block
+	@extend %ci-radius-small
+	font-size: 1.2rem
+	height: 3rem
+	line-height: 3rem
+	background-color: $white
+	color: $fn-green
+	font-weight: bold
+	padding: 0 0 0 3rem
+	position: relative
+
 %insider
 	+box-sizing(border-box)
 
@@ -20,6 +37,34 @@
 
 %ci-radius
 	+border-radius($fn-radius)
+
+%ci-radius-small
+	+border-radius($fn-radius-small)
+
+%fn-green-grad
+	+gradient-vertical(transparentize($fn-green-medium, 1), $fn-green-medium)
+	background-color: $fn-green-simple
+
+%fn-green-soft-grad
+	+gradient-vertical(rgba(117, 140, 48, 1), rgba(78, 107, 50, 1))
+
+%cap-right
+	position: absolute
+	right: 0
+	top: 0
+	line-height: 3rem
+	height: 3rem
+	text-align: center
+	display: block
+	width: 3rem
+	content: "\e3b1"
+	@extend [class^="icon-"]
+	z-index: 2
+	font-size: 1rem
+	+border-top-right-radius($fn-radius-small)
+	+border-bottom-right-radius($fn-radius-small)
+	@extend %fn-green-grad
+	color: $white
 
 %clearfix
 	&:after

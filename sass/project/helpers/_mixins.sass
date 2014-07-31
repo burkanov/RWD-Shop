@@ -214,10 +214,22 @@
 	background-image: linear-gradient(to right, $startColor, $endColor)
 
 =gradient-vertical($start, $end)
-	background: $start
+	background-color: $start
 	background: -moz-linear-gradient(top,  $start 0%, $end 100%)
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start), color-stop(100%, $end))
 	background: -webkit-linear-gradient(top, $start 0%, $end 100%)
 	background: -o-linear-gradient(top, $start 0%, $end 100%)
 	background: -ms-linear-gradient(top, $start 0%, $end 100%)
 	background: linear-gradient(to bottom, $start 0%, $end 100%)
+
+// Mobile Tricks
+
+=user-select($select-value: none)
+	-webkit-user-select: $select-value
+	-moz-user-select: -moz-$select-value
+	user-select: $select-value
+
+=user-drag($drag-value: none)
+	-webkit-user-drag: $drag-value
+	-moz-user-drag: -moz-$drag-value
+	user-drag: $drag-value

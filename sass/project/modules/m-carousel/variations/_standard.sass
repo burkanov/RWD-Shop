@@ -45,12 +45,8 @@
 		bottom: 10px
 		left: 0
 		> a
-			-webkit-user-select: none
-			-moz-user-select: -moz-none
-			user-select: none
-			-webkit-user-drag: none
-			-moz-user-drag: -moz-none
-			user-drag: none
+			+user-select()
+			+user-drag()
 		&.m-carousel-bulleted
 			> a
 				display: inline-block
