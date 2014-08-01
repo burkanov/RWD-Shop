@@ -543,8 +543,7 @@ body {
   background-color: #eae9e7;
   color: #333333;
   overflow-x: hidden;
-  position: relative;
-  -ms-touch-action: none !important; }
+  position: relative; }
 
 a, .search > label > .search-field {
   -webkit-transition: all linear 0.2s;
@@ -581,7 +580,7 @@ a:active {
   padding: 0 0 0 3rem;
   position: relative; }
 
-.search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item {
+.search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -648,7 +647,7 @@ a:active {
   border-bottom-right-radius: 3px;
   color: white; }
 
-.header:after, .main:after, .navi:after {
+.header:after, .main:after, footer:after, .navi:after, .payment-options:after {
   content: "";
   display: table;
   clear: both; }
@@ -843,6 +842,12 @@ h2 {
     transform: translate3d(80%, 0, 0);
     opacity: 0.25;
     filter: alpha(opacity=25); }
+
+footer {
+  display: block;
+  background-color: #d4d2ce;
+  margin: 0.5rem -0.75rem 0 -0.75rem;
+  padding: 0.75rem; }
 
 .search {
   display: block;
@@ -1175,3 +1180,19 @@ h2 {
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
       .central-navi > li.m-active > .m-header > span:after {
         content: "\e3b2"; }
+
+.payment-options {
+  background-color: #eae9e7;
+  padding: 0.45rem;
+  padding-right: 0;
+  width: 100%; }
+  .payment-options > li {
+    background-color: white;
+    border-right: 0.45rem solid #eae9e7;
+    width: 25%;
+    float: left; }
+    .payment-options > li > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative; }
