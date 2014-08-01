@@ -23,6 +23,7 @@ Modernizr.load([
 	{
 		load: [
 			'js/vendor/mobify/carousel.js',
+			'js/vendor/mobify/accordion.js',
 			'js/project/things.js' // Different things (why not)
 		]
 	}

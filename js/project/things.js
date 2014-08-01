@@ -9,6 +9,7 @@
 	var naviSwitch = $(".toggle-navigation");
 	var naviStatus = "navi-open";
 	var searchField = $(".search-field");
+	var centralNavi = $(".central-navi");
 
 	var naviPanel = {};
 		naviPanel.selector = $(".navi");
@@ -59,11 +60,16 @@
 		$(".m-carousel").carousel();
 	};
 
+	var prepareCentralNavi = function() {
+		$('.m-accordion').accordion();
+	};
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
 		prepareSearchFocus();
 		prepareScrollingGallery();
+		prepareCentralNavi();
 	});
 
 

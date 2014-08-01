@@ -62,7 +62,7 @@
 .navi > ul > li.garden > span:after {
   content: attr(data-icon-after); }
 
-[class^="icon-"], .central-navi > li > a > span:after, .central-navi > li.current > .second-level-navi > li > a > span:after, .button.icon-combo:before, .search > label:before, .search > label > .form-submit:before, .navi > ul > li.cats > a > span:after,
+[class^="icon-"], .central-navi > li > .m-header > span:after, .central-navi > li > .m-content > .second-level-navi > li > a > span:after, .button.icon-combo:before, .search > label:before, .search > label > .form-submit:before, .navi > ul > li.cats > a > span:after,
 .navi > ul > li.cats > span:after, .navi > ul > li.dogs > a > span:after,
 .navi > ul > li.dogs > span:after, .navi > ul > li.rodents > a > span:after,
 .navi > ul > li.rodents > span:after, .navi > ul > li.birds > a > span:after,
@@ -560,17 +560,17 @@ a:active {
   -o-transition: none;
   transition: none; }
 
-.central-navi > li > a, .central-navi > li.current > .second-level-navi > li > a, .button, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field {
+.central-navi > li > .m-header, .central-navi > li > .m-content > .second-level-navi > li > a, .button, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field {
   padding: 0;
   margin: 0;
   border: 0;
   outline: none; }
 
-.central-navi > li > a, .central-navi > li.current > .second-level-navi > li > a {
+.central-navi > li > .m-header, .central-navi > li > .m-content > .second-level-navi > li > a {
   display: block;
   text-decoration: none; }
 
-.central-navi > li > a > span, .central-navi > li.current > .second-level-navi > li > a > span {
+.central-navi > li > .m-header > span, .central-navi > li > .m-content > .second-level-navi > li > a > span {
   display: block;
   font-size: 1.2rem;
   height: 3rem;
@@ -604,12 +604,12 @@ a:active {
   -moz-border-radius: 6px;
   border-radius: 6px; }
 
-.central-navi > li > a > span, .central-navi > li.current > .second-level-navi > li > a > span, .button {
+.central-navi > li > .m-header > span, .central-navi > li > .m-content > .second-level-navi > li > a > span, .button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
-.central-navi > li > a > span:after, .central-navi > li.current > .second-level-navi > li > a > span:after, .button {
+.central-navi > li > .m-header > span:after, .central-navi > li > .m-content > .second-level-navi > li > a > span:after, .button {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(96, 132, 62, 0)), color-stop(100%, #60843e));
@@ -628,7 +628,7 @@ a:active {
   background: -ms-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: linear-gradient(to bottom, #758c30 0%, #4e6b32 100%); }
 
-.central-navi > li > a > span:after, .central-navi > li.current > .second-level-navi > li > a > span:after {
+.central-navi > li > .m-header > span:after, .central-navi > li > .m-content > .second-level-navi > li > a > span:after {
   position: absolute;
   right: 0;
   top: 0;
@@ -1124,11 +1124,12 @@ h2 {
         .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before {
           content: "\e3b1"; }
 
+/* Mobile Carousel by Mobify.js: https://www.mobify.com/mobifyjs/modules/carousel/ Translated into SASS & Refactored by Jurij Burkanov */
 .central-navi {
   padding-top: 10px; }
   .central-navi > li {
     margin-top: 0.45rem; }
-    .central-navi > li > a > span:before {
+    .central-navi > li > .m-header > span:before {
       position: absolute;
       left: 0.5rem;
       top: 0.5rem;
@@ -1136,34 +1137,41 @@ h2 {
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
     .central-navi > li:first-child {
       margin-top: 0; }
-    .central-navi > li > .second-level-navi {
-      display: none; }
-    .central-navi > li.current > a > span {
+    .central-navi > li > .m-content {
+      -webkit-transition: max-height ease 0.5s;
+      -moz-transition: max-height ease 0.5s;
+      -ms-transition: max-height ease 0.5s;
+      -o-transition: max-height ease 0.5s;
+      transition: max-height ease 0.5s;
+      overflow: hidden;
+      max-height: 0; }
+      .central-navi > li > .m-content > .second-level-navi {
+        background-color: #d4d2ce;
+        padding: 0.65rem;
+        margin: 0 0.33rem 0.5rem 0.33rem;
+        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35); }
+        .central-navi > li > .m-content > .second-level-navi > li > a > span {
+          padding-left: 0.5rem;
+          font-size: 1rem;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          margin-top: 0.33rem; }
+          .central-navi > li > .m-content > .second-level-navi > li > a > span:after {
+            background-image: none;
+            background-color: transparent;
+            color: #196428;
+            font-size: 0.75rem;
+            width: 2rem; }
+        .central-navi > li > .m-content > .second-level-navi > li:first-child > a > span {
+          margin-top: 0; }
+    .central-navi > li.m-active > .m-content {
+      max-height: 10000px; }
+    .central-navi > li.m-active > .m-header > span {
       -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
-      .central-navi > li.current > a > span:after {
+      .central-navi > li.m-active > .m-header > span:after {
         content: "\e3b2"; }
-    .central-navi > li.current > .second-level-navi {
-      display: block;
-      background-color: #d4d2ce;
-      padding: 0.65rem;
-      margin: 0 0.33rem 0.5rem 0.33rem;
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
-      -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35); }
-      .central-navi > li.current > .second-level-navi > li > a > span {
-        padding-left: 0.5rem;
-        font-size: 1rem;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        margin-top: 0.33rem; }
-        .central-navi > li.current > .second-level-navi > li > a > span:after {
-          background-image: none;
-          background-color: transparent;
-          color: #196428;
-          font-size: 0.75rem;
-          width: 2rem; }
-      .central-navi > li.current > .second-level-navi > li:first-child > a > span {
-        margin-top: 0; }
