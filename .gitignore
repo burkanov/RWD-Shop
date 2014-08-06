@@ -15,3 +15,5 @@
 .sass-cache/d0fa67616b17ac0a639821deaaa08a71a28ee020/_standard.sassc
 
 .sass-cache/f4f8e4f667ec51796c570c3a0f66b2cd6e17b60d/composition.sassc
+
+*.sassc

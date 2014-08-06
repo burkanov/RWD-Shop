@@ -6,6 +6,7 @@ a
 	padding: 0.1em 0.25em
 	margin: -0.1em -0.25em
 	@extend %common-transition
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
 	&:visited
 		color: $link-color-visited
 	&:hover,
@@ -17,13 +18,34 @@ a
 		color: $white
 		background-color: $fn-green-medium
 
-.button
+%but-link-container
+	display: block
+	@extend %pure
+	text-decoration: none
+
+%but-link-insider
+	display: block
+	@extend %ci-radius-small
+	font-size: 1.2rem
+	height: 3rem
+	line-height: 3rem
+	background-color: $white
+	color: $fn-green
+	font-weight: bold
+	padding: 0 0 0 3.5rem
+	position: relative
+
+%primary-button
 	display: block
 	@extend %fn-green-grad
 	@extend %pure
 	@extend %ci-radius-small
+	@extend %insider
+	text-decoration: none
 	color: $white
-	text-align: center
+	position: relative
+	text-align: left
+	padding-left: 3rem
 	height: 2rem
 	font-weight: bold
 	+box-shadow(0 2px 2px rgba(0, 0, 0, 0.25))
@@ -47,23 +69,24 @@ a
 		display: block
 		height: 1rem
 		line-height: 2rem
-	&.icon-combo
-		position: relative
-		text-align: left
-		padding-left: 3rem
+
+%secondary-button
+	@extend %primary-button
+	@extend %fn-gray-grad
+	+box-shadow(0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px rgba(234, 237, 236, 1), inset 0 1px 1px rgba(237, 238, 237, 1))
+	color: $fn-gray
+	font-size: 0.65rem
+	text-transform: uppercase
+	position: relative
+	> span
+		padding-top: 0.05rem
+	&:hover,
+	&:focus
+		background-color: $white
+		color: $fn-green
+		+box-shadow(0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 1px rgba(234, 237, 236, 1), inset 0 1px 1px rgba(237, 238, 237, 1))
 		&:before
-			position: absolute
-			left: 0
-			top: 0
-			line-height: 2rem
-			height: 2rem
-			text-align: center
-			display: block
-			width: 2.25rem
-			content: "\e6b3"
-			@extend [class^="icon-"]
-			z-index: 2
-			font-size: 1rem
-			+border-top-left-radius($fn-radius-small)
-			+border-bottom-left-radius($fn-radius-small)
-			@extend %fn-green-soft-grad
+			color: $fn-green
+	&:active
+		background-color: $fn-gray-medium
+		+box-shadow(inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35))

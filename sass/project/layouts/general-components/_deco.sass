@@ -1,0 +1,45 @@
+%fn-green-grad
+	+gradient-vertical(transparentize($fn-green-medium, 1), $fn-green-medium)
+	background-color: $fn-green-simple
+
+%fn-green-soft-grad
+	+gradient-vertical(rgba(117, 140, 48, 1), rgba(78, 107, 50, 1))
+
+%fn-gray-grad
+	+gradient-vertical(rgba(219, 221, 221, 0), rgba(219, 221, 221, 1))
+	background-color: rgba(247, 247, 247, 1)
+
+%cap-right
+	position: absolute
+	right: 0
+	top: 0
+	line-height: 3rem
+	height: 3rem
+	text-align: center
+	display: block
+	width: 3rem
+	content: "\e3b1"
+	@extend [class^="icon-"]
+	z-index: 2
+	font-size: 1rem
+	+border-top-right-radius($fn-radius-small)
+	+border-bottom-right-radius($fn-radius-small)
+	@extend %fn-green-grad
+	color: $white
+
+%cap-left
+	position: absolute
+	left: 0
+	top: 0
+	line-height: 2rem
+	height: 2rem
+	text-align: center
+	display: block
+	width: 2.25rem
+	content: "\e6b3"
+	@extend [class^="icon-"]
+	z-index: 2
+	font-size: 1rem
+	+border-top-left-radius($fn-radius-small)
+	+border-bottom-left-radius($fn-radius-small)
+	@extend %fn-green-soft-grad

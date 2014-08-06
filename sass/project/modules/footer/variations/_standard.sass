@@ -6,3 +6,54 @@ footer
 	@extend %clearfix
 	margin: 0.5rem $base-mass * -0.5 0 $base-mass * -0.5
 	padding: $base-mass * 0.5
+	> .service-links
+		@extend %clearfix
+		> .delivery-options,
+		> .return-options,
+		> .newsletter-link,
+		> .help-link
+			@extend %secondary-button
+			margin-bottom: 0.5rem
+			&:before
+				@extend %cap-left
+				content: "\e3b1"
+				font-size: 0.65rem
+				background: none
+		> .newsletter-link,
+		> .help-link
+			width: calc(50% - 0.25rem)
+			float: left
+		> .newsletter-link
+			margin-right: 0.5rem
+	> .footer-links
+		display: block
+		text-align: center
+		font-size: 0.7rem
+		> .desktop-version-link
+			display: inline-block
+			color: $fn-gray
+			margin-bottom: 0.5rem
+		> ul
+			@extend %clearfix
+			display: block
+			text-align: center
+			> li
+				display: inline-block
+				margin: 0
+				> a
+					display: block
+					color: $fn-gray
+					> span
+						display: block
+						border-left: 1px solid $fn-gray
+						line-height: 0.65rem
+						padding: 0 0.15rem 0 0.25rem
+				&:first-child
+					> a
+						> span
+							border-left: 0
+							padding-left: 0
+				&:last-child
+					> a
+						> span
+							padding-right: 0

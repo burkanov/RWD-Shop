@@ -12,7 +12,7 @@
 	var centralNavi = $(".central-navi");
 
 	var naviPanel = {};
-		naviPanel.selector = $(".navi");
+		naviPanel.selector = $(".navi-panel");
 
 	var contentPanel = {};
 		contentPanel.selector = $(".main");
@@ -42,7 +42,7 @@
 		});
 
 		naviPanel.selector.click(function( event ) {
-			if ($(event.target).hasClass('navi')){
+			if ($(event.target).hasClass('navi-panel')){
 				closeNavigationPanel();
 			}
 		});
