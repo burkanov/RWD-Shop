@@ -1232,13 +1232,13 @@ footer {
             width: 2rem; }
         .navi.central > li > div > .second-level-navi > li:first-child > a > span {
           margin-top: 0; }
-    .navi.central > li.m-active > div {
+    .navi.central > li.current > div {
       max-height: 10000px; }
-    .navi.central > li.m-active > a > span {
+    .navi.central > li.current > a > span {
       -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
-      .navi.central > li.m-active > a > span:after {
+      .navi.central > li.current > a > span:after {
         content: "\e3b2"; }
 
 html.touch .navi:not(.central) > li > a:hover > span, html.touch .navi:not(.central) > li > a:focus > span {
