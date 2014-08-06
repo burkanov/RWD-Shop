@@ -63,10 +63,10 @@
   content: attr(data-icon-after); }
 
 [class^="icon-"], .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > .m-content > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .main > .store-finder:before, footer > .service-links > .delivery-options:before,
-footer > .service-links > .return-options:before,
-footer > .service-links > .newsletter-link:before,
-footer > .service-links > .help-link:before, .search > label:before, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+.navi:not(.central) > li > .m-content > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
+footer > .return-options:before,
+footer > .newsletter-link:before,
+footer > .help-link:before, .search > label:before, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -563,10 +563,10 @@ a:active {
   -o-transition: none;
   transition: none; }
 
-.navi:not(.central) > li > a, .navi:not(.central) > li > .m-content > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .service-links > .delivery-options,
-footer > .service-links > .return-options,
-footer > .service-links > .newsletter-link,
-footer > .service-links > .help-link, .main > .store-finder, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar {
+.navi:not(.central) > li > a, .navi:not(.central) > li > .m-content > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
+footer > .return-options,
+footer > .newsletter-link,
+footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar {
   padding: 0;
   margin: 0;
   border: 0;
@@ -580,7 +580,7 @@ footer > .service-links > .help-link, .main > .store-finder, .header > .toggle-n
   -moz-border-radius: 0px;
   border-radius: 0px; }
 
-.header:after, .main:after, .navi-panel:after, footer:after, footer > .service-links:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after {
+.header:after, .main:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after {
   content: "";
   display: table;
   clear: both; }
@@ -593,10 +593,10 @@ footer > .service-links > .help-link, .main > .store-finder, .header > .toggle-n
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px); } }
 
-footer > .service-links > .delivery-options,
-footer > .service-links > .return-options,
-footer > .service-links > .newsletter-link,
-footer > .service-links > .help-link, .main > .store-finder, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li {
+footer > .delivery-options,
+footer > .return-options,
+footer > .newsletter-link,
+footer > .help-link, .main > .store-finder, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -620,10 +620,10 @@ footer > .service-links > .help-link, .main > .store-finder, .search > label > .
   border-radius: 6px; }
 
 .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span,
-.navi:not(.central) > li > .m-content > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .service-links > .delivery-options,
-footer > .service-links > .return-options,
-footer > .service-links > .newsletter-link,
-footer > .service-links > .help-link, .main > .store-finder {
+.navi:not(.central) > li > .m-content > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .delivery-options,
+footer > .return-options,
+footer > .newsletter-link,
+footer > .help-link, .main > .store-finder {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -660,10 +660,10 @@ a {
   padding: 0 0 0 3.5rem;
   position: relative; }
 
-footer > .service-links > .delivery-options,
-footer > .service-links > .return-options,
-footer > .service-links > .newsletter-link,
-footer > .service-links > .help-link, .main > .store-finder {
+footer > .delivery-options,
+footer > .return-options,
+footer > .newsletter-link,
+footer > .help-link, .main > .store-finder {
   display: block;
   text-decoration: none;
   color: white;
@@ -682,50 +682,50 @@ footer > .service-links > .help-link, .main > .store-finder {
   -moz-user-drag: -moz- none;
   user-drag: none;
   -webkit-tap-highlight-color: transparent; }
-  footer > .service-links > .delivery-options:hover,
-  footer > .service-links > .return-options:hover,
-  footer > .service-links > .newsletter-link:hover,
-  footer > .service-links > .help-link:hover, .main > .store-finder:hover, footer > .service-links > .delivery-options:focus,
-  footer > .service-links > .return-options:focus,
-  footer > .service-links > .newsletter-link:focus,
-  footer > .service-links > .help-link:focus, .main > .store-finder:focus, footer > .service-links > .delivery-options:active,
-  footer > .service-links > .return-options:active,
-  footer > .service-links > .newsletter-link:active,
-  footer > .service-links > .help-link:active, .main > .store-finder:active {
+  footer > .delivery-options:hover,
+  footer > .return-options:hover,
+  footer > .newsletter-link:hover,
+  footer > .help-link:hover, .main > .store-finder:hover, footer > .delivery-options:focus,
+  footer > .return-options:focus,
+  footer > .newsletter-link:focus,
+  footer > .help-link:focus, .main > .store-finder:focus, footer > .delivery-options:active,
+  footer > .return-options:active,
+  footer > .newsletter-link:active,
+  footer > .help-link:active, .main > .store-finder:active {
     cursor: pointer; }
-  footer > .service-links > .delivery-options:hover,
-  footer > .service-links > .return-options:hover,
-  footer > .service-links > .newsletter-link:hover,
-  footer > .service-links > .help-link:hover, .main > .store-finder:hover, footer > .service-links > .delivery-options:focus,
-  footer > .service-links > .return-options:focus,
-  footer > .service-links > .newsletter-link:focus,
-  footer > .service-links > .help-link:focus, .main > .store-finder:focus {
+  footer > .delivery-options:hover,
+  footer > .return-options:hover,
+  footer > .newsletter-link:hover,
+  footer > .help-link:hover, .main > .store-finder:hover, footer > .delivery-options:focus,
+  footer > .return-options:focus,
+  footer > .newsletter-link:focus,
+  footer > .help-link:focus, .main > .store-finder:focus {
     background-color: #c3d255;
     color: white;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
     -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e; }
-  footer > .service-links > .delivery-options:active,
-  footer > .service-links > .return-options:active,
-  footer > .service-links > .newsletter-link:active,
-  footer > .service-links > .help-link:active, .main > .store-finder:active {
+  footer > .delivery-options:active,
+  footer > .return-options:active,
+  footer > .newsletter-link:active,
+  footer > .help-link:active, .main > .store-finder:active {
     background-color: #196428;
     -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     box-shadow: inset 0 -0.25rem 1.25rem #143800; }
-  footer > .service-links > .delivery-options > span,
-  footer > .service-links > .return-options > span,
-  footer > .service-links > .newsletter-link > span,
-  footer > .service-links > .help-link > span, .main > .store-finder > span {
+  footer > .delivery-options > span,
+  footer > .return-options > span,
+  footer > .newsletter-link > span,
+  footer > .help-link > span, .main > .store-finder > span {
     font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     height: 1rem;
     line-height: 2rem; }
 
-footer > .service-links > .delivery-options,
-footer > .service-links > .return-options,
-footer > .service-links > .newsletter-link,
-footer > .service-links > .help-link {
+footer > .delivery-options,
+footer > .return-options,
+footer > .newsletter-link,
+footer > .help-link {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
@@ -733,44 +733,44 @@ footer > .service-links > .help-link {
   font-size: 0.65rem;
   text-transform: uppercase;
   position: relative; }
-  footer > .service-links > .delivery-options > span,
-  footer > .service-links > .return-options > span,
-  footer > .service-links > .newsletter-link > span,
-  footer > .service-links > .help-link > span {
+  footer > .delivery-options > span,
+  footer > .return-options > span,
+  footer > .newsletter-link > span,
+  footer > .help-link > span {
     padding-top: 0.05rem; }
-  footer > .service-links > .delivery-options:hover,
-  footer > .service-links > .return-options:hover,
-  footer > .service-links > .newsletter-link:hover,
-  footer > .service-links > .help-link:hover, footer > .service-links > .delivery-options:focus,
-  footer > .service-links > .return-options:focus,
-  footer > .service-links > .newsletter-link:focus,
-  footer > .service-links > .help-link:focus {
+  footer > .delivery-options:hover,
+  footer > .return-options:hover,
+  footer > .newsletter-link:hover,
+  footer > .help-link:hover, footer > .delivery-options:focus,
+  footer > .return-options:focus,
+  footer > .newsletter-link:focus,
+  footer > .help-link:focus {
     background-color: white;
     color: #196428;
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
     -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed; }
-    footer > .service-links > .delivery-options:hover:before,
-    footer > .service-links > .return-options:hover:before,
-    footer > .service-links > .newsletter-link:hover:before,
-    footer > .service-links > .help-link:hover:before, footer > .service-links > .delivery-options:focus:before,
-    footer > .service-links > .return-options:focus:before,
-    footer > .service-links > .newsletter-link:focus:before,
-    footer > .service-links > .help-link:focus:before {
+    footer > .delivery-options:hover:before,
+    footer > .return-options:hover:before,
+    footer > .newsletter-link:hover:before,
+    footer > .help-link:hover:before, footer > .delivery-options:focus:before,
+    footer > .return-options:focus:before,
+    footer > .newsletter-link:focus:before,
+    footer > .help-link:focus:before {
       color: #196428; }
-  footer > .service-links > .delivery-options:active,
-  footer > .service-links > .return-options:active,
-  footer > .service-links > .newsletter-link:active,
-  footer > .service-links > .help-link:active {
+  footer > .delivery-options:active,
+  footer > .return-options:active,
+  footer > .newsletter-link:active,
+  footer > .help-link:active {
     background-color: #999999;
     -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
     box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35); }
 
-footer > .service-links > .delivery-options,
-footer > .service-links > .return-options,
-footer > .service-links > .newsletter-link,
-footer > .service-links > .help-link, .main > .store-finder, .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span:after,
+footer > .delivery-options,
+footer > .return-options,
+footer > .newsletter-link,
+footer > .help-link, .main > .store-finder, .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span:after,
 .navi:not(.central) > li > .m-content > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
@@ -781,10 +781,10 @@ footer > .service-links > .help-link, .main > .store-finder, .navi:not(.central)
   background: linear-gradient(to bottom, rgba(96, 132, 62, 0) 0%, #60843e 100%);
   background-color: #8eaa3c; }
 
-.main > .store-finder:before, footer > .service-links > .delivery-options:before,
-footer > .service-links > .return-options:before,
-footer > .service-links > .newsletter-link:before,
-footer > .service-links > .help-link:before {
+.main > .store-finder:before, footer > .delivery-options:before,
+footer > .return-options:before,
+footer > .newsletter-link:before,
+footer > .help-link:before {
   background-color: #758c30;
   background: -moz-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #758c30), color-stop(100%, #4e6b32));
@@ -793,10 +793,10 @@ footer > .service-links > .help-link:before {
   background: -ms-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: linear-gradient(to bottom, #758c30 0%, #4e6b32 100%); }
 
-footer > .service-links > .delivery-options,
-footer > .service-links > .return-options,
-footer > .service-links > .newsletter-link,
-footer > .service-links > .help-link {
+footer > .delivery-options,
+footer > .return-options,
+footer > .newsletter-link,
+footer > .help-link {
   background-color: rgba(219, 221, 221, 0);
   background: -moz-linear-gradient(top, rgba(219, 221, 221, 0) 0%, #dbdddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(219, 221, 221, 0)), color-stop(100%, #dbdddd));
@@ -827,10 +827,10 @@ footer > .service-links > .help-link {
   border-bottom-right-radius: 3px;
   color: white; }
 
-.main > .store-finder:before, footer > .service-links > .delivery-options:before,
-footer > .service-links > .return-options:before,
-footer > .service-links > .newsletter-link:before,
-footer > .service-links > .help-link:before {
+.main > .store-finder:before, footer > .delivery-options:before,
+footer > .return-options:before,
+footer > .newsletter-link:before,
+footer > .help-link:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -993,23 +993,23 @@ footer {
   background-color: #d4d2ce;
   margin: 0.5rem -0.75rem 0 -0.75rem;
   padding: 0.75rem; }
-  footer > .service-links > .delivery-options,
-  footer > .service-links > .return-options,
-  footer > .service-links > .newsletter-link,
-  footer > .service-links > .help-link {
+  footer > .delivery-options,
+  footer > .return-options,
+  footer > .newsletter-link,
+  footer > .help-link {
     margin-bottom: 0.5rem; }
-    footer > .service-links > .delivery-options:before,
-    footer > .service-links > .return-options:before,
-    footer > .service-links > .newsletter-link:before,
-    footer > .service-links > .help-link:before {
+    footer > .delivery-options:before,
+    footer > .return-options:before,
+    footer > .newsletter-link:before,
+    footer > .help-link:before {
       content: "\e3b1";
       font-size: 0.65rem;
       background: none; }
-  footer > .service-links > .newsletter-link,
-  footer > .service-links > .help-link {
+  footer > .newsletter-link,
+  footer > .help-link {
     width: calc(50% - 0.25rem);
     float: left; }
-  footer > .service-links > .newsletter-link {
+  footer > .newsletter-link {
     margin-right: 0.5rem; }
   footer > .footer-links {
     display: block;
@@ -1378,8 +1378,10 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       position: relative; }
 
 .social-bar {
+  clear: left;
+  float: none;
   text-align: center;
-  padding: 0.85rem 0 0.35rem 0; }
+  padding: 0.65rem 0 0.35rem 0; }
   .social-bar > li {
     display: inline-block;
     margin: 0 0.2rem; }

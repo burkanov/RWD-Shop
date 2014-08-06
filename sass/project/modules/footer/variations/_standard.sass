@@ -6,25 +6,23 @@ footer
 	@extend %clearfix
 	margin: 0.5rem $base-mass * -0.5 0 $base-mass * -0.5
 	padding: $base-mass * 0.5
-	> .service-links
-		@extend %clearfix
-		> .delivery-options,
-		> .return-options,
-		> .newsletter-link,
-		> .help-link
-			@extend %secondary-button
-			margin-bottom: 0.5rem
-			&:before
-				@extend %cap-left
-				content: "\e3b1"
-				font-size: 0.65rem
-				background: none
-		> .newsletter-link,
-		> .help-link
-			width: calc(50% - 0.25rem)
-			float: left
-		> .newsletter-link
-			margin-right: 0.5rem
+	> .delivery-options,
+	> .return-options,
+	> .newsletter-link,
+	> .help-link
+		@extend %secondary-button
+		margin-bottom: 0.5rem
+		&:before
+			@extend %cap-left
+			content: "\e3b1"
+			font-size: 0.65rem
+			background: none
+	> .newsletter-link,
+	> .help-link
+		width: calc(50% - 0.25rem)
+		float: left
+	> .newsletter-link
+		margin-right: 0.5rem
 	> .footer-links
 		display: block
 		text-align: center
