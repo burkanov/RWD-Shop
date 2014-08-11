@@ -1,0 +1,69 @@
+// Standard styles for module
+
+.pbox
+	display: block
+	position: relative
+	padding-bottom: 2rem
+	@extend %pure
+	> img
+		display: block
+		max-width: 100%
+		height: auto
+		padding: 0
+		margin: 0
+	> .description
+		display: block
+		width: 100%
+		font-size: 0.75rem
+		position: absolute
+		bottom: 0
+		left: 0
+		padding: 0.1rem
+		@extend %insider
+		> h3,
+		> p
+			display: block
+			height: 0.75rem
+			line-height: 1
+			overflow: hidden
+			width: 100%
+			text-align: center
+			color: $fn-gray
+		> h3
+			font-weight: bold
+	> .badge
+		display: inline-block
+		position: absolute
+		font-weight: 800
+		background-color: $fn-yellow
+		top: 0.25rem
+		left: -5px
+		padding: 0.25rem 0.5rem 0 0.5rem
+		line-height: 1
+	&:hover,
+	&:focus,
+	&:active
+		background-color: $fn-green-medium
+		> .description
+			> h3,
+			> p
+				color: $white
+
+.m-carousel
+	&.m-carousel-products
+		> .m-carousel-inner
+			> .m-item
+				.pbox
+					display: block
+					min-height: 6rem
+					width: calc(50% - 3.5rem)
+					@extend %insider
+					border: 1px solid $fn-gray-light
+					float: left
+					margin-bottom: 1.25rem
+					margin-top: 1px
+					&:first-child
+						margin-right: 1rem
+						margin-left: 3rem
+					&:last-child
+						margin-right: 3rem

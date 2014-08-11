@@ -26,7 +26,8 @@
 				@extend %insider
 				> img
 					-ms-interpolation-mode: bicubic
-	&.m-carousel-photos
+	&.m-carousel-photos,
+	&.m-carousel-products
 		margin: 0 -10px
 		padding: 0 10px
 		> .m-carousel-inner
@@ -90,4 +91,19 @@
 					right: 1rem
 					&:before
 						content: "\e3b1"
-
+	&.m-carousel-products
+		> .m-carousel-controls
+			bottom: -0.2rem
+			&.m-carousel-bulleted
+				> a
+					padding: 0.33rem
+					+border-radius(0.33rem)
+					&[data-slide="prev"],
+					&[data-slide="next"]
+						padding: 1.25rem
+						+border-radius(1.25rem)
+						bottom: 3rem
+					&[data-slide="prev"]
+						left: 0.65rem
+					&[data-slide="next"]
+						right: 0.65rem
