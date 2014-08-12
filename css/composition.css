@@ -62,8 +62,8 @@
 .navi:not(.central) > li.garden > span:after {
   content: attr(data-icon-after); }
 
-[class^="icon-"], .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > .m-content > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
+[class^="icon-"], .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .search > label:before, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
@@ -563,7 +563,7 @@ a:active {
   -o-transition: none;
   transition: none; }
 
-.navi:not(.central) > li > a, .navi:not(.central) > li > .m-content > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
+.navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox {
@@ -619,8 +619,8 @@ footer > .help-link, .main > .store-finder, .search > label > .search-field, .m-
   -moz-border-radius: 6px;
   border-radius: 6px; }
 
-.navi:not(.central) > li > .m-content > .second-level-navi > li > a > span,
-.navi:not(.central) > li > .m-content > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .delivery-options,
+.navi:not(.central) > li > div > .second-level-navi > li > a > span,
+.navi:not(.central) > li > div > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .main > .store-finder {
@@ -644,12 +644,12 @@ a {
     color: white;
     background-color: #60843e; }
 
-.navi:not(.central) > li > a, .navi:not(.central) > li > .m-content > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a {
+.navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a {
   display: block;
   text-decoration: none; }
 
-.navi:not(.central) > li > .m-content > .second-level-navi > li > a > span,
-.navi:not(.central) > li > .m-content > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span {
+.navi:not(.central) > li > div > .second-level-navi > li > a > span,
+.navi:not(.central) > li > div > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span {
   display: block;
   font-size: 1.2rem;
   height: 3rem;
@@ -770,8 +770,8 @@ footer > .help-link {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > .m-content > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after {
+footer > .help-link, .main > .store-finder, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(96, 132, 62, 0)), color-stop(100%, #60843e));
@@ -811,8 +811,8 @@ footer > .products-suggestions, .payment-options {
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
 
-.navi:not(.central) > li > .m-content > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > .m-content > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after {
+.navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after {
   position: absolute;
   right: 0;
   top: 0;
@@ -1178,26 +1178,32 @@ footer {
       content: "\e3b2"; }
     .navi:not(.central) > li:first-child {
       border-top: 0; }
-    .navi:not(.central) > li > .m-content {
-      display: none; }
-      .navi:not(.central) > li > .m-content > .second-level-navi {
+    .navi:not(.central) > li > div {
+      -webkit-transition: max-height ease 0.5s;
+      -moz-transition: max-height ease 0.5s;
+      -ms-transition: max-height ease 0.5s;
+      -o-transition: max-height ease 0.5s;
+      transition: max-height ease 0.5s;
+      overflow: hidden;
+      max-height: 0; }
+      .navi:not(.central) > li > div > .second-level-navi {
         display: block; }
-        .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span,
-        .navi:not(.central) > li > .m-content > .second-level-navi > li > span {
+        .navi:not(.central) > li > div > .second-level-navi > li > a > span,
+        .navi:not(.central) > li > div > .second-level-navi > li > span {
           color: #333333;
           font-weight: normal;
           font-size: 1rem;
           padding-left: 3.5rem; }
-          .navi:not(.central) > li > .m-content > .second-level-navi > li > a > span:after,
-          .navi:not(.central) > li > .m-content > .second-level-navi > li > span:after {
+          .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+          .navi:not(.central) > li > div > .second-level-navi > li > span:after {
             font-size: 0.65em;
             color: #333333;
             background: none; }
-        .navi:not(.central) > li > .m-content > .second-level-navi > li > a:hover > span, .navi:not(.central) > li > .m-content > .second-level-navi > li > a:focus > span {
+        .navi:not(.central) > li > div > .second-level-navi > li > a:hover > span, .navi:not(.central) > li > div > .second-level-navi > li > a:focus > span {
           background-color: #f6f4d2;
           color: black; }
-    .navi:not(.central) > li.current > .m-content {
-      display: block; }
+    .navi:not(.central) > li.current > div {
+      max-height: 10000px; }
 .navi.central {
   padding-top: 10px; }
   .navi.central > li {

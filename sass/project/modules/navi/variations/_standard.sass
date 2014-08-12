@@ -96,8 +96,10 @@
 							content: "\e3b2"
 			&:first-child
 				border-top: 0
-			> .m-content
-				display: none
+			> div
+				+addTransition(max-height, ease, 0.5s)
+				overflow: hidden
+				max-height: 0
 				> .second-level-navi
 					display: block
 					> li
@@ -122,8 +124,8 @@
 									background-color: $fn-yellow-light
 									color: $black
 			&.current
-				> .m-content
-					display: block
+				> div
+					max-height: 10000px
 	&.central
 		padding-top: 10px
 		> li
