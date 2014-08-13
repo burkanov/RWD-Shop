@@ -926,6 +926,20 @@ footer > .products-suggestions > .headline {
     -ms-transform: translate3d(80%, 0, 0);
     -o-transform: translate3d(80%, 0, 0);
     transform: translate3d(80%, 0, 0); }
+  .scrolled > .header {
+    height: 1.875rem; }
+    .scrolled > .header > .toggle-navigation {
+      font-size: 1.25rem;
+      width: 1.875rem;
+      height: 1.875rem;
+      line-height: 1;
+      top: 0.25rem; }
+    .scrolled > .header > .fressnapf-logo {
+      height: 1.8rem; }
+    .scrolled > .header > .shopping-cart {
+      top: 0.25rem;
+      font-size: 0.85rem;
+      border-width: 1px; }
 
 .main {
   padding: 4.5rem 0.75rem 1.5rem 0.75rem;

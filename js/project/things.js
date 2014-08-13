@@ -8,8 +8,13 @@
 	var pageBody = $("body");
 	var naviSwitch = $(".toggle-navigation");
 	var naviStatus = "navi-open";
+	var scrolledOffStatus = "scrolled";
 	var searchField = $(".search-field");
 	var centralNavi = $(".central-navi");
+
+	var header = {};
+		header.selector = $(".module.header");
+		header.heightMass = header.selector.innerHeight();
 
 	var naviPanel = {};
 		naviPanel.selector = $(".navi-panel");
@@ -64,12 +69,24 @@
 		$('.m-accordion').accordion();
 	};
 
+	var prepareScrollSpy = function() {
+		$(window).scroll(function() {
+			var fromTop = $(this).scrollTop() - header.heightMass;
+			if (fromTop > 0) {
+				pageBody.addClass(scrolledOffStatus);
+			}else{
+				pageBody.removeClass(scrolledOffStatus);
+			}
+		});
+	};
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
 		prepareSearchFocus();
 		prepareScrollingGallery();
 		prepareCentralNavi();
+		prepareScrollSpy();
 	});
 
 
