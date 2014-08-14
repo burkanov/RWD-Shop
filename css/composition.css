@@ -63,7 +63,7 @@
   content: attr(data-icon-after); }
 
 [class^="icon-"], .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .search > label:before, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
@@ -566,7 +566,7 @@ a:active {
 .navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox {
+footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a {
   padding: 0;
   margin: 0;
   border: 0;
@@ -580,7 +580,7 @@ footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .heade
   -moz-border-radius: 0px;
   border-radius: 0px; }
 
-.header:after, .main:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after {
+.header:after, .main:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after, .breadcrumb:after {
   content: "";
   display: table;
   clear: both; }
@@ -771,7 +771,7 @@ footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .main > .store-finder, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after {
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(96, 132, 62, 0)), color-stop(100%, #60843e));
@@ -812,7 +812,7 @@ footer > .products-suggestions, .payment-options {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
 
 .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after {
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   position: absolute;
   right: 0;
   top: 0;
@@ -1493,3 +1493,26 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     margin-left: 3rem; }
   .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox:last-child {
     margin-right: 3rem; }
+
+.breadcrumb {
+  display: block;
+  background-color: white;
+  font-weight: 800; }
+  .breadcrumb > li {
+    display: block;
+    float: left; }
+    .breadcrumb > li span {
+      display: block;
+      position: relative;
+      line-height: 3rem;
+      padding-left: 0.5rem; }
+    .breadcrumb > li > a > span {
+      padding-right: 1rem; }
+      .breadcrumb > li > a > span:after {
+        background: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        color: #196428;
+        font-size: 0.75rem;
+        right: -1.25rem; }

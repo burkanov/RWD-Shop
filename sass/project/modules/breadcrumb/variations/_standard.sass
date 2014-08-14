@@ -1,0 +1,26 @@
+// Standard styles for module
+
+.breadcrumb
+	display: block
+	background-color: $white
+	font-weight: 800
+	@extend %clearfix
+	> li
+		display: block
+		float: left
+		span
+			display: block
+			position: relative
+			line-height: 3rem
+			padding-left: 0.5rem
+		> a
+			@extend %pure
+			> span
+				padding-right: 1rem
+				&:after
+					@extend %cap-right
+					background: none
+					+border-radius(0)
+					color: $fn-green
+					font-size: 0.75rem
+					right: -1.25rem
