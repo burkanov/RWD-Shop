@@ -66,7 +66,7 @@
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .search > label:before, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+footer > .help-link:before, .filtering > a > span:before, .search > label:before, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -566,7 +566,7 @@ a:active {
 .navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a {
+footer > .help-link, .main > .store-finder, .filtering > a, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a {
   padding: 0;
   margin: 0;
   border: 0;
@@ -580,7 +580,7 @@ footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .heade
   -moz-border-radius: 0px;
   border-radius: 0px; }
 
-.header:after, .main:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after, .breadcrumb:after {
+.header:after, .main:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after, .breadcrumb:after, .filtering:after {
   content: "";
   display: table;
   clear: both; }
@@ -596,7 +596,7 @@ footer > .help-link, .main > .store-finder, .header > .toggle-navigation, .heade
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox {
+footer > .help-link, .main > .store-finder, .filtering > a, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -623,7 +623,7 @@ footer > .help-link, .main > .store-finder, .search > label > .search-field, .m-
 .navi:not(.central) > li > div > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder {
+footer > .help-link, .main > .store-finder, .filtering > a {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -663,7 +663,7 @@ a {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder {
+footer > .help-link, .main > .store-finder, .filtering > a {
   display: block;
   text-decoration: none;
   color: white;
@@ -685,21 +685,21 @@ footer > .help-link, .main > .store-finder {
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .main > .store-finder:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .main > .store-finder:hover, .filtering > a:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .main > .store-finder:focus, footer > .delivery-options:active,
+  footer > .help-link:focus, .main > .store-finder:focus, .filtering > a:focus, footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .main > .store-finder:active {
+  footer > .help-link:active, .main > .store-finder:active, .filtering > a:active {
     cursor: pointer; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .main > .store-finder:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .main > .store-finder:hover, .filtering > a:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .main > .store-finder:focus {
+  footer > .help-link:focus, .main > .store-finder:focus, .filtering > a:focus {
     background-color: #c3d255;
     color: white;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
@@ -708,7 +708,7 @@ footer > .help-link, .main > .store-finder {
   footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .main > .store-finder:active {
+  footer > .help-link:active, .main > .store-finder:active, .filtering > a:active {
     background-color: #196428;
     -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
@@ -716,7 +716,7 @@ footer > .help-link, .main > .store-finder {
   footer > .delivery-options > span,
   footer > .return-options > span,
   footer > .newsletter-link > span,
-  footer > .help-link > span, .main > .store-finder > span {
+  footer > .help-link > span, .main > .store-finder > span, .filtering > a > span {
     font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     height: 1rem;
@@ -770,7 +770,7 @@ footer > .help-link {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+footer > .help-link, .main > .store-finder, .filtering > a, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
@@ -784,7 +784,7 @@ footer > .help-link, .main > .store-finder, .navi:not(.central) > li > div > .se
 .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before {
+footer > .help-link:before, .filtering > a > span:before {
   background-color: #758c30;
   background: -moz-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #758c30), color-stop(100%, #4e6b32));
@@ -835,7 +835,7 @@ footer > .products-suggestions, .payment-options {
 .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before {
+footer > .help-link:before, .filtering > a > span:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -1267,6 +1267,8 @@ footer {
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
       .navi.central > li.current > a > span:after {
         content: "\e3b2"; }
+  .navi.central.simple > li > a > span {
+    padding-left: 0.5rem; }
 
 html.touch .navi:not(.central) > li > a:hover > span, html.touch .navi:not(.central) > li > a:focus > span {
   background-color: #d4d2ce;
@@ -1516,3 +1518,22 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
         color: #196428;
         font-size: 0.75rem;
         right: -1.25rem; }
+
+.filtering {
+  display: block;
+  margin: 1rem 0 0.5rem 0; }
+  .filtering > a {
+    display: block;
+    float: left;
+    width: calc(50% - 0.25rem);
+    height: 3rem; }
+    .filtering > a:first-child {
+      margin-right: 0.5rem; }
+    .filtering > a > span {
+      line-height: 3rem; }
+      .filtering > a > span:before {
+        height: 3rem;
+        line-height: 3rem;
+        content: "\e3b1"; }
+    .filtering > a.open > span:before {
+      content: "\e3b2"; }
