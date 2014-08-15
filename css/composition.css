@@ -1507,21 +1507,26 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       display: block;
       position: relative;
       line-height: 3rem;
-      padding-left: 0.5rem; }
-    .breadcrumb > li > a > span {
-      padding-right: 1rem; }
-      .breadcrumb > li > a > span:after {
-        background: none;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        color: #196428;
-        font-size: 0.75rem;
-        right: -1.25rem; }
+      padding-left: 0.5rem;
+      color: #999999; }
+    .breadcrumb > li > a {
+      color: #196428;
+      text-decoration: none; }
+      .breadcrumb > li > a > span {
+        padding-right: 1rem;
+        color: #196428; }
+        .breadcrumb > li > a > span:after {
+          background: none;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          color: #196428;
+          font-size: 0.75rem;
+          right: -1.25rem; }
 
 .filtering {
   display: block;
-  margin: 1rem 0 0.5rem 0; }
+  margin: 1rem 0 0.25rem 0; }
   .filtering > a {
     display: block;
     float: left;
