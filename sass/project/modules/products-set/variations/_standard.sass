@@ -1,0 +1,63 @@
+// Standard styles for module
+
+.products-set
+	@extend %clearfix
+	margin-top: 1rem
+	> .load-more-products
+		@extend %primary-button
+		&:before
+			@extend %cap-left
+	> ul
+		margin-bottom: 0.5rem
+		> li
+			margin-top: 0.5rem
+			> a
+				@extend %pure
+				@extend %clearfix
+				color: $fn-gray
+				text-decoration: none
+				display: -webkit-flex
+				display: flex
+				-webkit-flex-direction: row
+				flex-direction: row
+				background-color: $white
+				padding: 0.5rem
+				> .photo,
+				> .description
+					-webkit-flex: auto
+					flex: auto
+				> .photo
+					width: 100%
+					height: auto
+					max-width: 50%
+					> img
+						display: block
+						width: 100%
+						height: auto
+				> .description
+					min-width: 12rem
+					line-height: 1.2
+					padding-bottom: 3rem
+					position: relative
+					> div
+						display: block
+						@extend %clearfix
+						position: absolute
+						left: 0
+						bottom: 0
+						width: 100%
+						> .price
+							display: block
+							float: right
+							text-align: right
+							> .old
+								font-size: 0.85rem
+								color: $fn-gray-medium
+								> span
+									text-decoration: line-through
+							> .new
+								font-weight: 800
+								color: $fn-red-accent
+								font-size: 1.5rem
+			&:first-child
+				margin-top: 0

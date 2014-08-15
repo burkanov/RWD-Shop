@@ -3,21 +3,17 @@
 .filtering
 	display: block
 	@extend %clearfix
-	margin: 1rem 0 0.25rem 0
+	margin: 0.5rem 0 0rem 0
 	> a
 		@extend %primary-button
 		display: block
 		float: left
 		width: calc(50% - 0.25rem)
-		height: 3rem
 		&:first-child
 			margin-right: 0.5rem
 		> span
-			line-height: 3rem
 			&:before
 				@extend %cap-left
-				height: 3rem
-				line-height: 3rem
 				content: "\e3b1"
 		&.open
 			> span

@@ -2,18 +2,17 @@
 
 .search
 	display: block
-	margin: $base-mass * -0.75 $base-mass * -0.25
-	margin-bottom: $base-mass * 0.25
+	margin: 0.5rem -0.5rem
 	> label
 		display: block
-		padding: $base-mass / 4 $base-mass * 2 $base-mass / 4 $base-mass / 4
+		padding: 0 2rem 0 0.5rem
 		position: relative
 		&:before
 			@extend [class^="icon-"]
 			content: "\e60d"
 			position: absolute
-			left: 0.75rem
-			top: 0.85rem
+			left: 1rem
+			top: 0.5rem
 			z-index: 2
 			font-size: 1.5rem
 			color: $fn-green
@@ -39,8 +38,8 @@
 			@extend %fe-norm
 			border: 0
 			position: absolute
-			right: $base-mass / 4
-			top: $base-mass / 4
+			right: 0.5rem
+			top: 0
 			width: 2.5rem
 			height: 2.5rem
 			background-color: $fn-gray-light

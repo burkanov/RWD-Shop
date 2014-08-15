@@ -1,0 +1,43 @@
+// Standard styles for module
+
+%full-star
+	&:before
+		content: "\e604"
+
+.rating
+	color: $fn-green
+	> [class^="star-"],
+	> [class*=" star-"]
+		display: inline-block
+		&:before
+			content: "\e605"
+			@extend [class^="icon-"]
+	&.r-1
+		> .star-1
+			@extend %full-star
+	&.r-2
+		> .star-1,
+		> .star-2
+			@extend %full-star
+	&.r-3
+		> .star-1,
+		> .star-2,
+		> .star-3
+			@extend %full-star
+	&.r-4
+		> .star-1,
+		> .star-2,
+		> .star-3,
+		> .star-4
+			@extend %full-star
+	&.r-5
+		> .star-1,
+		> .star-2,
+		> .star-3,
+		> .star-4,
+		> .star-5
+			@extend %full-star
+	.products-set &
+		font-size: 0.85rem
+		display: block
+		float: left
