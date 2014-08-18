@@ -107,3 +107,27 @@
 						left: 0.5rem
 					&[data-slide="next"]
 						right: 0.5rem
+.product
+	> .photos
+		> .m-carousel
+			border: 1px solid $fn-gray-light
+			margin: 0
+			padding: 0
+			> .m-carousel-controls
+				bottom: 0
+				&.m-carousel-bulleted
+					> a
+						padding: 0.45rem
+						&[data-slide="prev"],
+						&[data-slide="next"]
+							bottom: 0.5rem
+							padding: 1rem
+							+border-radius(1rem)
+							&:before
+								left: 0.5rem
+								top: 0.5rem
+								font-size: 1rem
+						&[data-slide="prev"]
+							left: 0.25rem
+						&[data-slide="next"]
+							right: 0.25rem

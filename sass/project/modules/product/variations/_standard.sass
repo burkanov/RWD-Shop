@@ -1,0 +1,19 @@
+// Standard styles for module
+
+.product
+	display: block
+	background-color: $white
+	margin-top: 0.5rem
+	padding: 0.5rem 0.5rem 0.25rem 0.5rem
+	> .title
+		@extend %base-headline
+		font-size: 1.5rem
+		line-height: 1.25
+	> .photos
+		display: block
+		position: relative
+		> .badge
+			@extend %badge
+			font-size: 1.5rem
+			line-height: 1
+			padding: 0.5rem 0.5rem 0.15rem 0.75rem
