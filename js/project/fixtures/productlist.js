@@ -5,10 +5,10 @@ fixtures.productlist =
       {  
          "index":0,
          "rebateType":"rebateType0",
-         "numRatings":0,
+         "numRatings":23,
          "relativePriceBadge":"",
          "textBadge":"",
-         "numStars":3,
+         "numStars":3.5,
          "url":"Url0",
          "currency":"€",
          "imgUrl":"img/pr1.jpg",

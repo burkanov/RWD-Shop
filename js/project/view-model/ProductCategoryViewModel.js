@@ -14,7 +14,7 @@ function Product(data) {
 	this.textBadge = data.textBadge;
 	
 	this.getRatingClass = function() {
-		return 'r-' + String(this.numStars);
+		return 'r-' + String(this.numStars).replace('.',  '_');
 	};
 	this.getNumRatings = function() {
 		return '(' + String(this.numRatings) + ')';
@@ -30,13 +30,14 @@ function Product(data) {
 	}
 }
 
-function ProductCategoryViewModel() {
+function ProductCategoryViewModel(categoryName, categoryId) {
 
 	var self = this;
 	
 	// Attributes
-	self.currentCategory = 'Katzenfutter';
-	self.productURL = 'http://10.0.1.34:9001/shop/c/189/1/categoryProducts.json';
+	self.categoryName = categoryName;
+	self.categoryId = categoryId;
+	self.productURL = 'http://10.0.1.34:9001/shop/c/{cat}/{page}/{mode}/categoryProducts.json';
 	self.doScroll = false;
 	self.fadeInSpeed = 1000;
 	self.ScrollSpeed = 1000;
@@ -51,13 +52,16 @@ function ProductCategoryViewModel() {
 	});
 	
     // Behaviours
-	self.loadMoreProducts = function(doScroll) {
+	self.loadMoreProducts = function(doScroll, currentPageInit) {
 		$('.product-added').removeClass('product-added');
+		if (currentPageInit > 0) {
+			self.currentPage(currentPageInit);
+		}
 		self.scrollIntoView = true;
 		self.doScroll = doScroll;
 		var data = fixtures.productlist;
 		
-		//$.getJSON(self.productURL, {}).done(function(data) {
+		//$.getJSON(self.productURL.replace('{cat}', self.categoryId).replace('{page}', self.currentPage).replace('{mode}', currentPageInit > 0 ? 'a':'s')).done(function(data) {
 			var newProducts = ko.utils.arrayMap(data.results, function(productData) {
 				return new Product(productData);
 			});
@@ -66,7 +70,10 @@ function ProductCategoryViewModel() {
 			self.totalResults(data.totalResults);
 			self.currentPage(data.currentPage);
 			
-			//history.pushState({test: 'test2'}, '', 'index2.html?page=2');
+			if (self.doScroll) {
+				var url = window.location.href.replace(/\?page=\d+/, '') + '?page=' + self.currentPage();
+				history.pushState({currentPage: self.currentPage()}, self.categoryName, url);
+			}
 		//});
 		
 	}
@@ -86,8 +93,14 @@ function ProductCategoryViewModel() {
 
 (function ($) {
 	$(document).ready(function () {
-		var pageViewModel = new ProductCategoryViewModel();
+		var pageViewModel = new ProductCategoryViewModel(categoryName, categoryId);
 		ko.applyBindings(pageViewModel);
-		pageViewModel.loadMoreProducts(false);
+		var currentPage = parseInt(window.location.search.match(/page=(\d+)/)[1]);
+		pageViewModel.loadMoreProducts(false, currentPage);
+		
+		window.addEventListener('popstate', function(event) {
+			// TODO
+		});
+
 	});
 })(jQuery);
