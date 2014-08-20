@@ -1,0 +1,47 @@
+// Importing standard styles for the module
+@import variations/standard
+
+// Importing print styles for the module
+@media print
+	@import variations/print/print
+
+// Importing now we're adding screen variations for the RWD
+// Phones All
+@media screen and ($phone-landscape-max)
+	@import variations/screens/phones/phones-all
+
+// Tablets All
+@media screen and ($tablet-portrait-min) and ($tablet-landscape-max)
+	@import variations/screens/tablets/tablets-all
+
+// Desktops All
+@media screen and ($desktop-small-min)
+	@import variations/screens/desktops/desktops-all
+
+// Phone-Portrait
+@media screen and ($phone-portrait-max) and (orientation:portrait)
+	@import variations/screens/phones/phone-portrait
+
+// Phone-Landscape
+@media screen and ($phone-landscape-min) and ($phone-landscape-max) and (orientation:landscape)
+	@import variations/screens/phones/phone-landscape
+
+// Tablet-Portrait
+@media screen and ($tablet-portrait-min) and ($tablet-portrait-max) and (orientation:portrait)
+	@import variations/screens/tablets/tablet-portrait
+
+// Tablet-Landscape
+@media screen and ($tablet-landscape-min) and ($tablet-landscape-max) and (orientation:landscape)
+	@import variations/screens/tablets/tablet-landscape
+
+// Desktop-Small
+@media screen and ($desktop-small-min) and ($desktop-small-max)
+	@import variations/screens/desktops/desktop-small
+
+// Desktop-Normal
+@media screen and ($desktop-normal-min) and ($desktop-normal-max)
+	@import variations/screens/desktops/desktop-medium
+
+// Desktop-Large
+@media screen and ($desktop-large-min)
+	@import variations/screens/desktops/desktop-large

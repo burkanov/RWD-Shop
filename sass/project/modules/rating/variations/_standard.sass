@@ -4,6 +4,10 @@
 	&:before
 		content: "\e604"
 
+%half-star
+	&:before
+		content: "\e300"
+
 .rating
 	color: $fn-green
 	> [class^="star-"],
@@ -12,24 +16,53 @@
 		&:before
 			content: "\e605"
 			@extend [class^="icon-"]
+	&.r-0_5
+		> .star-1
+			@extend %half-star
 	&.r-1
 		> .star-1
 			@extend %full-star
+	&.r-1_5
+		> .star-1
+			@extend %full-star
+		> .star-2
+			@extend %half-star
 	&.r-2
 		> .star-1,
 		> .star-2
 			@extend %full-star
+	&.r-2_5
+		> .star-1,
+		> .star-2
+			@extend %full-star
+		> .star-3
+			@extend %half-star
 	&.r-3
 		> .star-1,
 		> .star-2,
 		> .star-3
 			@extend %full-star
+	&.r-3_5
+		> .star-1,
+		> .star-2,
+		> .star-3
+			@extend %full-star
+		> .star-4
+			@extend %half-star
 	&.r-4
 		> .star-1,
 		> .star-2,
 		> .star-3,
 		> .star-4
 			@extend %full-star
+	&.r-4_5
+		> .star-1,
+		> .star-2,
+		> .star-3,
+		> .star-4
+			@extend %full-star
+		> .star-5
+			@extend %half-star
 	&.r-5
 		> .star-1,
 		> .star-2,

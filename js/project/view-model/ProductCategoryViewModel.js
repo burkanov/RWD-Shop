@@ -10,6 +10,8 @@ function Product(data) {
 	this.numRatings = data.numRatings;
 	this.currency = data.currency;
 	this.apriceF = data.apriceF;
+	this.relativePriceBadge = data.relativePriceBadge;
+	this.textBadge = data.textBadge;
 	
 	this.getRatingClass = function() {
 		return 'r-' + String(this.numStars);
@@ -19,6 +21,12 @@ function Product(data) {
 	}
 	this.getPrice = function() {
 		return this.apriceF + ' ' + this.currency;
+	}
+	this.hasRelativePriceBadge = function() {
+		return this.relativePriceBadge.length > 0;
+	}
+	this.hasTextBadge = function() {
+		return this.textBadge.length > 0;
 	}
 }
 

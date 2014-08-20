@@ -14,3 +14,17 @@
 		@extend %primary-button
 		&:before
 			@extend %cap-left
+	> .product-video
+		@extend %primary-button
+		padding: 0
+		text-align: center
+		margin-top: 0.5rem
+		> span
+			&:after
+				content: "\e627"
+				@extend [class^="icon-"]
+				display: inline-block
+				font-size: 1.5rem
+				margin-top: -0.25rem
+				vertical-align: middle
+				margin-left: 0.4rem

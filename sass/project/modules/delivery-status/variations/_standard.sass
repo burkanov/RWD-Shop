@@ -1,0 +1,37 @@
+// Standard styles for module
+
+.delivery-status
+	display: block
+	font-size: 0.75rem
+	> .indicator
+		display: inline-block
+		@extend %clearfix
+		vertical-align: top
+		> span
+			display: block
+			float: left
+			margin-right: 0.15rem
+			&:before
+				content: "\e61a"
+				@extend [class^="icon-"]
+				color: $fn-gray-light
+	> .description
+		display: inline-block
+	&.ready
+		> .indicator
+			> span
+				&:before
+					color: $fn-green
+	&.waiting
+		> .indicator
+			> span
+				&:nth-child(1),
+				&:nth-child(2)
+					&:before
+						color: $fn-yellow
+	&.absent
+		> .indicator
+			> span
+				&:nth-child(1)
+					&:before
+						color: $fn-red
