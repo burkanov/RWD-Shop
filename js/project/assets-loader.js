@@ -18,6 +18,7 @@ Modernizr.load([
 			'js/project/browser-detection.js', // UA Sniffing (used for greater good)
 			'js/vendor/fast-click/fast-click.js', // Eliminating 300ms delay
 			'js/project/detector.js', // Populating DOM with context-description classes
+			'js/vendor/knockout/knockout-3.2.0.js' // Knockout.js MVVM framework
 		],
 	},
 	{
@@ -25,6 +26,13 @@ Modernizr.load([
 			'js/vendor/mobify/carousel.js',
 			'js/vendor/mobify/accordion.js',
 			'js/project/things.js' // Different things (why not)
+		]
+	},
+	{
+		// view models / fixtures
+		load: [
+			'js/project/fixtures/productlist.js',
+			'js/project/view-model/ProductCategoryViewModel.js'
 		]
 	}
 ]);

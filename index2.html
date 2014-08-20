@@ -813,121 +813,32 @@
 			</li>
 		</ul>
 
-		<div class="module products-set">
-			<ul>
+		<div id="products-set" class="module products-set">
+		
+			<ul data-bind="foreach: {data: products, afterAdd: showAdditionalProduct }">
 				<li>
-					<a href="#">
+					<a data-bind="attr: { href: url, title: title }">
 						<div class="photo">
-							<img src="img/pr1.jpg">
+							<img data-bind="attr: { src: imgUrl, alt: title }">
 						</div>
 						<div class="description">
-							<p class="title">Felix So gut wie es aussieht Multipack 24x100g</p>
-							<p class="subtitle">Fleisch mit Huhn, Rind, Lamm &amp; Kaninchen</p>
+							<p class="title" data-bind="text: title"></p>
+							<p class="subtitle" data-bind="text: subTitle"></p>
 							<div>
-								<div class="module rating r-1">
+								<div class="module rating" data-bind="css: getRatingClass()">
 									<span class="star-1"></span>
 									<span class="star-2"></span>
 									<span class="star-3"></span>
 									<span class="star-4"></span>
 									<span class="star-5"></span>
-									(23)
+									<span data-bind="text: getNumRatings()"></span>
 								</div>
 								<div class="price">
 									<div class="old">
 										UVP
 										<span>9,96 &euro;</span>
 									</div>
-									<div class="new">
-										8,90 &euro;
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="photo">
-							<img src="img/pr2.jpg">
-						</div>
-						<div class="description">
-							<p class="title">Felix So gut wie es aussieht Multipack 24x100g</p>
-							<p class="subtitle">Fleisch mit Huhn, Rind, Lamm &amp; Kaninchen</p>
-							<div>
-								<div class="module rating r-3">
-									<span class="star-1"></span>
-									<span class="star-2"></span>
-									<span class="star-3"></span>
-									<span class="star-4"></span>
-									<span class="star-5"></span>
-									(23)
-								</div>
-								<div class="price">
-									<div class="old">
-										UVP
-										<span>9,96 &euro;</span>
-									</div>
-									<div class="new">
-										8,90 &euro;
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="photo">
-							<img src="img/pr1.jpg">
-						</div>
-						<div class="description">
-							<p class="title">Felix So gut wie es aussieht Multipack 24x100g</p>
-							<p class="subtitle">Fleisch mit Huhn, Rind, Lamm &amp; Kaninchen</p>
-							<div>
-								<div class="module rating r-3">
-									<span class="star-1"></span>
-									<span class="star-2"></span>
-									<span class="star-3"></span>
-									<span class="star-4"></span>
-									<span class="star-5"></span>
-									(23)
-								</div>
-								<div class="price">
-									<div class="old">
-										UVP
-										<span>9,96 &euro;</span>
-									</div>
-									<div class="new">
-										8,90 &euro;
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="photo">
-							<img src="img/pr2.jpg">
-						</div>
-						<div class="description">
-							<p class="title">fit+fun Multipack XXL 44x100g</p>
-							<div>
-								<div class="module rating r-3">
-									<span class="star-1"></span>
-									<span class="star-2"></span>
-									<span class="star-3"></span>
-									<span class="star-4"></span>
-									<span class="star-5"></span>
-									(23)
-								</div>
-								<div class="price">
-									<div class="old">
-										UVP
-										<span>9,96 &euro;</span>
-									</div>
-									<div class="new">
-										8,49 &euro;
+									<div class="new" data-bind="text: getPrice()">
 									</div>
 								</div>
 							</div>
@@ -935,7 +846,8 @@
 					</a>
 				</li>
 			</ul>
-			<a href="#" class="load-more-products">
+			
+			<a class="load-more-products" data-bind="visible: hasMoreResults, click: loadMoreProducts">
 				<span>Weitere Produkte laden</span>
 			</a>
 		</div>
@@ -1088,9 +1000,18 @@
 		</footer>
 
 	</div>
+	<a href="index3.html">TEST</a>
 
 	<script src="js/vendor/modernizr/modernizr.js"></script>
 	<script src="js/project/assets-loader.js"></script>
+	
+	<script type="text/javascript">
+	console.log('TEST');
+	history.pushState({test: 'test2'}, 'Test-Eintrag', 'index2.html?page=2');
+	window.addEventListener('statechange', function(event) {
+  console.log('statechange fired!');
+});
+	</script>
 
 </body>
 </html>
