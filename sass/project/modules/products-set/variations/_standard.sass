@@ -22,6 +22,7 @@
 				flex-direction: row
 				background-color: $white
 				padding: 0.5rem
+				position: relative
 				> .photo,
 				> .description
 					-webkit-flex: auto
@@ -59,5 +60,14 @@
 								font-weight: 800
 								color: $fn-red-accent
 								font-size: 1.5rem
+				> .badge
+					@extend %badge
+					&.special
+						top: auto
+						bottom: 0.5rem
+						left: 0.5rem
+						padding: 0.75rem 0.5rem 0.5rem 0.5rem
+						+border-radius(50%)
+						background-color: $fn-blue-light
 			&:first-child
 				margin-top: 0

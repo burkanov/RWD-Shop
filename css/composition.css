@@ -431,7 +431,7 @@ footer > .help-link:before, .filtering > a > span:before, .products-set > .load-
   -moz-border-radius-bottomleft: 3px;
   border-bottom-left-radius: 3px; }
 
-.pbox > .badge, .product > .photos > .badge {
+.pbox > .badge, .products-set > ul > li > a > .badge, .product > .photos > .badge {
   display: inline-block;
   position: absolute;
   font-weight: 800;
@@ -1198,7 +1198,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
         -webkit-flex-direction: row;
         flex-direction: row;
         background-color: white;
-        padding: 0.5rem; }
+        padding: 0.5rem;
+        position: relative; }
         .products-set > ul > li > a > .photo,
         .products-set > ul > li > a > .description {
           -webkit-flex: auto;
@@ -1235,6 +1236,15 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
                 font-weight: 800;
                 color: #b1181e;
                 font-size: 1.5rem; }
+        .products-set > ul > li > a > .badge.special {
+          top: auto;
+          bottom: 0.5rem;
+          left: 0.5rem;
+          padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          background-color: #c4d7f0; }
       .products-set > ul > li:first-child {
         margin-top: 0; }
 
