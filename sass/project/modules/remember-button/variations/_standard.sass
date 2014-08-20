@@ -1,0 +1,35 @@
+// Standard styles for module
+
+.remember-button
+	display: inline-block
+	@extend %pure
+	text-decoration: none
+	cursor: pointer
+	> span
+		@extend %away
+	&:before
+		content: "\e679"
+		@extend [class^="icon-"]
+		display: block
+		font-size: 1.25rem
+		padding: 0.5rem
+		text-align: center
+		background-color: rgba(252, 252, 252, 1)
+		color: $fn-red
+		@extend %ci-radius
+		@extend %fn-gray-grad
+		@extend %common-transition
+		+box-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
+	&.on
+		&:before
+			content: "\e64f"
+	&:hover,
+	&:focus
+		&:before
+			background-color: $fn-blue-lightest
+			+box-shadow(0 2px 3px rgba(0, 0, 0, 0.3))
+	&:active,
+	&:visited
+		background: none
+		&:before
+			+box-shadow(0 1px 1px rgba(0, 0, 0, 0.25))

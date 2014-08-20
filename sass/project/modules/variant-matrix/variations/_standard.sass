@@ -1,0 +1,48 @@
+// Standard styles for module
+
+.variant-matrix
+	display: block
+	background-color: $white
+	padding: 0.5rem
+	> li
+		display: block
+		padding-top: 1.5rem
+		&:first-child
+			padding-top: 0.5rem
+		> h3
+			@extend %base-headline
+			font-size: 1.25rem
+			padding: 0.5rem
+			border-top: 1px solid $fn-gray-medium
+			background-color: $fn-almost-white
+		> ul
+			display: block
+			> li
+				display: -webkit-flex
+				display: flex
+				-webkit-flex-direction: row
+				flex-direction: row
+				padding: 0.5rem
+				border-top: 1px solid $fn-gray-light
+				&:first-child
+					border-top: none
+				> .information,
+				> .action
+					-webkit-flex: auto
+					flex: auto
+					width: 50%
+				> .information
+					line-height: 1.25
+					> h4
+						@extend %base-headline
+					> .relative-price
+						color: $fn-gray-medium
+						font-size: 0.85rem
+				> .action
+					text-align: right
+					min-width: 11rem
+					> .reco-price
+						display: block
+						color: $fn-gray-medium
+						font-size: 0.85rem
+						text-align: right

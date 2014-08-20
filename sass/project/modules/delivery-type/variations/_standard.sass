@@ -1,0 +1,15 @@
+// Standard styles for module
+
+.delivery-type
+	display: block
+	padding: 1rem 0.5rem
+	&.forwarding
+		text-align: center
+		&:before
+			content: "\e602"
+			@extend [class^="icon-"]
+			display: inline-block
+			padding-top: 0.005rem
+			vertical-align: top
+			color: $fn-gray
+			font-size: 1.25rem

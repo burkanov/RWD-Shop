@@ -11,6 +11,7 @@
 	var scrolledOffStatus = "scrolled";
 	var searchField = $(".search-field");
 	var centralNavi = $(".central-navi");
+	var rememberButton = $(".remember-button");
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -80,6 +81,12 @@
 		});
 	};
 
+	var prepareRememberButton = function() {
+		rememberButton.click(function(event) {
+			$(this).toggleClass('on');
+		});
+	};
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
@@ -87,6 +94,7 @@
 		prepareScrollingGallery();
 		prepareCentralNavi();
 		prepareScrollSpy();
+		prepareRememberButton();
 	});
 
 
