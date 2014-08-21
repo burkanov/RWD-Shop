@@ -60,8 +60,9 @@ function ProductCategoryViewModel(categoryName, categoryId) {
 		self.scrollIntoView = true;
 		self.doScroll = doScroll;
 		var data = fixtures.productlist;
+		var url = self.productURL.replace('{cat}', self.categoryId).replace('{page}', self.currentPage()).replace('{mode}', currentPageInit > 0 ? 'a':'s');
 		
-		//$.getJSON(self.productURL.replace('{cat}', self.categoryId).replace('{page}', self.currentPage).replace('{mode}', currentPageInit > 0 ? 'a':'s')).done(function(data) {
+		//$.getJSON(url, { pageSize: self.perPage() }).done(function(data) {
 			var newProducts = ko.utils.arrayMap(data.results, function(productData) {
 				return new Product(productData);
 			});
@@ -69,11 +70,6 @@ function ProductCategoryViewModel(categoryName, categoryId) {
 			self.products.valueHasMutated();
 			self.totalResults(data.totalResults);
 			self.currentPage(data.currentPage);
-			
-			if (self.doScroll) {
-				var url = window.location.href.replace(/\?page=\d+/, '') + '?page=' + self.currentPage();
-				history.pushState({currentPage: self.currentPage()}, self.categoryName, url);
-			}
 		//});
 		
 	}
@@ -84,7 +80,10 @@ function ProductCategoryViewModel(categoryName, categoryId) {
 			$(elem).hide().addClass('product-added').fadeIn(self.fadeInSpeed);
 			var $productAdded = $('.product-added');
 			if (self.doScroll && $productAdded.length === 1) {
-				$('html, body').animate({ scrollTop: $productAdded.offset().top - 50 }, { duration: self.ScrollSpeed });
+				var url = window.location.href.replace(/\?page=\d+/, '') + '?page=' + self.currentPage();
+				var scrollTop = $productAdded.offset().top - 50;
+				history.pushState({currentPage: self.currentPage(), scrollTop: scrollTop }, self.categoryName, url);
+				$('html, body').animate({ scrollTop: scrollTop }, { duration: self.ScrollSpeed });
 			}
 		}
 	}
@@ -95,11 +94,12 @@ function ProductCategoryViewModel(categoryName, categoryId) {
 	$(document).ready(function () {
 		var pageViewModel = new ProductCategoryViewModel(categoryName, categoryId);
 		ko.applyBindings(pageViewModel);
-		var currentPage = parseInt(window.location.search.match(/page=(\d+)/)[1]);
+		var pageMatch = window.location.search.match(/page=(\d+)/);
+		var currentPage = pageMatch === null ? 0 : pageMatch[1];
 		pageViewModel.loadMoreProducts(false, currentPage);
 		
 		window.addEventListener('popstate', function(event) {
-			// TODO
+			$('html, body').animate({ scrollTop: event.state === null ? 200 : event.state.scrollTop }, { duration: pageViewModel.ScrollSpeed });
 		});
 
 	});
