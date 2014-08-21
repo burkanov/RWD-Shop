@@ -82,7 +82,7 @@ function ProductCategoryViewModel(categoryName, categoryId) {
 			if (self.doScroll && $productAdded.length === 1) {
 				var url = window.location.href.replace(/\?page=\d+/, '') + '?page=' + self.currentPage();
 				var scrollTop = $productAdded.offset().top - 50;
-				history.pushState({currentPage: self.currentPage(), scrollTop: scrollTop }, self.categoryName, url);
+				history.replaceState({currentPage: self.currentPage(), scrollTop: scrollTop }, self.categoryName, url);
 				$('html, body').animate({ scrollTop: scrollTop }, { duration: self.ScrollSpeed });
 			}
 		}
