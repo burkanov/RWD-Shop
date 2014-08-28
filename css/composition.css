@@ -71,7 +71,7 @@
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .filtering > a > span:before, .products-set > .load-more-products:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+footer > .help-link:before, .filtering > .select-icon, .filtering > a > span:before, .products-set > .load-more-products:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -150,7 +150,7 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-a, .search > label > .search-field, .remember-button:before {
+a, .search > label > .search-field, .filtering > select, .remember-button:before {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -167,7 +167,7 @@ a:active {
 .navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > a, .products-set > .load-more-products, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a, .remember-button {
+footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > a, .products-set > .load-more-products, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a, .filtering > select, .products-set > ul > li > a, .remember-button {
   padding: 0;
   margin: 0;
   border: 0;
@@ -197,7 +197,7 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > a, .products-set > .load-more-products, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox {
+footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > a, .products-set > .load-more-products, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .filtering > select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -345,7 +345,7 @@ footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > a, .products-set > .load-more-products, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after, .filtering > select {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(96, 132, 62, 0)), color-stop(100%, #60843e));
@@ -358,7 +358,7 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
 .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .filtering > a > span:before, .products-set > .load-more-products:before {
+footer > .help-link:before, .filtering > .select-icon, .filtering > a > span:before, .products-set > .load-more-products:before {
   background-color: #758c30;
   background: -moz-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #758c30), color-stop(100%, #4e6b32));
@@ -417,7 +417,7 @@ footer > .products-suggestions, .payment-options {
 .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .filtering > a > span:before, .products-set > .load-more-products:before {
+footer > .help-link:before, .filtering > .select-icon, .filtering > a > span:before, .products-set > .load-more-products:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -468,7 +468,7 @@ footer > .help-link:before, .filtering > a > span:before, .products-set > .load-
 .navi:not(.central) > li > div > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > a, .products-set > .load-more-products {
+footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > a, .products-set > .load-more-products, .filtering > select {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -1170,12 +1170,49 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 .filtering {
   display: block;
   margin: 0.5rem 0 0rem 0; }
+  .filtering > .select-icon {
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    position: relative;
+    float: left;
+    color: white; }
+  .filtering > select {
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    display: block;
+    float: left;
+    width: calc(50% - 2.5rem);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    border: none;
+    -webkit-appearance: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+    position: relative;
+    text-align: left;
+    padding-left: 0.5rem;
+    height: 3rem; }
+    .filtering > select:hover, .filtering > select:focus {
+      background-color: #c3d255;
+      color: white;
+      -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
+      -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e; }
+    .filtering > select:active {
+      background-color: #196428;
+      -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
+      -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
+      box-shadow: inset 0 -0.25rem 1.25rem #143800; }
+    .filtering > select::-ms-expand {
+      display: none; }
   .filtering > a {
     display: block;
     float: left;
     width: calc(50% - 0.25rem); }
-    .filtering > a:first-child {
-      margin-right: 0.5rem; }
     .filtering > a > span:before {
       content: "\e3b1"; }
     .filtering > a.open > span:before {

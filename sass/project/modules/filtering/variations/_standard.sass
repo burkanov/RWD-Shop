@@ -4,13 +4,50 @@
 	display: block
 	@extend %clearfix
 	margin: 0.5rem 0 0rem 0
+	> .select-icon
+		@extend %cap-left
+		+box-shadow(0 2px 2px rgba(0, 0, 0, 0.25))
+		position: relative
+		float: left
+		color: $white
+	> select
+		@extend %fn-green-grad
+		@extend %pure
+		@extend %ci-radius-small
+		@extend %insider
+		@extend %common-transition
+		+box-shadow(0 2px 2px rgba(0, 0, 0, 0.25))
+		display: block
+		float: left
+		width: calc(50% - 2.5rem)
+		font-size: 0.9rem
+		font-weight: bold
+		margin-right: 0.5rem
+		border: none
+		-webkit-appearance: none
+		border-top-left-radius: 0
+		border-bottom-left-radius: 0
+		color: $white
+		position: relative
+		text-align: left
+		padding-left: 0.5rem
+		height: 3rem
+		&:hover,
+		&:focus
+			background-color: $fn-green-yellow
+			color: $white
+			+box-shadow(0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem $fn-green-medium)
+		&:active
+			background-color: $fn-green
+			+box-shadow(inset 0 -0.25rem 1.25rem $fn-green-accent)
+		&::-ms-expand
+			display: none
+
 	> a
 		@extend %primary-button
 		display: block
 		float: left
 		width: calc(50% - 0.25rem)
-		&:first-child
-			margin-right: 0.5rem
 		> span
 			&:before
 				@extend %cap-left
