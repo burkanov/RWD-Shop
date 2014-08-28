@@ -7,15 +7,6 @@
 		display: block
 		padding: 0 2rem 0 0.5rem
 		position: relative
-		&:before
-			@extend [class^="icon-"]
-			content: "\e60d"
-			position: absolute
-			left: 1rem
-			top: 0.5rem
-			z-index: 2
-			font-size: 1.5rem
-			color: $fn-green
 		> span
 			@extend %away
 		> .search-field
@@ -32,7 +23,7 @@
 			color: $fn-green
 			font-weight: bold
 			border: 1px solid $white
-			padding-left: 2.25rem
+			padding-left: 0.5rem
 		> .form-submit
 			display: block
 			@extend %fe-norm
@@ -44,13 +35,13 @@
 			height: 2.5rem
 			background-color: $fn-gray-light
 			color: $fn-green
-			font-size: 1rem
+			font-size: 1.4rem
 			line-height: 1
 			&:before
 				@extend [class^="icon-"]
-				content: "\e3b1"
+				content: "\e60d"
 				position: absolute
 				display: block
 				line-height: 1
-				left: 0.75rem
-				top: 0.75rem
+				left: 0.5rem
+				top: 0.5rem

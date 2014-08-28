@@ -3,28 +3,33 @@
   src: url("../fonts/frutiger-neue/1461aeb8-9b58-4c92-94fe-7969267a24fb.eot?#iefix");
   src: url("../fonts/frutiger-neue/1461aeb8-9b58-4c92-94fe-7969267a24fb.eot?#iefix") format("eot"), url("../fonts/frutiger-neue/835a166c-157e-46da-91fa-031d8f83f1a3.woff") format("woff"), url("../fonts/frutiger-neue/dbd1d539-bc67-4b94-bc06-083ec9712853.ttf") format("truetype"), url("../fonts/frutiger-neue/28d8438f-4ed4-49ad-a830-70271cc33028.svg#28d8438f-4ed4-49ad-a830-70271cc33028") format("svg");
   font-weight: normal; }
+
 @font-face {
   font-family: "frutiger-neue";
   src: url("../fonts/frutiger-neue/fc777a37-cc70-4b99-bf2a-c24669de9f92.eot?#iefix");
   src: url("../fonts/frutiger-neue/fc777a37-cc70-4b99-bf2a-c24669de9f92.eot?#iefix") format("eot"), url("../fonts/frutiger-neue/67be8d50-c4d0-4d17-879c-1deeb5f8870a.woff") format("woff"), url("../fonts/frutiger-neue/985128da-2b69-4224-8d28-daa9b41222e0.ttf") format("truetype"), url("../fonts/frutiger-neue/e7176ba8-b58a-48bd-b344-766a019ad299.svg#e7176ba8-b58a-48bd-b344-766a019ad299") format("svg");
   font-weight: bold; }
+
 @font-face {
   font-family: "frutiger-neue";
   src: url("../fonts/frutiger-neue/0006b597-d834-4c7c-8875-d60bc1973ff6.eot?#iefix");
   src: url("../fonts/frutiger-neue/0006b597-d834-4c7c-8875-d60bc1973ff6.eot?#iefix") format("eot"), url("../fonts/frutiger-neue/3f1277b6-5ad4-4938-b22a-36afc73c1894.woff") format("woff"), url("../fonts/frutiger-neue/935338c1-ec39-4dba-ba99-68d0d31f1e57.ttf") format("truetype"), url("../fonts/frutiger-neue/00bb5192-0909-4fd0-8537-af541de6bc42.svg#00bb5192-0909-4fd0-8537-af541de6bc42") format("svg");
   font-weight: 800; }
+
 @font-face {
   font-family: "kipp";
   src: url("../fonts/kipp/fressnapfkipppronoone.eot");
   src: url("../fonts/kipp/fressnapfkipppronoone.eot?#iefix") format("embedded-opentype"), url("../fonts/kipp/fressnapfkipppronoone.woff") format("woff"), url("../fonts/kipp/fressnapfkipppronoone.ttf") format("truetype"), url("../fonts/kipp/fressnapfkipppronoone.svg#kipp") format("svg");
   font-weight: bold;
   font-style: normal; }
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icons_font/fonts/icomoon.eot");
   src: url("../fonts/icons_font/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icons_font/fonts/icomoon.svg#icomoon") format("svg"), url("../fonts/icons_font/fonts/icomoon.woff") format("woff"), url("../fonts/icons_font/fonts/icomoon.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before,
 [data-icon-after]:after,
@@ -66,7 +71,7 @@
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after, .main > .store-finder:before, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .filtering > a > span:before, .products-set > .load-more-products:before, .main > .product-video > span:after, .search > label:before, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+footer > .help-link:before, .filtering > a > span:before, .products-set > .load-more-products:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -203,7 +208,7 @@ a {
   display: inline-block;
   padding: 0.1em 0.25em;
   margin: -0.1em -0.25em;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   a:visited {
     color: #5b385f; }
   a:hover, a:focus {
@@ -250,7 +255,7 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
   -webkit-user-drag: none;
   -moz-user-drag: -moz- none;
   user-drag: none;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
@@ -503,7 +508,7 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
     top: 0;
     color: white;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent; }
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
     .header > .toggle-navigation:hover, .header > .toggle-navigation:focus, .header > .toggle-navigation:active {
       background-color: transparent; }
     .header > .toggle-navigation:active {
@@ -601,7 +606,7 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   background-image: none;
   -webkit-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
@@ -700,14 +705,6 @@ footer {
     display: block;
     padding: 0 2rem 0 0.5rem;
     position: relative; }
-    .search > label:before {
-      content: "\e60d";
-      position: absolute;
-      left: 1rem;
-      top: 0.5rem;
-      z-index: 2;
-      font-size: 1.5rem;
-      color: #196428; }
     .search > label > .search-field {
       display: block;
       width: 100%;
@@ -719,7 +716,7 @@ footer {
       color: #196428;
       font-weight: bold;
       border: 1px solid white;
-      padding-left: 2.25rem; }
+      padding-left: 0.5rem; }
     .search > label > .form-submit {
       display: block;
       border: 0;
@@ -730,15 +727,15 @@ footer {
       height: 2.5rem;
       background-color: #d4d2ce;
       color: #196428;
-      font-size: 1rem;
+      font-size: 1.4rem;
       line-height: 1; }
       .search > label > .form-submit:before {
-        content: "\e3b1";
+        content: "\e60d";
         position: absolute;
         display: block;
         line-height: 1;
-        left: 0.75rem;
-        top: 0.75rem; }
+        left: 0.5rem;
+        top: 0.5rem; }
 
 .navi:not(.central) {
   display: block;
@@ -1186,6 +1183,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 
 .products-set {
   margin-top: 1rem; }
+  .products-set > .load-more-products:before {
+    content: "\e1b0"; }
   .products-set > ul {
     margin-bottom: 0.5rem; }
     .products-set > ul > li {
