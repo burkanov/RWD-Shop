@@ -497,7 +497,7 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
   z-index: 20; }
   .header > .toggle-navigation {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 3rem;
     height: 3rem;
     overflow: hidden;
@@ -505,7 +505,7 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
     position: absolute;
     z-index: 11;
     left: 0;
-    top: 0;
+    top: 0.4rem;
     color: white;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -1170,8 +1170,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     position: relative;
     float: left;
-    color: white;
-    cursor: pointer; }
+    color: white; }
   .filtering > select {
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
