@@ -3,12 +3,14 @@
 .navi
 	&:not(.central)
 		display: block
-		background-color: $white
+		background-color: $fn-gray-light
+		height: 100%
 		> li
 			display: block
 			border-top: 1px solid $fn-gray-medium
 			> a
 				@extend %but-link-container
+				font-size: 1.3rem
 			> a > span,
 			> span
 				display: block
@@ -20,7 +22,7 @@
 				&:before
 					position: absolute
 					left: 0.75rem
-					top: 0.4rem
+					top: 0.6rem
 					font-size: 2rem
 			> a
 				&:hover,
@@ -34,14 +36,14 @@
 					&:before
 						font-size: 1.5rem
 						left: 1rem
-						top: 0.65rem
+						top: 1rem
 			&.find
 				> a > span,
 				> span
 					&:before
 						font-size: 1.35rem
 						left: 1rem
-						top: 0.75rem
+						top: 1rem
 			&.wishlist
 				> a > span,
 				> span
@@ -66,8 +68,6 @@
 				border-top: none
 				> a > span,
 				> span
-					&:before
-						top: 0.5rem
 					&:after
 						@extend [data-icon-after]:after
 						@extend [class^="icon-"]

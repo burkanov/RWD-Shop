@@ -739,10 +739,13 @@ footer {
 
 .navi:not(.central) {
   display: block;
-  background-color: white; }
+  background-color: #d4d2ce;
+  height: 100%; }
   .navi:not(.central) > li {
     display: block;
     border-top: 1px solid #999999; }
+    .navi:not(.central) > li > a {
+      font-size: 1.3rem; }
     .navi:not(.central) > li > a > span,
     .navi:not(.central) > li > span {
       display: block;
@@ -755,7 +758,7 @@ footer {
       .navi:not(.central) > li > span:before {
         position: absolute;
         left: 0.75rem;
-        top: 0.4rem;
+        top: 0.6rem;
         font-size: 2rem; }
     .navi:not(.central) > li > a:hover > span, .navi:not(.central) > li > a:focus > span {
       background-color: #f6f4d2;
@@ -764,12 +767,12 @@ footer {
     .navi:not(.central) > li.login > span:before {
       font-size: 1.5rem;
       left: 1rem;
-      top: 0.65rem; }
+      top: 1rem; }
     .navi:not(.central) > li.find > a > span:before,
     .navi:not(.central) > li.find > span:before {
       font-size: 1.35rem;
       left: 1rem;
-      top: 0.75rem; }
+      top: 1rem; }
     .navi:not(.central) > li.wishlist > a > span:before,
     .navi:not(.central) > li.wishlist > span:before {
       font-size: 1.35rem;
@@ -782,15 +785,6 @@ footer {
       top: 0.8rem; }
     .navi:not(.central) > li.cats, .navi:not(.central) > li.dogs, .navi:not(.central) > li.rodents, .navi:not(.central) > li.birds, .navi:not(.central) > li.aquarium, .navi:not(.central) > li.reptile, .navi:not(.central) > li.garden {
       border-top: none; }
-      .navi:not(.central) > li.cats > a > span:before,
-      .navi:not(.central) > li.cats > span:before, .navi:not(.central) > li.dogs > a > span:before,
-      .navi:not(.central) > li.dogs > span:before, .navi:not(.central) > li.rodents > a > span:before,
-      .navi:not(.central) > li.rodents > span:before, .navi:not(.central) > li.birds > a > span:before,
-      .navi:not(.central) > li.birds > span:before, .navi:not(.central) > li.aquarium > a > span:before,
-      .navi:not(.central) > li.aquarium > span:before, .navi:not(.central) > li.reptile > a > span:before,
-      .navi:not(.central) > li.reptile > span:before, .navi:not(.central) > li.garden > a > span:before,
-      .navi:not(.central) > li.garden > span:before {
-        top: 0.5rem; }
       .navi:not(.central) > li.cats > a > span:after,
       .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
       .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
@@ -1176,7 +1170,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     position: relative;
     float: left;
-    color: white; }
+    color: white;
+    cursor: pointer; }
   .filtering > select {
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
