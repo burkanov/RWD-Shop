@@ -1,5 +1,7 @@
 
-function Product(data) {
+var CategoryPage = {};
+
+CategoryPage.Product = function(data) {
 
 	this.index = data.index;
 	this.title = data.title;
@@ -30,25 +32,27 @@ function Product(data) {
 	}
 }
 
-function ProductCategoryViewModel(categoryName, categoryId) {
+CategoryPage.ProductCategoryViewModel = function(categoryName, categorySlug) {
 
 	var self = this;
 	
 	// Attributes
 	self.categoryName = categoryName;
-	self.categoryId = categoryId;
-	self.productURL = 'http://10.0.1.34:9001/shop/c/{cat}/{page}/{mode}/categoryProducts.json';
+	self.categorySlug = categorySlug;
+	self.categoryUrl = window.location.protocol + '//' + window.location.host + '/c/{cat}{page}/categoryProducts.json';
 	self.doScroll = false;
 	self.fadeInSpeed = 1000;
 	self.ScrollSpeed = 1000;
 
     // Observables  
     self.products = ko.observableArray([]);
-	self.perPage = ko.observable(2);
+	self.pageSize = ko.observable(2);
 	self.totalResults = ko.observable(0);
-	self.currentPage = ko.observable(1);
+	self.currentPage = ko.observable(0);
+	self.sort = ko.observable('preis');
+	self.searchQuery = ko.observable('filter-settings');
     self.hasMoreResults = ko.computed(function() {
-		return self.currentPage() * self.perPage() < self.totalResults();
+		return self.currentPage() * self.pageSize() < self.totalResults();
 	});
 	
     // Behaviours
@@ -60,11 +64,16 @@ function ProductCategoryViewModel(categoryName, categoryId) {
 		self.scrollIntoView = true;
 		self.doScroll = doScroll;
 		var data = fixtures.productlist;
-		var url = self.productURL.replace('{cat}', self.categoryId).replace('{page}', self.currentPage()).replace('{mode}', currentPageInit > 0 ? 'a':'s');
+		var url = self.categoryUrl.replace('{cat}', self.categorySlug).replace('{page}', self.currentPage());
 		
-		//$.getJSON(url, { pageSize: self.perPage() }).done(function(data) {
+		/*$.getJSON(url, {
+			mode: currentPageInit > 0 ? 'a':'s',
+			pageSize: self.pageSize(),
+			sort: self.sort(),
+			searchQuery: self.searchQuery()
+		}).done(function(data) {*/
 			var newProducts = ko.utils.arrayMap(data.results, function(productData) {
-				return new Product(productData);
+				return new CategoryPage.Product(productData);
 			});
 			ko.utils.arrayPushAll(self.products(), newProducts);
 			self.products.valueHasMutated();
@@ -92,15 +101,22 @@ function ProductCategoryViewModel(categoryName, categoryId) {
 
 (function ($) {
 	$(document).ready(function () {
-		var pageViewModel = new ProductCategoryViewModel(categoryName, categoryId);
+		var currentPage, categorySlug, pageViewModel;
+		var pageMatch = window.location.href.match(/\d$/.test(window.location.href) ? /\/c\/(.+)\/?(\d+)\/?$/ : /\/c\/(.+)\/?$/);
+		if (pageMatch !== null) {
+			currentPage = pageMatch.length === 3 ? 0 : pageMatch[2];
+			categorySlug = pageMatch[1];
+		} else {
+			currentPage = 0;
+			categorySlug = '';
+		}
+		pageViewModel = new CategoryPage.ProductCategoryViewModel(categoryName, categorySlug);
 		ko.applyBindings(pageViewModel);
-		var pageMatch = window.location.search.match(/page=(\d+)/);
-		var currentPage = pageMatch === null ? 0 : pageMatch[1];
 		pageViewModel.loadMoreProducts(false, currentPage);
-		
 		window.addEventListener('popstate', function(event) {
 			$('html, body').animate({ scrollTop: event.state === null ? 200 : event.state.scrollTop }, { duration: pageViewModel.ScrollSpeed });
 		});
+		
 
 	});
 })(jQuery);
