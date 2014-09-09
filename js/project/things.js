@@ -12,8 +12,6 @@
 	var searchField = $(".search-field");
 	var centralNavi = $(".central-navi");
 	var rememberButton = $(".remember-button");
-    var styledSelectIcon = $(".select-icon");
-    var styledSelect = $(".select-icon + select");
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -89,21 +87,15 @@
 		});
 	};
 
-    var openSelect = function(elem) {
-        if (document.createEvent) {
-            var e = document.createEvent("MouseEvents");
-            e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            elem[0].dispatchEvent(e);
-        } else if (element.fireEvent) {
-            elem[0].fireEvent("onmousedown");
-        }
-    }
-
-    var prepareStyledSelect = function() {
-        styledSelectIcon.on('click', function() {
-            openSelect(styledSelect);
-        });
-    }
+	var openSelect = function(elem) {
+		if (document.createEvent) {
+			var e = document.createEvent("MouseEvents");
+			e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+			elem[0].dispatchEvent(e);
+		} else if (element.fireEvent) {
+			elem[0].fireEvent("onmousedown");
+		}
+	}
 
 	$(document).ready(function () {
 		FastClick.attach(document.body);
@@ -113,7 +105,6 @@
 		prepareCentralNavi();
 		prepareScrollSpy();
 		prepareRememberButton();
-        prepareStyledSelect();
 	});
 
 
