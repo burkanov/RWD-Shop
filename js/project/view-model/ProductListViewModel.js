@@ -1,10 +1,10 @@
 // namespace 
-var CategoryPage = {};
+var ProductListPage = {};
 
 // constants
-CategoryPage.NO_SCROLL = false;
+ProductListPage.NO_SCROLL = false;
 
-CategoryPage.Product = function(data) {
+ProductListPage.Product = function(data) {
 
 	this.index = data.index;
 	this.title = data.title;
@@ -35,14 +35,14 @@ CategoryPage.Product = function(data) {
 	}
 }
 
-CategoryPage.ProductCategoryViewModel = function(categoryName, categorySlug) {
+ProductListPage.ProductListViewModel = function(pageName, pageSlug) {
 
 	var self = this;
 	
 	// attributes
-	this.categoryName = categoryName;
-	this.categorySlug = categorySlug;
-	this.categoryUrl = window.location.protocol + '//' + window.location.host + '/c/{cat}{page}/categoryProducts.json';
+	this.pageName = pageName;
+	this.pageSlug = pageSlug;
+	this.pageUrl = window.location.protocol + '//' + window.location.host + '/c/{cat}{page}/productList.json';
 	this.doScroll = true;
 	this.fadeInSpeed = 1000;
 	this.ScrollSpeed = 1000;
@@ -79,7 +79,7 @@ CategoryPage.ProductCategoryViewModel = function(categoryName, categorySlug) {
 		self.doScroll = 'doScroll' in options ? options.doScroll : true;
 		
 		var data = fixtures.productlist;
-		var url = self.categoryUrl.replace('{cat}', self.categorySlug).replace('{page}', self.currentPage());
+		var url = self.pageUrl.replace('{cat}', self.pageSlug).replace('{page}', self.currentPage());
 		
 		/*$.getJSON(url, {
 			mode: loadMode,
@@ -88,7 +88,7 @@ CategoryPage.ProductCategoryViewModel = function(categoryName, categorySlug) {
 			searchQuery: self.searchQuery()
 		}).done(function(data) {*/
 			var newProducts = ko.utils.arrayMap(data.results, function(productData) {
-				return new CategoryPage.Product(productData);
+				return new ProductListPage.Product(productData);
 			});
 			ko.utils.arrayPushAll(self.products(), newProducts);
 			self.products.valueHasMutated();
@@ -107,7 +107,7 @@ CategoryPage.ProductCategoryViewModel = function(categoryName, categorySlug) {
 				var scrollTop = $productAdded.offset().top - 50;
 				history.replaceState(
 					{currentPage: self.currentPage(), scrollTop: scrollTop },
-					self.categoryName,
+					self.pageName,
 					window.location.href.replace(/\/\d+\//, self.currentPage())
 				);
 				$('html, body').animate({ scrollTop: scrollTop }, { duration: self.ScrollSpeed });
@@ -119,20 +119,20 @@ CategoryPage.ProductCategoryViewModel = function(categoryName, categorySlug) {
 
 (function ($) {
 	$(document).ready(function () {
-		var currentPage, categorySlug, pageViewModel;
+		var currentPage, pageSlug, pageViewModel;
 		var pageMatch = window.location.href.match(/\d$/.test(window.location.href) ? /\/c\/(.+)\/?(\d+)\/?$/ : /\/c\/(.+)\/?$/);
 		if (pageMatch !== null) {
 			currentPage = pageMatch.length === 3 ? 0 : pageMatch[2];
-			categorySlug = pageMatch[1];
+			pageSlug = pageMatch[1];
 		} else {
 			currentPage = 0;
-			categorySlug = '';
+			pageSlug = '';
 		}
-		pageViewModel = new CategoryPage.ProductCategoryViewModel(categoryName, categorySlug);
+		pageViewModel = new ProductListPage.ProductListViewModel(pageName, pageSlug);
 		ko.applyBindings(pageViewModel);
 		pageViewModel.loadMoreProducts(null, {
 			currentPage: currentPage,
-			doScroll: CategoryPage.NO_SCROLL
+			doScroll: ProductListPage.NO_SCROLL
 		});
 		window.addEventListener('popstate', function(event) {
 			$('html, body').animate({ scrollTop: event.state === null ? 200 : event.state.scrollTop }, { duration: pageViewModel.ScrollSpeed });

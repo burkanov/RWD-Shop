@@ -32,7 +32,7 @@ Modernizr.load([
 		// view models / fixtures
 		load: [
 			'js/project/fixtures/productlist.js',
-			'js/project/view-model/ProductCategoryViewModel.js'
+			'js/project/view-model/ProductListViewModel.js'
 		]
 	}
 ]);
