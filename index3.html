@@ -692,12 +692,12 @@
 				<div class="m-content">
 					<div class="module ingredients">
 						<div>
-							<select id="ingredients-selector">
+							<select id="ingredients-selector" data-bind="value: selectedIngredientsValue">
 								<option value="1">Reis und Nudeln</option>
 								<option value="2">Eis und Feuer</option>
 								<option value="3">Sex and the city</option>
 							</select>
-							<section>
+							<section data-bind="visible: isIngredientsSelected(1)">
 								<h3 class="headline">Zusatzstoffe pro kg</h3>
 								<p>IE/kg: Vit A: 1490, Vit D3: 230, Vit E: 17 mg/kg: Fe(E1): 10; I(E2): 0,3; Cu(E4): 0,9; Mn(E5): 2,0; Zn(E6): 10</p>
 								<p>Technologische Zusatzstoffe: mg/kg: E499: 2650</p>
@@ -710,10 +710,10 @@
 								<h3 class="headline">Hersteller</h3>
 								<p>Nestlé Purina PetCare Deutschland GmbH Albert-Latz-Straße 6</p>
 							</section>
-							<section>
+							<section data-bind="visible: isIngredientsSelected(2)">
 								<p>Text fuer Eis und Feuer</p>
 							</section>
-							<section>
+							<section data-bind="visible: isIngredientsSelected(3)">
 								<p>Text fuer Sex and the city</p>
 							</section>
 						</div>

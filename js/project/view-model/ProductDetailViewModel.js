@@ -4,16 +4,11 @@ var ProductDetailPage = {};
 ProductDetailPage.ProductDetailViewModel = function() {
 
 	var self = this;
-	
-	// attributes
 
     // observables
-	this.selectedIngredientsValue = ko.observable(1);
+	this.selectedIngredientsValue = ko.observable();
 	
     // behaviours
-	this.switchIngredients = function() {
-		self.selectedIngredientsValue($('#ingredients-selector').val());
-	}
 	this.isIngredientsSelected = function(index) {
 		return self.selectedIngredientsValue() == index;
 	}
@@ -27,6 +22,6 @@ ProductDetailPage.ProductDetailViewModel = function() {
 		}
 		pageViewModel = new ProductDetailPage.ProductDetailViewModel();
 		ko.applyBindings(pageViewModel);
-
+		pageViewModel.selectedIngredientsValue($('#ingredients-selector').val());
 	});
 })(jQuery);
