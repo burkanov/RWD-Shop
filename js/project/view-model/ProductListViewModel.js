@@ -119,6 +119,10 @@ ProductListPage.ProductListViewModel = function(pageName, pageSlug) {
 
 (function ($) {
 	$(document).ready(function () {
+		// remove if-clause after tag manager integration
+		if ($('.filtering select').length === 0) {
+			return;
+		}
 		var currentPage, pageSlug, pageViewModel;
 		var pageMatch = window.location.href.match(/\d$/.test(window.location.href) ? /\/c\/(.+)\/?(\d+)\/?$/ : /\/c\/(.+)\/?$/);
 		if (pageMatch !== null) {
