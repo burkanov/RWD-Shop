@@ -11,16 +11,20 @@
 		float: left
 		color: $white
 	> .filtering-area
-		@extend %primary-button
+		@extend %secondary-button
+		font-size: 1rem
 		display: block
 		float: left
 		width: calc(50% - 0.25rem)
+		padding-left: 2rem
 		> select
 			@extend %away
 			font-size: 1rem
 		> span
+			padding-top: 0.1rem
 			&:before
 				@extend %cap-left
+				background: transparent
 				content: "\e3b1"
 		&.open
 			> span

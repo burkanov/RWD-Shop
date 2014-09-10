@@ -2,7 +2,7 @@
 
 .products-set
 	@extend %clearfix
-	margin-top: 1rem
+	margin-top: 0.5rem
 	> .load-more-products
 		@extend %primary-button
 		&:before
@@ -72,3 +72,7 @@
 						background-color: $fn-blue-light
 			&:first-child
 				margin-top: 0
+
+.module.navi.central
+	& + .products-set
+		margin-top: 1rem

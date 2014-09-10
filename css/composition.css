@@ -162,7 +162,7 @@ a:active {
 .navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > .filtering-area, .products-set > .load-more-products, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a, .remember-button {
+footer > .help-link, .filtering > .filtering-area, .main > .store-finder, .main > .product-video, .products-set > .load-more-products, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a, .remember-button {
   padding: 0;
   margin: 0;
   border: 0;
@@ -192,7 +192,7 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > .filtering-area, .products-set > .load-more-products, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox {
+footer > .help-link, .filtering > .filtering-area, .main > .store-finder, .main > .product-video, .products-set > .load-more-products, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -232,7 +232,7 @@ a {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > .filtering-area, .products-set > .load-more-products {
+footer > .help-link, .filtering > .filtering-area, .main > .store-finder, .main > .product-video, .products-set > .load-more-products {
   display: block;
   text-decoration: none;
   color: white;
@@ -254,21 +254,21 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .main > .store-finder:hover, .main > .product-video:hover, .filtering > .filtering-area:hover, .products-set > .load-more-products:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .main > .store-finder:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .main > .store-finder:focus, .main > .product-video:focus, .filtering > .filtering-area:focus, .products-set > .load-more-products:focus, footer > .delivery-options:active,
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .main > .store-finder:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .main > .store-finder:active, .main > .product-video:active, .filtering > .filtering-area:active, .products-set > .load-more-products:active {
+  footer > .help-link:active, .filtering > .filtering-area:active, .main > .store-finder:active, .main > .product-video:active, .products-set > .load-more-products:active {
     cursor: pointer; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .main > .store-finder:hover, .main > .product-video:hover, .filtering > .filtering-area:hover, .products-set > .load-more-products:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .main > .store-finder:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .main > .store-finder:focus, .main > .product-video:focus, .filtering > .filtering-area:focus, .products-set > .load-more-products:focus {
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .main > .store-finder:focus, .main > .product-video:focus, .products-set > .load-more-products:focus {
     background-color: #c3d255;
     color: white;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
@@ -277,7 +277,7 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
   footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .main > .store-finder:active, .main > .product-video:active, .filtering > .filtering-area:active, .products-set > .load-more-products:active {
+  footer > .help-link:active, .filtering > .filtering-area:active, .main > .store-finder:active, .main > .product-video:active, .products-set > .load-more-products:active {
     background-color: #196428;
     -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
@@ -285,7 +285,7 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
   footer > .delivery-options > span,
   footer > .return-options > span,
   footer > .newsletter-link > span,
-  footer > .help-link > span, .main > .store-finder > span, .main > .product-video > span, .filtering > .filtering-area > span, .products-set > .load-more-products > span {
+  footer > .help-link > span, .filtering > .filtering-area > span, .main > .store-finder > span, .main > .product-video > span, .products-set > .load-more-products > span {
     font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     height: 1rem;
@@ -294,7 +294,7 @@ footer > .help-link, .main > .store-finder, .main > .product-video, .filtering >
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link {
+footer > .help-link, .filtering > .filtering-area {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
@@ -305,15 +305,15 @@ footer > .help-link {
   footer > .delivery-options > span,
   footer > .return-options > span,
   footer > .newsletter-link > span,
-  footer > .help-link > span {
+  footer > .help-link > span, .filtering > .filtering-area > span {
     padding-top: 0.05rem; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus {
+  footer > .help-link:focus, .filtering > .filtering-area:focus {
     background-color: white;
     color: #196428;
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
@@ -322,15 +322,15 @@ footer > .help-link {
     footer > .delivery-options:hover:before,
     footer > .return-options:hover:before,
     footer > .newsletter-link:hover:before,
-    footer > .help-link:hover:before, footer > .delivery-options:focus:before,
+    footer > .help-link:hover:before, .filtering > .filtering-area:hover:before, footer > .delivery-options:focus:before,
     footer > .return-options:focus:before,
     footer > .newsletter-link:focus:before,
-    footer > .help-link:focus:before {
+    footer > .help-link:focus:before, .filtering > .filtering-area:focus:before {
       color: #196428; }
   footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active {
+  footer > .help-link:active, .filtering > .filtering-area:active {
     background-color: #999999;
     -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
@@ -339,7 +339,7 @@ footer > .help-link {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > .filtering-area, .products-set > .load-more-products, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+footer > .help-link, .filtering > .filtering-area, .main > .store-finder, .main > .product-video, .products-set > .load-more-products, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
@@ -365,7 +365,7 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .remember-button:before {
+footer > .help-link, .filtering > .filtering-area, .remember-button:before {
   background-color: rgba(219, 221, 221, 0);
   background: -moz-linear-gradient(top, rgba(219, 221, 221, 0) 0%, #dbdddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(219, 221, 221, 0)), color-stop(100%, #dbdddd));
@@ -463,7 +463,7 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
 .navi:not(.central) > li > div > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .main > .store-finder, .main > .product-video, .filtering > .filtering-area, .products-set > .load-more-products {
+footer > .help-link, .filtering > .filtering-area, .main > .store-finder, .main > .product-video, .products-set > .load-more-products {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -1167,20 +1167,25 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     float: left;
     color: white; }
   .filtering > .filtering-area {
+    font-size: 1rem;
     display: block;
     float: left;
-    width: calc(50% - 0.25rem); }
+    width: calc(50% - 0.25rem);
+    padding-left: 2rem; }
     .filtering > .filtering-area > select {
       font-size: 1rem; }
-    .filtering > .filtering-area > span:before {
-      content: "\e3b1"; }
+    .filtering > .filtering-area > span {
+      padding-top: 0.1rem; }
+      .filtering > .filtering-area > span:before {
+        background: transparent;
+        content: "\e3b1"; }
     .filtering > .filtering-area.open > span:before {
       content: "\e3b2"; }
     .filtering > .filtering-area:nth-child(odd) {
       margin-right: 0.5rem; }
 
 .products-set {
-  margin-top: 1rem; }
+  margin-top: 0.5rem; }
   .products-set > .load-more-products:before {
     content: "\e1b0"; }
   .products-set > ul {
@@ -1244,6 +1249,9 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
           background-color: #c4d7f0; }
       .products-set > ul > li:first-child {
         margin-top: 0; }
+
+.module.navi.central + .products-set {
+  margin-top: 1rem; }
 
 .rating.r-1 > .star-1:before, .rating.r-1_5 > .star-1:before, .rating.r-2 > .star-1:before,
 .rating.r-2 > .star-2:before, .rating.r-2_5 > .star-1:before,
