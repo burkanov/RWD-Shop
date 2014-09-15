@@ -10,7 +10,8 @@
 	background-color: rgba(247, 247, 247, 1)
 
 %gradient-fn-red-horizontal
-	+gradient-horizontal($fn-red-accent, $fn-red)
+	+gradient-horizontal($fn-red-accent, transparentize($fn-red, 1))
+	background-color: $fn-red
 
 %gradient-fn-red-vertical
 	+gradient-vertical($fn-red, $fn-red-accent)

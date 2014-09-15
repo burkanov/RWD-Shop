@@ -24,6 +24,9 @@
 		contentPanel.selector = $(".main");
 
 	var searchMenuItem = naviPanel.selector.find('.find > a');
+
+	var buyButton = $(".add-to-cart-button");
+	var bubble = $(".bubble");
 	//
 	/*--------------------------*/
 
@@ -95,7 +98,16 @@
 		} else if (element.fireEvent) {
 			elem[0].fireEvent("onmousedown");
 		}
-	}
+	};
+
+	var prepareBuyingBubble = function() {
+		buyButton.click(function(event) {
+			$(this).parents(".product-single").velocity({
+				opacity: 0,
+				width: "0px"
+			}, 2000);
+		});
+	};
 
 	$(document).ready(function () {
 		FastClick.attach(document.body);
@@ -105,6 +117,7 @@
 		prepareCentralNavi();
 		prepareScrollSpy();
 		prepareRememberButton();
+		prepareBuyingBubble();
 	});
 
 

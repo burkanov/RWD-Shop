@@ -18,7 +18,8 @@ Modernizr.load([
 			'js/project/browser-detection.js', // UA Sniffing (used for greater good)
 			'js/vendor/fast-click/fast-click.js', // Eliminating 300ms delay
 			'js/project/detector.js', // Populating DOM with context-description classes
-			'js/vendor/knockout/knockout-3.2.0.js' // Knockout.js MVVM framework
+			'js/vendor/knockout/knockout-3.2.0.js', // Knockout.js MVVM framework
+			'js/vendor/velocity/velocity.js' // JS Animation Lib, strongly improves performance
 		],
 	},
 	{

@@ -145,7 +145,7 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-a, .search > label > .search-field, .remember-button:before {
+a, .search > label > .search-field, .remember-button:before, .add-to-cart-button {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -376,12 +376,13 @@ footer > .help-link, .filtering > .filtering-area, .remember-button:before {
   background-color: #f7f7f7; }
 
 .add-to-cart-button {
-  background-color: #e7001f;
-  background-image: -moz-linear-gradient(left, #b1181e, #e7001f);
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#b1181e), to(#e7001f));
-  background-image: -webkit-linear-gradient(left, #b1181e, #e7001f);
-  background-image: -o-linear-gradient(left, #b1181e, #e7001f);
-  background-image: linear-gradient(to right, #b1181e, #e7001f); }
+  background-color: rgba(231, 0, 31, 0);
+  background-image: -moz-linear-gradient(left, #b1181e, rgba(231, 0, 31, 0));
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#b1181e), to(rgba(231, 0, 31, 0)));
+  background-image: -webkit-linear-gradient(left, #b1181e, rgba(231, 0, 31, 0));
+  background-image: -o-linear-gradient(left, #b1181e, rgba(231, 0, 31, 0));
+  background-image: linear-gradient(to right, #b1181e, rgba(231, 0, 31, 0));
+  background-color: #e7001f; }
 
 footer > .products-suggestions, .payment-options {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
@@ -454,7 +455,7 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
 .search > label > .search-field:focus::-webkit-input-placeholder {
   color: white; }
 
-.header > .shopping-cart, .remember-button:before, .add-to-cart-button {
+.header > .shopping-cart, .remember-button:before, .add-to-cart-button, .bubble {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px; }
@@ -468,7 +469,7 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder, .main 
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
-footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > li > .information > h4, .ingredients > div > section > .headline {
+footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4, .ingredients > div > section > .headline, .bubble > strong {
   display: block;
   font-size: 1rem;
   font-weight: 800;
@@ -1336,33 +1337,35 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       background-color: #eae9e7; }
     .variant-matrix > li > ul {
       display: block; }
-      .variant-matrix > li > ul > li {
+      .variant-matrix > li > ul > .product-single {
         display: -webkit-flex;
         display: flex;
         -webkit-flex-direction: row;
         flex-direction: row;
         padding: 0.5rem;
         border-top: 1px solid #d4d2ce; }
-        .variant-matrix > li > ul > li:first-child {
+        .variant-matrix > li > ul > .product-single:first-child {
           border-top: none; }
-        .variant-matrix > li > ul > li > .information,
-        .variant-matrix > li > ul > li > .action {
+        .variant-matrix > li > ul > .product-single > .information,
+        .variant-matrix > li > ul > .product-single > .action {
           -webkit-flex: auto;
           flex: auto;
           width: 50%; }
-        .variant-matrix > li > ul > li > .information {
+        .variant-matrix > li > ul > .product-single > .information {
           line-height: 1.25; }
-          .variant-matrix > li > ul > li > .information > .relative-price {
+          .variant-matrix > li > ul > .product-single > .information > .relative-price {
             color: #999999;
             font-size: 0.85rem; }
-        .variant-matrix > li > ul > li > .action {
+        .variant-matrix > li > ul > .product-single > .action {
           text-align: right;
           min-width: 11rem; }
-          .variant-matrix > li > ul > li > .action > .reco-price {
+          .variant-matrix > li > ul > .product-single > .action > .reco-price {
             display: block;
             color: #999999;
             font-size: 0.85rem;
             text-align: right; }
+        .variant-matrix > li > ul > .product-single.active {
+          background-color: #f8ec1a; }
 
 .delivery-status {
   display: block;
@@ -1445,6 +1448,16 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     font-size: 50%;
     padding-top: 0.2rem;
     margin-left: -0.5rem; }
+  .add-to-cart-button:hover, .add-to-cart-button:focus {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), inset 0 1px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 2px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), inset 0 1px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), inset 0 1px 3px rgba(255, 255, 255, 0.75), inset 0 -1px 2px rgba(0, 0, 0, 0.35);
+    background-color: #ff4e66; }
+  .add-to-cart-button:active {
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(255, 255, 255, 0.75), inset 0 1px 2px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(255, 255, 255, 0.75), inset 0 1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(255, 255, 255, 0.75), inset 0 1px 2px rgba(0, 0, 0, 0.35);
+    background-color: #810011; }
 
 .variant-matrix > li > ul > li > .action > .add-to-cart-button {
   margin-left: 0.5rem; }
@@ -1463,3 +1476,18 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     display: block; }
     .ingredients > div > section > .headline {
       padding-top: 1rem; }
+
+.bubble {
+  display: none;
+  background-color: white;
+  margin: 1rem;
+  position: fixed;
+  left: 0;
+  top: 300px;
+  border: 1px solid #333333;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75); }
+  .bubble > img {
+    width: 50%;
+    height: auto; }

@@ -1,0 +1,17 @@
+// Standard styles for module
+
+.bubble
+	display: none
+	background-color: $white
+	margin: 1rem
+	position: fixed
+	left: 0
+	top: 300px
+	border: 1px solid $fn-gray
+	@extend %ci-radius
+	+box-shadow(0 3px 10px rgba(0, 0, 0, 0.75))
+	> strong
+		@extend %base-headline
+	> img
+		width: 50%
+		height: auto
