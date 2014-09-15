@@ -17,13 +17,15 @@
 			background-color: $fn-almost-white
 		> ul
 			display: block
-			> .product-single
+			> .product-single,
+			> .product-single > .ghost
 				display: -webkit-flex
 				display: flex
 				-webkit-flex-direction: row
 				flex-direction: row
 				padding: 0.5rem
 				border-top: 1px solid $fn-gray-light
+				position: relative
 				&:first-child
 					border-top: none
 				> .information,
@@ -48,3 +50,22 @@
 						text-align: right
 				&.active
 					background-color: $fn-yellow
+				> .ghost
+					position: absolute
+					@extend %insider
+					left: 0
+					top: 0
+					background-color: $fn-yellow-medium
+					border: none
+					z-index: 100
+				> .message
+					position: absolute
+					display: none
+					@extend %insider
+					left: 0
+					top: 0
+					padding: 0.5rem
+					background-color: $white
+					text-align: center
+					width: 100%
+					font-weight: bold

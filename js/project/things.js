@@ -12,6 +12,7 @@
 	var searchField = $(".search-field");
 	var centralNavi = $(".central-navi");
 	var rememberButton = $(".remember-button");
+	var addToCartMessage = $(".variant-matrix").attr('data-add-to-card-message');
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -101,11 +102,39 @@
 	};
 
 	var prepareBuyingBubble = function() {
+		
 		buyButton.click(function(event) {
-			$(this).parents(".product-single").velocity({
+		
+			var product = $(this).parents(".product-single");
+			var ghost = $('<div class="ghost"></div>').append(product.html());
+			var message = $('<div class="message"></div>').text(addToCartMessage);
+			var productContent = product.find('> *');
+
+			productContent.css({
+				visibility: 'hidden'
+			}); // first, we hide everything in the product cell (while keeping the dimensions unchanged)
+
+			product.append(message); // then, we add the message box
+
+			var productHeight = product.innerHeight();
+			var messageHeight = message.innerHeight();
+			var difference = (productHeight - messageHeight) / 2;
+
+			message.css('top', difference + 'px');
+			message.velocity("fadeIn", { duration: 500 });
+
+			product.append(ghost); // Here we clone the content of the product matrix cell (a product) to animate it indepenently
+			
+			ghost.velocity({
 				opacity: 0,
-				width: "0px"
-			}, 2000);
+				translateY: "-200px"
+			},
+			1000, function() {
+				$(this).remove();
+				message.remove();
+				productContent.velocity({opacity: 1}, {visibility: "visible"});
+			}); // Copied product content is floating to the top and then being removed... Status Quo is restored
+
 		});
 	};
 
