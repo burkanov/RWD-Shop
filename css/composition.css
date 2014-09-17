@@ -1418,6 +1418,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     color: #196428; }
   .delivery-status.waiting > .indicator > span:nth-child(1):before, .delivery-status.waiting > .indicator > span:nth-child(2):before {
     color: #f8ec1a; }
+  .delivery-status.waiting-full > .indicator > span:before {
+    color: #f8ec1a; }
   .delivery-status.absent > .indicator > span:nth-child(1):before {
     color: #e7001f; }
 
