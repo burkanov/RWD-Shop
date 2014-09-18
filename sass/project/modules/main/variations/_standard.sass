@@ -10,10 +10,15 @@
 	.navi-open &
 		+translate3d(80%, 0, 0)
 		+opacity(25)
-	> .store-finder
+	> .store-finder,
+	> .to-payment
 		@extend %primary-button
 		&:before
 			@extend %cap-left
+	> .to-payment
+		margin: 1rem 0
+		&:before
+			content: "\e3b1"
 	> .product-video
 		@extend %primary-button
 		padding: 0
