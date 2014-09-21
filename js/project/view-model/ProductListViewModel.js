@@ -25,7 +25,7 @@ ProductListPage.Product = function(data) {
 		return '(' + String(this.numRatings) + ')';
 	}
 	this.getPrice = function() {
-		return this.apriceF + ' ' + this.currency;
+		return this.apriceF;
 	}
 	this.hasRelativePriceBadge = function() {
 		return this.relativePriceBadge.length > 0;
