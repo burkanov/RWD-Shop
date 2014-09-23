@@ -12,4 +12,27 @@
 			top: 0.15rem
 			font-weight: normal
 			font-size: 1rem
-	
+	> .coupon
+		display: block
+		color: $black
+		cursor: pointer
+		padding: 1rem 0.25rem
+		&:before
+			content: "\e3b1"
+			@extend [class^="icon-"]
+		> span
+			font-size: 1.25rem
+			font-weight: bold
+			text-decoration: underline
+	> .invoice
+		width: 100%
+		> tbody
+			> tr
+				> td
+					border: 1px solid $fn-gray-light
+					padding: 0.25rem
+					&:last-child
+						text-align: right
+					&.sum
+						background-color: $fn-gray-light
+						font-weight: bold

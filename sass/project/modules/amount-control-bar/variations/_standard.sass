@@ -1,0 +1,72 @@
+// Standard styles for module
+%acb-element
+	font-size: 1.25rem
+	line-height: 2rem
+	text-align: center
+
+.amount-control-bar
+	display: block
+	position: relative
+	text-align: right
+	padding: 0.5rem 0
+	@extend %clearfix
+	> .delete,
+	> .decrease,
+	> .increase,
+	> .counter,
+	> .sum
+		display: block
+		float: left
+	> .sum
+		float: right
+		white-space: nowrap
+		font-weight: 800
+		font-size: 1.5rem
+		text-align: right
+	> .delete,
+	> .decrease,
+	> .increase
+		background-color: $fn-green
+		color: $white
+		@extend %pure
+		cursor: pointer
+		&:before
+			display: block
+			content: "\e60a"
+			@extend [class^="icon-"]
+			@extend %acb-element
+			width: 2rem
+		&:hover,
+		&:focus
+			background-color: $fn-green-accent
+		&:active
+			background-color: $fn-green-yellow
+			color: $fn-gray
+	> .counter,
+	> .sum
+		@extend %acb-element
+	> .counter
+		padding: 0 1rem
+	> .delete
+		background-color: $fn-red
+		margin-right: 1rem
+		&:hover,
+		&:focus
+			background-color: $fn-red-accent
+		&:active
+			background-color: $fn-orange
+	> .decrease
+		&:before
+			content: "\e614"
+	> .increase
+		&:before
+			content: "\e613"
+	&.minimum
+		> .decrease
+			background-color: $fn-almost-white
+			cursor: default
+			&:hover,
+			&:focus,
+			&:active
+				background-color: $fn-almost-white
+				color: $white

@@ -12,7 +12,8 @@
 		margin-bottom: 0.5rem
 		> li
 			margin-top: 0.5rem
-			> a
+			> a,
+			> .product-wrapper
 				@extend %pure
 				@extend %clearfix
 				color: $fn-gray
@@ -41,6 +42,8 @@
 					line-height: 1.2
 					padding-bottom: 3rem
 					position: relative
+					> .title
+						font-weight: 800
 					> div
 						display: block
 						@extend %clearfix
@@ -76,3 +79,43 @@
 .module.navi.central
 	& + .products-set
 		margin-top: 1rem
+
+.module.cart
+	> .products-set
+		> ul
+			padding-bottom: 0.5rem
+			border-bottom: 1px solid $fn-gray-light
+			> li
+				border-top: 1px solid $fn-gray-light
+				padding-top: 1rem
+				padding-bottom: 0.5rem
+				@extend %clearfix
+				> .product-wrapper
+					> .description
+						padding-bottom: 0
+						> div
+							position: relative
+							left: auto
+							top: auto
+							width: auto
+							margin: 0.5rem 0
+						> .price-info
+							display: block
+							float: none
+							clear: both
+							> .old-price
+								text-decoration: line-through
+							> .new-price
+								display: inline-block
+								font-weight: 800
+								margin-left: 0.5rem
+				> .special-offer
+					display: block
+					border: 1px solid $fn-green
+					color: $fn-green
+					font-weight: bold
+					padding: 0.5rem 1rem
+					margin-bottom: 0.5rem
+					text-align: center
+					> a
+						color: $fn-green
