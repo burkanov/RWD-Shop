@@ -54,6 +54,15 @@
 	+border-bottom-left-radius($fn-radius-small)
 	@extend %fn-green-soft-grad
 
+%cap-left-secondary
+	@extend %cap-left
+	content: "\e3b1"
+	font-size: 0.65rem
+	background: none
+	line-height: 2rem
+	height: 2rem
+	width: 1.75rem
+
 %badge
 	display: inline-block
 	position: absolute
@@ -63,12 +72,6 @@
 	left: -5px
 	padding: 0.25rem 0.5rem 0 0.5rem
 	line-height: 1
-
-
-%placeholder
-	+placeholder($placeholderText)
-	&:focus
-		+placeholder($white)
 
 %ci-radius
 	+border-radius($fn-radius)

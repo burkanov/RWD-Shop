@@ -63,11 +63,13 @@
   content: attr(data-icon-after); }
 
 [class^="icon-"], .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
-.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after, .main > .store-finder:before,
-.main > .to-payment:before, footer > .delivery-options:before,
+.navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after, footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
+.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
+.login-dispatcher > .ld-section > .signup:before,
+.login-dispatcher > .ld-section > .fb-login:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -77,7 +79,7 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, [class*=" icon-"] {
+.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -148,7 +150,7 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-a, .search > label > .search-field, .remember-button:before, .add-to-cart-button {
+a, .search > label > .search-field, .login-dispatcher > .ld-section > label > input, .remember-button:before, .add-to-cart-button {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -165,8 +167,10 @@ a:active {
 .navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .header > .toggle-navigation, .header > .shopping-cart, .search > label > .search-field, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
+footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
+.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.login-dispatcher > .ld-section > .signup,
+.login-dispatcher > .ld-section > .fb-login, .search > label > .search-field, .login-dispatcher > .ld-section > label > input, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
 .products-set > ul > li > .product-wrapper, .remember-button, .amount-control-bar > .delete,
 .amount-control-bar > .decrease,
 .amount-control-bar > .increase {
@@ -175,7 +179,7 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
   border: 0;
   outline: none; }
 
-.search > label > .search-field, .search > label > .form-submit {
+.search > label > .search-field, .login-dispatcher > .ld-section > label > input, .search > label > .form-submit {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -191,7 +195,7 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
   clear: both; }
 
 @media screen {
-  .search > label > span, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .remember-button > span {
+  .search > label > span, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .remember-button > span, .login-dispatcher > .ld-section > label > span {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -201,8 +205,10 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
+footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
+.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.login-dispatcher > .ld-section > .signup,
+.login-dispatcher > .ld-section > .fb-login, .search > label > .search-field, .login-dispatcher > .ld-section > label > input, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
 .variant-matrix > li > ul > .product-single > .ghost > .ghost, .variant-matrix > li > ul > .product-single > .message,
 .variant-matrix > li > ul > .product-single > .ghost > .message {
   -webkit-box-sizing: border-box;
@@ -211,7 +217,7 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
 
 /* A place for links, buttons, tabs and other things that react on user input */
 a {
-  color: #004b73;
+  color: #333333;
   display: inline-block;
   padding: 0.1rem 0.25rem;
   margin: -0.1rem -0.25rem;
@@ -244,8 +250,10 @@ a {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products {
+footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
+.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.login-dispatcher > .ld-section > .signup,
+.login-dispatcher > .ld-section > .fb-login {
   display: block;
   text-decoration: none;
   color: white;
@@ -267,26 +275,36 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .filtering > .filtering-area:hover, .main > .store-finder:hover,
-  .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
+  .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
+  .login-dispatcher > .ld-section > .signup:hover,
+  .login-dispatcher > .ld-section > .fb-login:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .filtering > .filtering-area:focus, .main > .store-finder:focus,
-  .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, footer > .delivery-options:active,
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
+  .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
+  .login-dispatcher > .ld-section > .signup:focus,
+  .login-dispatcher > .ld-section > .fb-login:focus, footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .filtering > .filtering-area:active, .main > .store-finder:active,
-  .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active {
+  footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
+  .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
+  .login-dispatcher > .ld-section > .signup:active,
+  .login-dispatcher > .ld-section > .fb-login:active {
     cursor: pointer; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .filtering > .filtering-area:hover, .main > .store-finder:hover,
-  .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
+  .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
+  .login-dispatcher > .ld-section > .signup:hover,
+  .login-dispatcher > .ld-section > .fb-login:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .filtering > .filtering-area:focus, .main > .store-finder:focus,
-  .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus {
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
+  .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
+  .login-dispatcher > .ld-section > .signup:focus,
+  .login-dispatcher > .ld-section > .fb-login:focus {
     background-color: #c3d255;
     color: white;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
@@ -295,8 +313,10 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
   footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .filtering > .filtering-area:active, .main > .store-finder:active,
-  .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active {
+  footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
+  .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
+  .login-dispatcher > .ld-section > .signup:active,
+  .login-dispatcher > .ld-section > .fb-login:active {
     background-color: #196428;
     -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
@@ -304,8 +324,10 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
   footer > .delivery-options > span,
   footer > .return-options > span,
   footer > .newsletter-link > span,
-  footer > .help-link > span, .filtering > .filtering-area > span, .main > .store-finder > span,
-  .main > .to-payment > span, .main > .product-video > span, .products-set > .load-more-products > span {
+  footer > .help-link > span, .filtering > .filtering-area > span, .login-dispatcher > .contact > .call > span, .main > .store-finder > span,
+  .main > .to-payment > span, .main > .product-video > span, .products-set > .load-more-products > span, .login-dispatcher > .ld-section > .login > span,
+  .login-dispatcher > .ld-section > .signup > span,
+  .login-dispatcher > .ld-section > .fb-login > span {
     font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     height: 1rem;
@@ -314,26 +336,27 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area {
+footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   color: #333333;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  position: relative; }
+  font-size: 0.85rem;
+  font-weight: normal;
+  position: relative;
+  padding-left: 1.5rem; }
   footer > .delivery-options > span,
   footer > .return-options > span,
   footer > .newsletter-link > span,
-  footer > .help-link > span, .filtering > .filtering-area > span {
+  footer > .help-link > span, .filtering > .filtering-area > span, .login-dispatcher > .contact > .call > span {
     padding-top: 0.05rem; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .filtering > .filtering-area:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .filtering > .filtering-area:focus {
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus {
     background-color: white;
     color: #196428;
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
@@ -342,15 +365,15 @@ footer > .help-link, .filtering > .filtering-area {
     footer > .delivery-options:hover:before,
     footer > .return-options:hover:before,
     footer > .newsletter-link:hover:before,
-    footer > .help-link:hover:before, .filtering > .filtering-area:hover:before, footer > .delivery-options:focus:before,
+    footer > .help-link:hover:before, .filtering > .filtering-area:hover:before, .login-dispatcher > .contact > .call:hover:before, footer > .delivery-options:focus:before,
     footer > .return-options:focus:before,
     footer > .newsletter-link:focus:before,
-    footer > .help-link:focus:before, .filtering > .filtering-area:focus:before {
+    footer > .help-link:focus:before, .filtering > .filtering-area:focus:before, .login-dispatcher > .contact > .call:focus:before {
       color: #196428; }
   footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .filtering > .filtering-area:active {
+  footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active {
     background-color: #999999;
     -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
@@ -359,8 +382,10 @@ footer > .help-link, .filtering > .filtering-area {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
+.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.login-dispatcher > .ld-section > .signup,
+.login-dispatcher > .ld-section > .fb-login, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
@@ -371,11 +396,13 @@ footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
   background: linear-gradient(to bottom, rgba(96, 132, 62, 0) 0%, #60843e 100%);
   background-color: #8eaa3c; }
 
-.main > .store-finder:before,
-.main > .to-payment:before, footer > .delivery-options:before,
+footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before {
+footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
+.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
+.login-dispatcher > .ld-section > .signup:before,
+.login-dispatcher > .ld-section > .fb-login:before {
   background-color: #758c30;
   background: -moz-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #758c30), color-stop(100%, #4e6b32));
@@ -387,7 +414,7 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .remember-button:before {
+footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .remember-button:before {
   background-color: rgba(219, 221, 221, 0);
   background: -moz-linear-gradient(top, rgba(219, 221, 221, 0) 0%, #dbdddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(219, 221, 221, 0)), color-stop(100%, #dbdddd));
@@ -432,11 +459,13 @@ footer > .products-suggestions, .payment-options {
   border-bottom-right-radius: 3px;
   color: white; }
 
-.main > .store-finder:before,
-.main > .to-payment:before, footer > .delivery-options:before,
+footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
-footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before {
+footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
+.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
+.login-dispatcher > .ld-section > .signup:before,
+.login-dispatcher > .ld-section > .fb-login:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -455,6 +484,17 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
   -moz-border-radius-bottomleft: 3px;
   border-bottom-left-radius: 3px; }
 
+footer > .delivery-options:before,
+footer > .return-options:before,
+footer > .newsletter-link:before,
+footer > .help-link:before, .login-dispatcher > .contact > .call:before {
+  content: "\e3b1";
+  font-size: 0.65rem;
+  background: none;
+  line-height: 2rem;
+  height: 2rem;
+  width: 1.75rem; }
+
 .pbox > .badge, .products-set > ul > li > a > .badge,
 .products-set > ul > li > .product-wrapper > .badge, .product > .photos > .badge {
   display: inline-block;
@@ -466,19 +506,6 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
   padding: 0.25rem 0.5rem 0 0.5rem;
   line-height: 1; }
 
-.search > label > .search-field:-moz-placeholder {
-  color: #196428; }
-.search > label > .search-field:-ms-input-placeholder {
-  color: #196428; }
-.search > label > .search-field::-webkit-input-placeholder {
-  color: #196428; }
-.search > label > .search-field:focus:-moz-placeholder {
-  color: white; }
-.search > label > .search-field:focus:-ms-input-placeholder {
-  color: white; }
-.search > label > .search-field:focus::-webkit-input-placeholder {
-  color: white; }
-
 .header > .shopping-cart, .remember-button:before, .add-to-cart-button, .bubble {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -488,18 +515,24 @@ footer > .help-link:before, .filtering > .select-icon, .filtering > .filtering-a
 .navi:not(.central) > li > div > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products {
+footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
+.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.login-dispatcher > .ld-section > .signup,
+.login-dispatcher > .ld-section > .fb-login {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
 footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
-.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2 {
+.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title {
   display: block;
   font-size: 1rem;
   font-weight: 800;
   color: #333333; }
+
+.login-dispatcher > .ld-section > .small, .login-dispatcher > .contact > .small {
+  font-size: 0.85rem;
+  line-height: 1; }
 
 .navi.central > li > div > .second-level-navi, .ingredients {
   display: block;
@@ -510,10 +543,52 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35); }
 
-.variant-matrix, .cart {
+.variant-matrix, .cart, .login-dispatcher > .ld-section {
   display: block;
   background-color: white;
   padding: 0.5rem; }
+
+.search > label > .search-field, .login-dispatcher > .ld-section > label > input {
+  font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .search > label > .search-field:-moz-placeholder, .login-dispatcher > .ld-section > label > input:-moz-placeholder {
+    color: #999999; }
+  .search > label > .search-field:-ms-input-placeholder, .login-dispatcher > .ld-section > label > input:-ms-input-placeholder {
+    color: #999999; }
+  .search > label > .search-field::-webkit-input-placeholder, .login-dispatcher > .ld-section > label > input::-webkit-input-placeholder {
+    color: #999999; }
+  .search > label > .search-field:focus:-moz-placeholder, .login-dispatcher > .ld-section > label > input:focus:-moz-placeholder {
+    color: white; }
+  .search > label > .search-field:focus:-ms-input-placeholder, .login-dispatcher > .ld-section > label > input:focus:-ms-input-placeholder {
+    color: white; }
+  .search > label > .search-field:focus::-webkit-input-placeholder, .login-dispatcher > .ld-section > label > input:focus::-webkit-input-placeholder {
+    color: white; }
+
+.search > label > .search-field {
+  font-family: Arial, sans-serif; }
+  .search > label > .search-field:-moz-placeholder {
+    color: #196428; }
+  .search > label > .search-field:-ms-input-placeholder {
+    color: #196428; }
+  .search > label > .search-field::-webkit-input-placeholder {
+    color: #196428; }
+  .search > label > .search-field:focus:-moz-placeholder {
+    color: white; }
+  .search > label > .search-field:focus:-ms-input-placeholder {
+    color: white; }
+  .search > label > .search-field:focus::-webkit-input-placeholder {
+    color: white; }
+
+.search > label > .search-field, .login-dispatcher > .ld-section > label > input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #333333;
+  border: 1px solid #d4d2ce;
+  padding-left: 0.5rem; }
 
 .header {
   -webkit-transition: 500ms ease;
@@ -695,15 +770,6 @@ footer {
     footer > .newsletter-link > span,
     footer > .help-link > span {
       line-height: 2rem; }
-    footer > .delivery-options:before,
-    footer > .return-options:before,
-    footer > .newsletter-link:before,
-    footer > .help-link:before {
-      content: "\e3b1";
-      font-size: 0.65rem;
-      background: none;
-      line-height: 2rem;
-      height: 2rem; }
   footer > .newsletter-link,
   footer > .help-link {
     width: calc(50% - 0.25rem);
@@ -746,17 +812,9 @@ footer {
     padding: 0 2rem 0 0.5rem;
     position: relative; }
     .search > label > .search-field {
-      display: block;
-      width: 100%;
-      height: 2.5rem;
-      font-size: 1rem;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
       color: #196428;
-      font-weight: bold;
-      border: 1px solid white;
-      padding-left: 0.5rem; }
+      border-color: white;
+      font-weight: bold; }
     .search > label > .form-submit {
       display: block;
       border: 0;
@@ -1629,6 +1687,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: underline; }
+  .cart > .coupon:active {
+    color: white; }
 .cart > .invoice {
   width: 100%; }
   .cart > .invoice > tbody > tr > td {
@@ -1708,3 +1768,47 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     .amount-control-bar.minimum > .decrease:hover, .amount-control-bar.minimum > .decrease:focus, .amount-control-bar.minimum > .decrease:active {
       background-color: #eae9e7;
       color: white; }
+
+.login-dispatcher {
+  margin-top: 0.5rem; }
+  .login-dispatcher > .ld-section {
+    margin-top: 0.5rem; }
+    .login-dispatcher > .ld-section > .title {
+      font-size: 1.25rem; }
+    .login-dispatcher > .ld-section > .login:before,
+    .login-dispatcher > .ld-section > .signup:before,
+    .login-dispatcher > .ld-section > .fb-login:before {
+      content: "\e3b1"; }
+    .login-dispatcher > .ld-section > label {
+      display: block;
+      margin: 0.5rem 0; }
+    .login-dispatcher > .ld-section > .forgot {
+      display: inline-block;
+      margin: 0.5rem 0 1rem 0; }
+    .login-dispatcher > .ld-section > .advantages {
+      display: block;
+      margin: 0.5rem 0 1rem 0; }
+      .login-dispatcher > .ld-section > .advantages > li:before {
+        content: "\e601";
+        color: #196428;
+        display: inline-block;
+        margin-right: 0.25rem; }
+    .login-dispatcher > .ld-section > .fb-login {
+      margin: 1rem 0; }
+  .login-dispatcher > .order-without-registration {
+    font-weight: bold;
+    display: block;
+    padding: 1rem 0.5rem; }
+  .login-dispatcher > .contact {
+    display: block;
+    margin-bottom: 2rem; }
+    .login-dispatcher > .contact > .call {
+      margin-bottom: 0.5rem;
+      height: 2rem;
+      padding-left: 1.75rem;
+      margin: 0.25rem 0 0.75rem 0; }
+      .login-dispatcher > .contact > .call > span {
+        line-height: 2rem; }
+      .login-dispatcher > .contact > .call:before {
+        content: "\e62f";
+        font-size: 0.85rem; }

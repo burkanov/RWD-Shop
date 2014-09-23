@@ -1,0 +1,64 @@
+// Standard styles for module
+
+.login-dispatcher
+	margin-top: 0.5rem
+	> .ld-section
+		@extend %content-container
+		margin-top: 0.5rem
+		> .title
+			@extend %base-headline
+			font-size: 1.25rem
+		> .login,
+		> .signup,
+		> .fb-login
+			@extend %primary-button
+			&:before
+				@extend %cap-left
+				content: "\e3b1"
+		> label
+			display: block
+			margin: 0.5rem 0
+			> span
+				@extend %away
+			> input
+				@extend %field
+		> .forgot
+			display: inline-block
+			margin: 0.5rem 0 1rem 0
+		> .advantages
+			display: block
+			margin: 0.5rem 0 1rem 0
+			> li
+				&:before
+					@extend [class^="icon-"]
+					content: "\e601"
+					color: $fn-green
+					display: inline-block
+					margin-right: 0.25rem
+		> .small
+			@extend %small
+		> .fb-login
+			margin: 1rem 0
+	> .order-without-registration
+		font-weight: bold
+		display: block
+		padding: 1rem 0.5rem
+	> .contact
+		display: block
+		margin-bottom: 2rem
+		> .title
+			@extend %base-headline
+		> .call
+			@extend %secondary-button
+			margin-bottom: 0.5rem
+			height: 2rem
+			padding-left: 1.75rem
+			margin: 0.25rem 0 0.75rem 0
+			> span
+				line-height: 2rem
+			&:before
+				@extend %cap-left-secondary
+				content: "\e62f"
+				font-size: 0.85rem
+		> .small
+			@extend %small

@@ -10,20 +10,11 @@
 		> span
 			@extend %away
 		> .search-field
-			display: block
-			@extend %pure
-			@extend %insider
-			@extend %placeholder
-			@extend %common-transition
-			width: 100%
-			height: 2.5rem
-			font-size: 1rem
-			+border-radius(0)
-			@extend %fe-norm
+			@extend %field
 			color: $fn-green
+			border-color: $white
 			font-weight: bold
-			border: 1px solid $white
-			padding-left: 0.5rem
+			@extend %placeholder-accent
 		> .form-submit
 			display: block
 			@extend %fe-norm

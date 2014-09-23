@@ -1,0 +1,26 @@
+%placeholder
+	+placeholder($placeholderText)
+	font-family: $sans-font-family
+	&:focus
+		+placeholder($white)
+
+%placeholder-accent
+	+placeholder($fn-green)
+	font-family: $simple-font-family
+	&:focus
+		+placeholder($white)
+
+%field
+	display: block
+	@extend %pure
+	@extend %insider
+	@extend %placeholder
+	@extend %common-transition
+	width: 100%
+	height: 2.5rem
+	font-size: 1rem
+	+border-radius(0)
+	@extend %fe-norm
+	color: $fn-gray
+	border: 1px solid $fn-gray-light
+	padding-left: 0.5rem
