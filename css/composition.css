@@ -534,7 +534,7 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
   font-size: 0.85rem;
   line-height: 1; }
 
-.navi.central > li > div > .second-level-navi, .ingredients {
+.navi.central > li > div > .second-level-navi, .ingredients, .product-details, .product-ratings-overview, .product-delivery-info {
   display: block;
   background-color: #d4d2ce;
   padding: 0.65rem;
@@ -960,12 +960,14 @@ footer {
   padding-top: 0.5rem; }
   .navi.central > li {
     margin-top: 0.45rem; }
-    .navi.central > li > a > span:before {
-      position: absolute;
-      left: 0.75rem;
-      top: 0.5rem;
-      font-size: 2rem;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .navi.central > li > a {
+      position: relative; }
+      .navi.central > li > a > span:before {
+        position: absolute;
+        left: 0.75rem;
+        top: 0.5rem;
+        font-size: 2rem;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
     .navi.central > li:first-child {
       margin-top: 0; }
     .navi.central > li > div {
@@ -1452,6 +1454,12 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     display: block;
     float: left; }
 
+.navi.central.simple .m-header > .rating {
+  font-size: 0.85rem;
+  position: absolute;
+  right: 3.5rem;
+  top: 1rem; }
+
 .product {
   display: block;
   background-color: white;
@@ -1843,3 +1851,18 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   font-size: 1.5rem; }
 .pass-recovery > .request > .send:before {
   content: "\e3b1"; }
+
+.product-details > div {
+  background-color: white;
+  display: block;
+  padding: 0.5rem 1rem; }
+
+.product-ratings-overview > div {
+  background-color: white;
+  display: block;
+  padding: 0.5rem 1rem; }
+
+.product-delivery-info > div {
+  background-color: white;
+  display: block;
+  padding: 0.5rem 1rem; }
