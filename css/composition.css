@@ -69,7 +69,7 @@ footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before, .header > .shopping-cart:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before, .ingredients > div ul > li:before, .product-details > div ul > li:before, .product-delivery-info > div ul > li:before, .header > .shopping-cart:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -79,7 +79,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main >
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .product-details > div ul > li:before, [class*=" icon-"] {
+.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -523,11 +523,17 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
-footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
-.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .product-details > div h1,
-.product-details > div h2,
-.product-details > div h3,
-.product-details > div h4 {
+.ingredients > div ul h1, .product-details > div ul h1, .product-delivery-info > div ul h1,
+.ingredients > div ul h2,
+.product-details > div ul h2,
+.product-delivery-info > div ul h2,
+.ingredients > div ul h3,
+.product-details > div ul h3,
+.product-delivery-info > div ul h3,
+.ingredients > div ul h4,
+.product-details > div ul h4,
+.product-delivery-info > div ul h4, footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
+.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title {
   display: block;
   font-size: 1rem;
   font-weight: 800;
@@ -536,6 +542,27 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
 .login-dispatcher > .ld-section > .small, .login-dispatcher > .contact > .small {
   font-size: 0.85rem;
   line-height: 1; }
+
+.ingredients > div ul, .product-details > div ul, .product-delivery-info > div ul {
+  display: block;
+  margin: 0.5rem 0; }
+  .ingredients > div ul > li, .product-details > div ul > li, .product-delivery-info > div ul > li {
+    display: block;
+    position: relative;
+    padding-left: 1.25rem;
+    line-height: 1.25;
+    margin: 0.25rem 0; }
+    .ingredients > div ul > li:before, .product-details > div ul > li:before, .product-delivery-info > div ul > li:before {
+      content: "\e616";
+      color: #196428;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .ingredients > div ul strong, .product-details > div ul strong, .product-delivery-info > div ul strong {
+    font-weight: bold; }
+  .ingredients > div ul * + h1, .product-details > div ul * + h1, .product-delivery-info > div ul * + h1, .ingredients > div ul * + h2, .product-details > div ul * + h2, .product-delivery-info > div ul * + h2, .ingredients > div ul * + h3, .product-details > div ul * + h3, .product-delivery-info > div ul * + h3, .ingredients > div ul * + h4, .product-details > div ul * + h4, .product-delivery-info > div ul * + h4 {
+    margin-top: 1rem;
+    line-height: 1.25; }
 
 .navi.central > li > div > .second-level-navi, .ingredients, .product-details, .product-ratings-overview, .product-delivery-info {
   display: block;
@@ -1859,26 +1886,6 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   background-color: white;
   display: block;
   padding: 0.5rem 1rem; }
-  .product-details > div ul {
-    display: block;
-    margin: 0.5rem 0; }
-    .product-details > div ul > li {
-      display: block;
-      position: relative;
-      padding-left: 1.25rem;
-      line-height: 1.25;
-      margin: 0.25rem 0; }
-      .product-details > div ul > li:before {
-        content: "\e616";
-        color: #196428;
-        position: absolute;
-        left: 0;
-        top: 0; }
-  .product-details > div strong {
-    font-weight: bold; }
-  .product-details > div * + h1, .product-details > div * + h2, .product-details > div * + h3, .product-details > div * + h4 {
-    margin-top: 1rem;
-    line-height: 1.25; }
 
 .product-ratings-overview > div {
   background-color: white;
