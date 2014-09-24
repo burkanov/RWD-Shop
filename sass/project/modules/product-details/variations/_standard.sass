@@ -6,3 +6,33 @@
 		background-color: $white
 		display: block
 		padding: 0.5rem 1rem
+		ul
+			display: block
+			margin: 0.5rem 0
+			> li
+				display: block
+				position: relative
+				padding-left: 1.25rem
+				line-height: 1.25
+				margin: 0.25rem 0
+				&:before
+					content: "\e616"
+					@extend [class^="icon-"]
+					color: $fn-green
+					position: absolute
+					left: 0
+					top: 0
+		strong
+			font-weight: bold
+		h1,
+		h2,
+		h3,
+		h4
+			@extend %base-headline
+		*
+			&+h1,
+			&+h2,
+			&+h3,
+			&+h4
+				margin-top: 1rem
+				line-height: 1.25

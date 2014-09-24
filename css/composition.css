@@ -79,7 +79,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main >
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, [class*=" icon-"] {
+.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .product-details > div ul > li:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -524,7 +524,10 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   border-radius: 3px; }
 
 footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
-.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title {
+.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .product-details > div h1,
+.product-details > div h2,
+.product-details > div h3,
+.product-details > div h4 {
   display: block;
   font-size: 1rem;
   font-weight: 800;
@@ -1856,6 +1859,26 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   background-color: white;
   display: block;
   padding: 0.5rem 1rem; }
+  .product-details > div ul {
+    display: block;
+    margin: 0.5rem 0; }
+    .product-details > div ul > li {
+      display: block;
+      position: relative;
+      padding-left: 1.25rem;
+      line-height: 1.25;
+      margin: 0.25rem 0; }
+      .product-details > div ul > li:before {
+        content: "\e616";
+        color: #196428;
+        position: absolute;
+        left: 0;
+        top: 0; }
+  .product-details > div strong {
+    font-weight: bold; }
+  .product-details > div * + h1, .product-details > div * + h2, .product-details > div * + h3, .product-details > div * + h4 {
+    margin-top: 1rem;
+    line-height: 1.25; }
 
 .product-ratings-overview > div {
   background-color: white;
