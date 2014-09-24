@@ -69,7 +69,7 @@ footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -79,7 +79,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main >
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, [class*=" icon-"] {
+.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -150,7 +150,7 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-a, .search > label > .search-field, .login-dispatcher > .ld-section > label > input, .remember-button:before, .add-to-cart-button {
+a, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .remember-button:before, .add-to-cart-button {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -170,7 +170,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .search > label > .search-field, .login-dispatcher > .ld-section > label > input, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
 .products-set > ul > li > .product-wrapper, .remember-button, .amount-control-bar > .delete,
 .amount-control-bar > .decrease,
 .amount-control-bar > .increase {
@@ -179,7 +179,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   border: 0;
   outline: none; }
 
-.search > label > .search-field, .login-dispatcher > .ld-section > label > input, .search > label > .form-submit {
+.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .search > label > .form-submit {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -195,7 +195,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   clear: both; }
 
 @media screen {
-  .search > label > span, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .remember-button > span, .login-dispatcher > .ld-section > label > span {
+  .login-dispatcher > .ld-section > label > span, .pass-recovery > .request > label > span, .search > label > span, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .remember-button > span {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -208,7 +208,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .search > label > .search-field, .login-dispatcher > .ld-section > label > input, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
 .variant-matrix > li > ul > .product-single > .ghost > .ghost, .variant-matrix > li > ul > .product-single > .message,
 .variant-matrix > li > ul > .product-single > .ghost > .message {
   -webkit-box-sizing: border-box;
@@ -253,7 +253,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login {
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send {
   display: block;
   text-decoration: none;
   color: white;
@@ -278,19 +278,19 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
   .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
   .login-dispatcher > .ld-section > .signup:hover,
-  .login-dispatcher > .ld-section > .fb-login:hover, footer > .delivery-options:focus,
+  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
   footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
   .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
   .login-dispatcher > .ld-section > .signup:focus,
-  .login-dispatcher > .ld-section > .fb-login:focus, footer > .delivery-options:active,
+  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus, footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
   footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
   .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
   .login-dispatcher > .ld-section > .signup:active,
-  .login-dispatcher > .ld-section > .fb-login:active {
+  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active {
     cursor: pointer; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
@@ -298,13 +298,13 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
   .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
   .login-dispatcher > .ld-section > .signup:hover,
-  .login-dispatcher > .ld-section > .fb-login:hover, footer > .delivery-options:focus,
+  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
   footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
   .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
   .login-dispatcher > .ld-section > .signup:focus,
-  .login-dispatcher > .ld-section > .fb-login:focus {
+  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus {
     background-color: #c3d255;
     color: white;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
@@ -316,7 +316,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
   .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
   .login-dispatcher > .ld-section > .signup:active,
-  .login-dispatcher > .ld-section > .fb-login:active {
+  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active {
     background-color: #196428;
     -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
@@ -327,7 +327,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link > span, .filtering > .filtering-area > span, .login-dispatcher > .contact > .call > span, .main > .store-finder > span,
   .main > .to-payment > span, .main > .product-video > span, .products-set > .load-more-products > span, .login-dispatcher > .ld-section > .login > span,
   .login-dispatcher > .ld-section > .signup > span,
-  .login-dispatcher > .ld-section > .fb-login > span {
+  .login-dispatcher > .ld-section > .fb-login > span, .pass-recovery > .request > .send > span {
     font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     height: 1rem;
@@ -385,7 +385,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
@@ -402,7 +402,7 @@ footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before {
+.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before {
   background-color: #758c30;
   background: -moz-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #758c30), color-stop(100%, #4e6b32));
@@ -465,7 +465,7 @@ footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before {
+.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -518,13 +518,13 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login {
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
 footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
-.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title {
+.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title {
   display: block;
   font-size: 1rem;
   font-weight: 800;
@@ -543,24 +543,24 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35); }
 
-.variant-matrix, .cart, .login-dispatcher > .ld-section {
+.variant-matrix, .cart, .login-dispatcher > .ld-section, .pass-recovery > .back, .pass-recovery > .request {
   display: block;
   background-color: white;
   padding: 0.5rem; }
 
-.search > label > .search-field, .login-dispatcher > .ld-section > label > input {
+.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field {
   font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .search > label > .search-field:-moz-placeholder, .login-dispatcher > .ld-section > label > input:-moz-placeholder {
+  .login-dispatcher > .ld-section > label > input:-moz-placeholder, .pass-recovery > .request > label > input:-moz-placeholder, .search > label > .search-field:-moz-placeholder {
     color: #999999; }
-  .search > label > .search-field:-ms-input-placeholder, .login-dispatcher > .ld-section > label > input:-ms-input-placeholder {
+  .login-dispatcher > .ld-section > label > input:-ms-input-placeholder, .pass-recovery > .request > label > input:-ms-input-placeholder, .search > label > .search-field:-ms-input-placeholder {
     color: #999999; }
-  .search > label > .search-field::-webkit-input-placeholder, .login-dispatcher > .ld-section > label > input::-webkit-input-placeholder {
+  .login-dispatcher > .ld-section > label > input::-webkit-input-placeholder, .pass-recovery > .request > label > input::-webkit-input-placeholder, .search > label > .search-field::-webkit-input-placeholder {
     color: #999999; }
-  .search > label > .search-field:focus:-moz-placeholder, .login-dispatcher > .ld-section > label > input:focus:-moz-placeholder {
+  .login-dispatcher > .ld-section > label > input:focus:-moz-placeholder, .pass-recovery > .request > label > input:focus:-moz-placeholder, .search > label > .search-field:focus:-moz-placeholder {
     color: white; }
-  .search > label > .search-field:focus:-ms-input-placeholder, .login-dispatcher > .ld-section > label > input:focus:-ms-input-placeholder {
+  .login-dispatcher > .ld-section > label > input:focus:-ms-input-placeholder, .pass-recovery > .request > label > input:focus:-ms-input-placeholder, .search > label > .search-field:focus:-ms-input-placeholder {
     color: white; }
-  .search > label > .search-field:focus::-webkit-input-placeholder, .login-dispatcher > .ld-section > label > input:focus::-webkit-input-placeholder {
+  .login-dispatcher > .ld-section > label > input:focus::-webkit-input-placeholder, .pass-recovery > .request > label > input:focus::-webkit-input-placeholder, .search > label > .search-field:focus::-webkit-input-placeholder {
     color: white; }
 
 .search > label > .search-field {
@@ -578,7 +578,7 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
   .search > label > .search-field:focus::-webkit-input-placeholder {
     color: white; }
 
-.search > label > .search-field, .login-dispatcher > .ld-section > label > input {
+.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field {
   display: block;
   width: 100%;
   height: 2.5rem;
@@ -589,6 +589,10 @@ footer > .products-suggestions > .headline, .product > .title, .variant-matrix >
   color: #333333;
   border: 1px solid #d4d2ce;
   padding-left: 0.5rem; }
+
+.login-dispatcher > .ld-section > label, .pass-recovery > .request > label {
+  display: block;
+  margin: 0.5rem 0; }
 
 .header {
   -webkit-transition: 500ms ease;
@@ -1779,9 +1783,6 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     .login-dispatcher > .ld-section > .signup:before,
     .login-dispatcher > .ld-section > .fb-login:before {
       content: "\e3b1"; }
-    .login-dispatcher > .ld-section > label {
-      display: block;
-      margin: 0.5rem 0; }
     .login-dispatcher > .ld-section > .forgot {
       display: inline-block;
       margin: 0.5rem 0 1rem 0; }
@@ -1812,3 +1813,20 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       .login-dispatcher > .contact > .call:before {
         content: "\e62f";
         font-size: 0.85rem; }
+
+.pass-recovery > .back {
+  margin: 0.5rem 0;
+  text-decoration: none; }
+  .pass-recovery > .back > span {
+    text-decoration: underline; }
+  .pass-recovery > .back:before {
+    content: "\e3b1";
+    font-size: 0.65rem;
+    display: inline-block;
+    margin-right: 0.25rem; }
+  .pass-recovery > .back:active {
+    background-color: #60843e; }
+.pass-recovery > .request > .title {
+  font-size: 1.5rem; }
+.pass-recovery > .request > .send:before {
+  content: "\e3b1"; }

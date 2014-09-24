@@ -1,0 +1,29 @@
+// Standard styles for module
+
+.pass-recovery
+	> .back
+		@extend %content-container
+		margin: 0.5rem 0
+		text-decoration: none
+		> span
+			text-decoration: underline
+		&:before
+			content: "\e3b1"
+			@extend [class^="icon-"]
+			font-size: 0.65rem
+			display: inline-block
+			margin-right: 0.25rem
+		&:active
+			background-color: $fn-green-medium
+	> .request
+		@extend %content-container
+		> .title
+			@extend %base-headline
+			font-size: 1.5rem
+		> label
+			@extend %field-in-label
+		> .send
+			@extend %primary-button
+			&:before
+				@extend %cap-left
+				content: "\e3b1"

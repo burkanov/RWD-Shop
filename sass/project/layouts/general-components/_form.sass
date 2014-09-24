@@ -24,3 +24,11 @@
 	color: $fn-gray
 	border: 1px solid $fn-gray-light
 	padding-left: 0.5rem
+
+%field-in-label
+	display: block
+	margin: 0.5rem 0
+	> span
+		@extend %away
+	> input
+		@extend %field

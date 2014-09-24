@@ -13,6 +13,7 @@
 	var centralNavi = $(".central-navi");
 	var rememberButton = $(".remember-button");
 	var addToCartMessage = $(".variant-matrix").attr('data-add-to-card-message');
+	var formSubmitTrigger = $(".form-submit-button");
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -138,6 +139,12 @@
 		});
 	};
 
+	var prepareFormSubmit = function() {
+		formSubmitTrigger.click(function(event) {
+			$(this).closest('form').submit();
+		});
+	};
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
@@ -147,6 +154,7 @@
 		prepareScrollSpy();
 		prepareRememberButton();
 		prepareBuyingBubble();
+		prepareFormSubmit();
 	});
 
 
