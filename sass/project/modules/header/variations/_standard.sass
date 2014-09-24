@@ -7,7 +7,6 @@
 	display: block
 	text-align: center
 	height: $base-mass * 2
-	// background: $fn-green url('../img/big-green-bar.jpg') repeat-x left center
 	background: $fn-red
 	background-size: auto $base-mass * 2
 	position: fixed
@@ -53,18 +52,25 @@
 		display: block
 		@extend %pure
 		position: absolute
-		right: $base-mass / 2
-		top: $base-mass / 2.2
-		color: $white
+		right: 0.32rem
+		top: 0.25rem
+		color: $fn-red
 		text-decoration: none
-		font-weight: bold
+		font-weight: 800
 		border: 3px solid $white
 		line-height: 1
-		padding: 0.25rem 0.25rem 0.115rem 0.25rem
-		@extend %ci-radius
-		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5)
-		background-color: rgba(0, 0, 0, 0.25)
+		padding: 0.2rem 0.1rem 0 0.1rem
+		background-color: $white
 		min-width: 1rem
+		+border-radius(100%)
+		&:before
+			@extend [class^="icon-"]
+			content: "\e62a"
+			font-size: 1.75rem
+			position: absolute
+			left: -2rem
+			top: 0.2rem
+			color: $white
 	.navi-open &
 		+translate3d(80%, 0, 0)
 	.scrolled > &
@@ -81,3 +87,7 @@
 			top: 0.25rem
 			font-size:  0.85rem
 			border-width: 1px
+			&:before
+				font-size: 1.25rem
+				top: -0.075rem
+				left: -1.5rem
