@@ -22,16 +22,25 @@
 
 	<div class="module main">
 
-		<div class="module pass-recovery">
-			<a href="index6.html" class="back"><span>zur&uuml;ck</span></a>
-			<form action="index8.html" method="post" class="request">
-				<h1 class="title">Passwort vergessen</h1>
-				<p>Bitte geben Sie die in Ihrem Account hinterlegte E-Mail-Adresse ein. Sie erhalten eine E-Mail an diese Adresse, in der ein Link zur Änderung Ihres Passwortes enthalten ist.</p>
+		<div class="module top-message positive">
+			<span>Ihr Passwort wurde erfolgreich ge&auml;ndert</span>
+		</div>
+
+		<div class="module pass-recovery re-login">
+			<form action="index6.html" method="post" class="request">
+				<h1 class="title">Hallo Matthias Roth-Hof,</h1>
+				<p>Bitte geben Sie Ihr Passwort ein.</p>
 				<label>
 					<span>E-Mail-Adresse</span>
-					<input type="email" name="email" id="email" placeholder="E-Mail-Adresse"/>
+					<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" value="matthias.rothof@gmail.com"/>
 				</label>
-				<a class="send form-submit-button"><span>E-Mail senden</span></a>
+				<a href="index6.html" class="you-have-got-a-wrong-guy-I-do-not-know-him-let-me-out-of-here">Ich bin nicht Matthias Roth-Hof</a>
+				<label>
+					<span>Passwort wiederholen</span>
+					<input type="password" name="pass-confirm" id="pass-confirm" placeholder="Passwort wiederholen" />
+				</label>
+				<a href="index7" class="forgot">Passwort vergessen?</a>
+				<a class="send form-submit-button"><span>Passwort erstellen</span></a>
 			</form>
 		</div>
 

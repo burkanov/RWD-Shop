@@ -1,0 +1,38 @@
+// Standard styles for module
+
+.top-message
+	@extend %content-container
+	@extend %insider
+	margin: 0.5rem 0
+	padding-left: 2rem
+	position: relative
+	border: 3px solid $fn-gray
+	> span
+		display: block
+		padding-top: 0.1rem
+	&:before
+		@extend [class^="icon-"]
+		font-size: 1.25rem
+		position: absolute
+		left: 0.5rem
+		top: 0.6rem
+	&.positive
+		border-color: $fn-green
+		color: $fn-green
+		&:before
+			content: "\e616"
+	&.neutral
+		border-color: $fn-gray-light
+		color: $fn-gray
+		&:before
+			content: "\e618"
+	&.warning
+		border-color: $fn-yellow
+		color: $fn-orange
+		&:before
+			content: "\e61b"
+	&.error
+		border-color: $fn-red
+		color: $fn-red
+		&:before
+			content: "\e615"

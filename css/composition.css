@@ -79,7 +79,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main >
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, [class*=" icon-"] {
+.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -210,7 +210,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .login-dispatcher > .ld-section > .signup,
 .login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
 .variant-matrix > li > ul > .product-single > .ghost > .ghost, .variant-matrix > li > ul > .product-single > .message,
-.variant-matrix > li > ul > .product-single > .ghost > .message {
+.variant-matrix > li > ul > .product-single > .ghost > .message, .top-message {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -573,7 +573,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35); }
 
-.variant-matrix, .cart, .login-dispatcher > .ld-section, .pass-recovery > .back, .pass-recovery > .request {
+.variant-matrix, .cart, .login-dispatcher > .ld-section, .pass-recovery > .back, .pass-recovery > .request, .top-message {
   display: block;
   background-color: white;
   padding: 0.5rem; }
@@ -708,7 +708,8 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
       line-height: 1;
       top: 0.25rem; }
     .scrolled > .header > .fressnapf-logo {
-      height: 1.8rem; }
+      height: 1.8rem;
+      padding-top: 0.1rem; }
     .scrolled > .header > .shopping-cart {
       top: 0.25rem;
       font-size: 0.85rem;
@@ -1881,6 +1882,13 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   font-size: 1.5rem; }
 .pass-recovery > .request > .send:before {
   content: "\e3b1"; }
+.pass-recovery.re-login > .request > .title {
+  font-size: 1.25rem;
+  margin-bottom: -0.25rem; }
+.pass-recovery.re-login > .request > .you-have-got-a-wrong-guy-I-do-not-know-him-let-me-out-of-here,
+.pass-recovery.re-login > .request > .forgot {
+  display: block;
+  margin-bottom: 1rem; }
 
 .product-details > div {
   background-color: white;
@@ -1896,3 +1904,37 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   background-color: white;
   display: block;
   padding: 0.5rem 1rem; }
+
+.top-message {
+  margin: 0.5rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border: 3px solid #333333; }
+  .top-message > span {
+    display: block;
+    padding-top: 0.1rem; }
+  .top-message:before {
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.6rem; }
+  .top-message.positive {
+    border-color: #196428;
+    color: #196428; }
+    .top-message.positive:before {
+      content: "\e616"; }
+  .top-message.neutral {
+    border-color: #d4d2ce;
+    color: #333333; }
+    .top-message.neutral:before {
+      content: "\e618"; }
+  .top-message.warning {
+    border-color: #f8ec1a;
+    color: #f2761b; }
+    .top-message.warning:before {
+      content: "\e61b"; }
+  .top-message.error {
+    border-color: #e7001f;
+    color: #e7001f; }
+    .top-message.error:before {
+      content: "\e615"; }
