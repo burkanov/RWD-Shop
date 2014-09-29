@@ -27,7 +27,7 @@
 
 	var searchMenuItem = naviPanel.selector.find('.find > a');
 
-	var buyButton = $(".add-to-cart-button");
+	var buyButton = $(".add-to-cart-button:not(.disabled)");
 	var bubble = $(".bubble");
 	//
 	/*--------------------------*/

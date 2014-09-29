@@ -1744,6 +1744,16 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(255, 255, 255, 0.75), inset 0 1px 2px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(255, 255, 255, 0.75), inset 0 1px 2px rgba(0, 0, 0, 0.35);
     background-color: #810011; }
+  .add-to-cart-button.disabled {
+    cursor: default;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    background: #d4d2ce url(../img/diagonal-pattern.png) repeat left top;
+    border-color: white; }
+    .add-to-cart-button.disabled:after {
+      display: none; }
 
 .variant-matrix > li > ul > .product-single > .action > .add-to-cart-button,
 .variant-matrix > li > ul > .product-single > .ghost > .action > .add-to-cart-button {
