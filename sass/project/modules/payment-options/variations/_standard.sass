@@ -1,22 +1,24 @@
 // Standard styles for module
 
 .payment-options
-	background-color: $fn-almost-white
-	padding: 0.45rem
 	padding-right: 0
 	width: 100%
-	@extend %insider
 	@extend %clearfix
 	margin-bottom: 0.5rem
-	@extend %fn-box-shadow
+	display: -webkit-flex
+	display: flex
+	-webkit-flex-direction: row
+	flex-direction: row
 	> li
 		background-color: $white
-		border-right: 0.45rem solid $fn-almost-white
 		width: 25%
-		float: left
-		@extend %insider
+		-webkit-flex: auto
+		flex: auto
+		margin-right: 0.5rem
 		> img
 			display: block
 			width: 100%
 			height: auto
 			position: relative
+		&:last-child
+			margin-right: 0

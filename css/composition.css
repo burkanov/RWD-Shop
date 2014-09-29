@@ -210,7 +210,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
 .variant-matrix > li > ul > .product-single > .ghost > .ghost, .variant-matrix > li > ul > .product-single > .message,
 .variant-matrix > li > ul > .product-single > .ghost > .message, .top-message, .store-finder-list > .store > .route {
   -webkit-box-sizing: border-box;
@@ -444,7 +444,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   background-image: linear-gradient(to right, #b1181e, rgba(231, 0, 31, 0));
   background-color: #e7001f; }
 
-footer > .products-suggestions, .payment-options {
+footer > .products-suggestions {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
@@ -863,7 +863,7 @@ footer {
     footer > .footer-links > .desktop-version-link {
       display: inline-block;
       color: #333333;
-      margin-bottom: 0.5rem; }
+      margin: 0.5rem 0 1rem 0; }
     footer > .footer-links > ul {
       display: block;
       text-align: center; }
@@ -877,7 +877,7 @@ footer {
             display: block;
             border-left: 1px solid #333333;
             line-height: 0.65rem;
-            padding: 0 0.15rem 0 0.25rem; }
+            padding: 0 0.35rem 0 0.45rem; }
         footer > .footer-links > ul > li:first-child > a > span {
           border-left: 0;
           padding-left: 0; }
@@ -1247,21 +1247,26 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
         right: 0.25rem; }
 
 .payment-options {
-  background-color: #eae9e7;
-  padding: 0.45rem;
   padding-right: 0;
   width: 100%;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
   .payment-options > li {
     background-color: white;
-    border-right: 0.45rem solid #eae9e7;
     width: 25%;
-    float: left; }
+    -webkit-flex: auto;
+    flex: auto;
+    margin-right: 0.5rem; }
     .payment-options > li > img {
       display: block;
       width: 100%;
       height: auto;
       position: relative; }
+    .payment-options > li:last-child {
+      margin-right: 0; }
 
 .social-bar {
   clear: left;
