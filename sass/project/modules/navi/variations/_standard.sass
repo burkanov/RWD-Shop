@@ -30,6 +30,10 @@
 					> span
 						background-color: $fn-yellow-light
 						color: $black
+				&:active
+					> span
+						background-color: $fn-red
+						color: $white
 			&.login
 				> a > span,
 				> span
@@ -193,6 +197,15 @@ html.touch
 						> span
 							background-color: $fn-gray-light
 							color: $fn-gray
+					&:active
+						> span
+							background-color: $fn-red
+							color: $white
+				&.current
+					> a
+						> span
+							background-color: $fn-red
+							color: $white
 		> .m-content
 			> .second-level-navi
 				> li

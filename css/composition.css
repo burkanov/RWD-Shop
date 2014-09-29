@@ -67,7 +67,7 @@
 footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
-.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
+.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
 .login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before, .ingredients > div ul > li:before, .product-details > div ul > li:before, .product-delivery-info > div ul > li:before, .header > .shopping-cart:before, .main > .product-video > span:after, .search > .search-wrapper > .form-submit:before, .search.store-locator > .search-wrapper > .locator:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
@@ -411,7 +411,7 @@ footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
-.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
+.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
 .login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before {
   background-color: #758c30;
@@ -474,7 +474,7 @@ footer > .delivery-options:before,
 footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
-.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
+.main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
 .login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before {
   position: absolute;
@@ -669,7 +669,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
     .header > .toggle-navigation:hover, .header > .toggle-navigation:focus, .header > .toggle-navigation:active {
       background-color: transparent; }
     .header > .toggle-navigation:active {
-      color: #c3d255; }
+      color: #b1181e; }
   .header > .fressnapf-logo {
     display: inline-block;
     height: 3rem;
@@ -968,6 +968,9 @@ footer {
     .navi:not(.central) > li > a:hover > span, .navi:not(.central) > li > a:focus > span {
       background-color: #f6f4d2;
       color: black; }
+    .navi:not(.central) > li > a:active > span {
+      background-color: #e7001f;
+      color: white; }
     .navi:not(.central) > li.login > a > span:before,
     .navi:not(.central) > li.login > span:before {
       font-size: 1.5rem;
@@ -1096,6 +1099,12 @@ footer {
 html.touch .navi:not(.central) > li > a:hover > span, html.touch .navi:not(.central) > li > a:focus > span {
   background-color: #d4d2ce;
   color: #333333; }
+html.touch .navi:not(.central) > li > a:active > span {
+  background-color: #e7001f;
+  color: white; }
+html.touch .navi:not(.central) > li.current > a > span {
+  background-color: #e7001f;
+  color: white; }
 html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.touch .navi > .m-content > .second-level-navi > li > a:focus > span {
   background-color: white;
   color: #333333; }
@@ -1397,9 +1406,10 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 .products-set {
   margin-top: 0.5rem; }
   .products-set > .load-more-products {
-    font-size: 1.25rem; }
-    .products-set > .load-more-products:before {
-      content: "\e1b0"; }
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0;
+    font-weight: normal; }
   .products-set > ul {
     margin-bottom: 0.5rem; }
     .products-set > ul > li {
