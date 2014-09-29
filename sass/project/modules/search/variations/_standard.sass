@@ -3,14 +3,17 @@
 .search
 	display: block
 	margin: 0.5rem -0.5rem
-	> label
+	> .search-wrapper
 		display: block
-		padding: 0 2rem 0 0.5rem
+		padding: 0 2rem 0 0rem
 		position: relative
-		> span
+		background-color: $white
+		margin: 0 0.5rem
+		> .search-block-title
 			@extend %away
 		> .search-field
 			@extend %field
+			width: calc(100% - 1.5rem)
 			color: $fn-green
 			border-color: $white
 			font-weight: bold
@@ -20,14 +23,16 @@
 			@extend %fe-norm
 			border: 0
 			position: absolute
-			right: 0.5rem
+			right: 0rem
 			top: 0
 			width: 2.5rem
 			height: 2.5rem
 			background-color: $fn-gray-light
 			color: $fn-green
+			@extend %common-transition
 			font-size: 1.4rem
 			line-height: 1
+			cursor: pointer
 			&:before
 				@extend [class^="icon-"]
 				content: "\e60d"
@@ -36,3 +41,27 @@
 				line-height: 1
 				left: 0.5rem
 				top: 0.5rem
+			&:hover,
+			&:focus
+				background-color: $fn-green-medium
+				color: $white
+			&:active
+				background-color: $fn-green-accent
+	&.store-locator
+		> .search-wrapper
+			margin-left: 3.5rem
+			> .locator
+				@extend %primary-button
+				text-align: center
+				padding: 0.5rem
+				min-width: 2.5rem
+				font-size: 1.25rem
+				height: auto
+				line-height: 1
+				position: absolute
+				left: -3rem
+				top: 0
+				padding: 0.6rem 0.5rem 0.4rem 0.5rem
+				&:before
+					@extend [class^="icon-"]
+					content: "\e6a0"

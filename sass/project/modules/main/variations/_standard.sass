@@ -33,3 +33,23 @@
 				margin-top: -0.25rem
 				vertical-align: middle
 				margin-left: 0.4rem
+	> .list-map-switch
+		display: block
+		@extend %clearfix
+		> .list-view,
+		> .map-view
+			display: block
+			@extend %insider
+			width: 50%
+			float: left
+			text-align: center
+			@extend %primary-button
+			padding: 0
+			height: auto
+			padding: 0.5rem
+			&.current
+				background-image: none
+				background-color: $white
+				color: $fn-gray
+				+box-shadow(none)
+				cursor: default

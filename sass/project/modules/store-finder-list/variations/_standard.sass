@@ -1,0 +1,62 @@
+// Standard styles for module
+
+.store-finder-list
+	display: block
+	> .store
+		@extend %content-container
+		position: relative
+		padding-right: 5.5rem
+		min-height: 6rem
+		margin: 0.5rem 0
+		> .info,
+		> .route
+			display: block
+		> .info
+			> .store-title
+				@extend %base-headline
+				color: $fn-green
+				font-weight: normal
+				font-size: 1.5rem
+				line-height: 1.15
+				text-decoration: none
+				padding-bottom: 0.5rem
+				@extend %pure
+				&:active
+					color: $white
+			> .address,
+			> .working-hours
+				display: block
+				line-height: 1.25
+			> .working-hours
+				&:before
+					@extend [class^="icon-"]
+					content: "\e608"
+					font-size: 0.85rem
+					margin-right: 0.25rem
+		> .route
+			position: absolute
+			@extend %insider
+			right: 0
+			top: 0
+			width: 5.5rem
+			padding: 0.5rem
+			padding-top: 0.55rem
+			> .distance
+				display: blocke
+				&:before
+					@extend [class^="icon-"]
+					content: "\e698"
+					font-size: 0.85rem
+					margin-right: 0.25rem
+			> .route-calculation
+				@extend %primary-button
+				text-align: center
+				padding: 1.25rem 0.5rem
+				font-size: 1.25rem
+				height: auto
+				line-height: 1
+				> span
+					height: auto
+					line-height: 1
+					font-size: 0.75rem
+					font-weight: normal

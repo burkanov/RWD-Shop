@@ -437,116 +437,202 @@
 	</div>
 
 	<div class="module main">
-		<form class="module search" method="get" action="#">
-			<label>
-				<span>Produkte finden</span>
-				<input type="search" name="search-field" class="search-field" placeholder="Produkte finden">
-				<button type="submit" class="form-submit" alt="Suche starten"></button>
-			</label>
+		<form class="module search store-locator" method="get" action="#">
+			<fieldset class="search-wrapper">
+				<legend class="search-block-title">Marktfinder</legend>
+				<a class="locator"></a>
+				<input type="search" name="search-field" class="search-field" placeholder="Stadt oder PLZ" value="53121">
+				<input type="hidden" name="branch_country" value="de" id="branch_country">
+				<input type="hidden" name="branch_lat" id="branch_lat" value="">
+				<input type="hidden" name="branch_lon" id="branch_lon" value="">
+				<button type="submit" class="form-submit" title="Suche starten"></button>
+			</fieldset>
 		</form>
 
-		liste, karte
-		bububub
+		<div class="list-map-switch">
+			<div class="list-view current">Liste</div>
+			<a href="#" class="map-view">Karte</a>
+		</div>
+
+		<ul class="module store-finder-list">
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund Mitte
+					</a>
+					<span class="address">Kiefernstraße 31</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">8 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund Dorstfeld
+					</a>
+					<span class="address">Planetenfeldstra&szlig;e 24</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">10 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund XL
+					</a>
+					<span class="address">Zillestr. 71</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">18 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund Mitte
+					</a>
+					<span class="address">Kiefernstraße 31</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">8 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund Dorstfeld
+					</a>
+					<span class="address">Planetenfeldstra&szlig;e 24</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">10 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund XL
+					</a>
+					<span class="address">Zillestr. 71</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">18 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund Mitte
+					</a>
+					<span class="address">Kiefernstraße 31</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">8 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund Dorstfeld
+					</a>
+					<span class="address">Planetenfeldstra&szlig;e 24</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">10 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+			<li class="store">
+				<div class="info">
+					<a href="#" class="store-title">
+						Fressnapf Dortmund XL
+					</a>
+					<span class="address">Zillestr. 71</span>
+					<span class="working-hours">Heute ge&ouml;ffnet bis 20:00</span>
+				</div>
+				<div class="route">
+					<span class="distance">18 km</span>
+					<a href="#" class="route-calculation">
+						Route
+						<span>berechnen</span>
+					</a>
+				</div>
+			</li>
+		</ul>
 
 		<footer>
 
-			<div class="products-suggestions">
-				<h2 class="headline">Produktempfehlungen</h2>
-				<div class="module m-carousel m-fluid m-carousel-products">
-					<div class="m-carousel-inner">
-						<div class="m-item m-active">
-							<a href="#" class="module pbox">
-								<img src="img/pr1.jpg">
-								<div class="description">
-									<h3>Felix So gut wie es aussieht Multipack 24x100g</h3>
-									<p>Fleisch mit Huhn, Rind, Lamm &amp; Kaninchen, 6,99 &euro;</p>
-								</div>
-								<div class="badge">
-									20%
-								</div>
-							</a>
-							<a href="#" class="module pbox">
-								<img src="img/pr2.jpg">
-								<div class="description">
-									<h3>fit+fun Multipack XXL 44x100g</h3>
-									<p>8,49 &euro;</p>
-								</div>
-							</a>
-						</div>
-						<div class="m-item">
-							<a href="#" class="module pbox">
-								<img src="img/pr1.jpg">
-								<div class="description">
-									<h3>Felix So gut wie es aussieht Multipack 24x100g</h3>
-									<p>Fleisch mit Huhn, Rind, Lamm &amp; Kaninchen, 6,99 &euro;</p>
-								</div>
-							</a>
-							<a href="#" class="module pbox">
-								<img src="img/pr2.jpg">
-								<div class="description">
-									<h3>fit+fun Multipack XXL 44x100g</h3>
-									<p>8,49 &euro;</p>
-								</div>
-							</a>
-						</div>
-						<div class="m-item">
-							<a href="#" class="module pbox">
-								<img src="img/pr1.jpg">
-								<div class="description">
-									<h3>Felix So gut wie es aussieht Multipack 24x100g</h3>
-									<p>Fleisch mit Huhn, Rind, Lamm &amp; Kaninchen, 6,99 &euro;</p>
-								</div>
-							</a>
-							<a href="#" class="module pbox">
-								<img src="img/pr2.jpg">
-								<div class="description">
-									<h3>fit+fun Multipack XXL 44x100g</h3>
-									<p>8,49 &euro;</p>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="m-carousel-controls m-carousel-bulleted">
-						<a href="#" data-slide="prev"><span>Previous</span></a>
-						<a href="#" data-slide="1" class="m-active"><span>1</span></a>
-						<a href="#" data-slide="2"><span>2</span></a>
-						<a href="#" data-slide="3"><span>3</span></a>
-						<a href="#" data-slide="next"><span>Next</span></a>
-					</div>
-				</div>
-			</div>
-
 			<ul class="module payment-options">
 				<li class="visa">
-					<img src="img/visa-logo.svg">
+					<img src="img/visa-logo.svg" alt="Visa">
 				</li>
 				<li class="mastercard">
-					<img src="img/master-card-logo.svg">
+					<img src="img/master-card-logo.svg" alt="Master Card">
 				</li>
 				<li class="amex">
-					<img src="img/paypal-logo.svg">
+					<img src="img/paypal-logo.svg" alt="PayPal">
 				</li>
 				<li class="paypal">
-					<img src="img/amex-logo.svg">
+					<img src="img/amex-logo.svg" alt="American Express">
 				</li>
 			</ul>
 
-				<a href="#" class="delivery-options">
-					<span>Versandkostenfrei ab 15&euro; Mindestbestellwert</span>
-				</a>
+			<a href="#" class="delivery-options">
+				<span>Versandkostenfrei ab 15&euro; Mindestbestellwert</span>
+			</a>
 
-				<a href="#" class="return-options">
-					<span>Kostenlose R&uuml;cksendung</span>
-				</a>
+			<a href="#" class="return-options">
+				<span>Kostenlose R&uuml;cksendung</span>
+			</a>
 
-				<a href="#" class="newsletter-link">
-					<span>Newsletter</span>
-				</a>
+			<a href="#" class="newsletter-link">
+				<span>Newsletter</span>
+			</a>
 
-				<a href="#" class="help-link">
-					<span>Hilfe</span>
-				</a>
+			<a href="#" class="help-link">
+				<span>Hilfe</span>
+			</a>
 
 			<ul class="module social-bar">
 				<li class="facebook">
@@ -595,11 +681,6 @@
 
 		</footer>
 
-	</div>
-
-	<div class="module bubble">
-		<strong>Felix bla bla bla</strong>
-		<img src="img/f1-xl.jpg">
 	</div>
 
 	<script src="js/vendor/modernizr/modernizr.js"></script>

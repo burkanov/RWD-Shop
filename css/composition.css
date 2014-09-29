@@ -69,7 +69,7 @@ footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .products-set > .load-more-products:before, .login-dispatcher > .ld-section > .login:before,
 .login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before, .ingredients > div ul > li:before, .product-details > div ul > li:before, .product-delivery-info > div ul > li:before, .header > .shopping-cart:before, .main > .product-video > span:after, .search > label > .form-submit:before, .navi:not(.central) > li.cats > a > span:after,
+.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before, .ingredients > div ul > li:before, .product-details > div ul > li:before, .product-delivery-info > div ul > li:before, .header > .shopping-cart:before, .main > .product-video > span:after, .search > .search-wrapper > .form-submit:before, .search.store-locator > .search-wrapper > .locator:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -79,7 +79,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main >
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, [class*=" icon-"] {
+.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -150,7 +150,7 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-a, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .remember-button:before, .add-to-cart-button {
+a, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .search > .search-wrapper > .form-submit, .remember-button:before, .add-to-cart-button {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -168,18 +168,19 @@ a:active {
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
+.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
 .products-set > ul > li > .product-wrapper, .remember-button, .amount-control-bar > .delete,
 .amount-control-bar > .decrease,
-.amount-control-bar > .increase {
+.amount-control-bar > .increase, .store-finder-list > .store > .info > .store-title {
   padding: 0;
   margin: 0;
   border: 0;
   outline: none; }
 
-.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .search > label > .form-submit {
+.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .search > .search-wrapper > .form-submit {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -187,7 +188,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   -moz-border-radius: 0px;
   border-radius: 0px; }
 
-.header:after, .main:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after, .breadcrumb:after, .filtering:after, .products-set:after, .products-set > ul > li > a:after,
+.header:after, .main:after, .main > .list-map-switch:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after, .breadcrumb:after, .filtering:after, .products-set:after, .products-set > ul > li > a:after,
 .products-set > ul > li > .product-wrapper:after, .products-set > ul > li > a > .description > div:after,
 .products-set > ul > li > .product-wrapper > .description > div:after, .module.cart > .products-set > ul > li:after, .delivery-status > .indicator:after, .amount-control-bar:after {
   content: "";
@@ -195,7 +196,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   clear: both; }
 
 @media screen {
-  .login-dispatcher > .ld-section > label > span, .pass-recovery > .request > label > span, .search > label > span, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .remember-button > span {
+  .login-dispatcher > .ld-section > label > span, .pass-recovery > .request > label > span, .search > .search-wrapper > .search-block-title, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .remember-button > span {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -206,11 +207,12 @@ footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
+.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .payment-options, .payment-options > li, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
 .variant-matrix > li > ul > .product-single > .ghost > .ghost, .variant-matrix > li > ul > .product-single > .message,
-.variant-matrix > li > ul > .product-single > .ghost > .message, .top-message {
+.variant-matrix > li > ul > .product-single > .ghost > .message, .top-message, .store-finder-list > .store > .route {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -251,9 +253,10 @@ footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
+.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send {
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation {
   display: block;
   text-decoration: none;
   color: white;
@@ -276,35 +279,40 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
   footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
-  .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
+  .main > .to-payment:hover, .main > .product-video:hover, .main > .list-map-switch > .list-view:hover,
+  .main > .list-map-switch > .map-view:hover, .search.store-locator > .search-wrapper > .locator:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
   .login-dispatcher > .ld-section > .signup:hover,
-  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, footer > .delivery-options:focus,
+  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
   footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
-  .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
+  .main > .to-payment:focus, .main > .product-video:focus, .main > .list-map-switch > .list-view:focus,
+  .main > .list-map-switch > .map-view:focus, .search.store-locator > .search-wrapper > .locator:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
   .login-dispatcher > .ld-section > .signup:focus,
-  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus, footer > .delivery-options:active,
+  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus, .store-finder-list > .store > .route > .route-calculation:focus, footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
   footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
-  .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
+  .main > .to-payment:active, .main > .product-video:active, .main > .list-map-switch > .list-view:active,
+  .main > .list-map-switch > .map-view:active, .search.store-locator > .search-wrapper > .locator:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
   .login-dispatcher > .ld-section > .signup:active,
-  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active {
+  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active, .store-finder-list > .store > .route > .route-calculation:active {
     cursor: pointer; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
   footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
-  .main > .to-payment:hover, .main > .product-video:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
+  .main > .to-payment:hover, .main > .product-video:hover, .main > .list-map-switch > .list-view:hover,
+  .main > .list-map-switch > .map-view:hover, .search.store-locator > .search-wrapper > .locator:hover, .products-set > .load-more-products:hover, .login-dispatcher > .ld-section > .login:hover,
   .login-dispatcher > .ld-section > .signup:hover,
-  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, footer > .delivery-options:focus,
+  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
   footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
-  .main > .to-payment:focus, .main > .product-video:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
+  .main > .to-payment:focus, .main > .product-video:focus, .main > .list-map-switch > .list-view:focus,
+  .main > .list-map-switch > .map-view:focus, .search.store-locator > .search-wrapper > .locator:focus, .products-set > .load-more-products:focus, .login-dispatcher > .ld-section > .login:focus,
   .login-dispatcher > .ld-section > .signup:focus,
-  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus {
+  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus, .store-finder-list > .store > .route > .route-calculation:focus {
     background-color: #c3d255;
     color: white;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
@@ -314,9 +322,10 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .return-options:active,
   footer > .newsletter-link:active,
   footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
-  .main > .to-payment:active, .main > .product-video:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
+  .main > .to-payment:active, .main > .product-video:active, .main > .list-map-switch > .list-view:active,
+  .main > .list-map-switch > .map-view:active, .search.store-locator > .search-wrapper > .locator:active, .products-set > .load-more-products:active, .login-dispatcher > .ld-section > .login:active,
   .login-dispatcher > .ld-section > .signup:active,
-  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active {
+  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active, .store-finder-list > .store > .route > .route-calculation:active {
     background-color: #196428;
     -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
@@ -325,9 +334,10 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .return-options > span,
   footer > .newsletter-link > span,
   footer > .help-link > span, .filtering > .filtering-area > span, .login-dispatcher > .contact > .call > span, .main > .store-finder > span,
-  .main > .to-payment > span, .main > .product-video > span, .products-set > .load-more-products > span, .login-dispatcher > .ld-section > .login > span,
+  .main > .to-payment > span, .main > .product-video > span, .main > .list-map-switch > .list-view > span,
+  .main > .list-map-switch > .map-view > span, .search.store-locator > .search-wrapper > .locator > span, .products-set > .load-more-products > span, .login-dispatcher > .ld-section > .login > span,
   .login-dispatcher > .ld-section > .signup > span,
-  .login-dispatcher > .ld-section > .fb-login > span, .pass-recovery > .request > .send > span {
+  .login-dispatcher > .ld-section > .fb-login > span, .pass-recovery > .request > .send > span, .store-finder-list > .store > .route > .route-calculation > span {
     font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     height: 1rem;
@@ -383,9 +393,10 @@ footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
+.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
@@ -516,9 +527,10 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before {
 footer > .return-options,
 footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
-.main > .to-payment, .main > .product-video, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
+.main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
+.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send {
+.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -533,7 +545,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .ingredients > div ul h4,
 .product-details > div ul h4,
 .product-delivery-info > div ul h4, footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
-.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title {
+.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .store-finder-list > .store > .info > .store-title {
   display: block;
   font-size: 1rem;
   font-weight: 800;
@@ -573,42 +585,42 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35); }
 
-.variant-matrix, .cart, .login-dispatcher > .ld-section, .pass-recovery > .back, .pass-recovery > .request, .top-message {
+.variant-matrix, .cart, .login-dispatcher > .ld-section, .pass-recovery > .back, .pass-recovery > .request, .top-message, .store-finder-list > .store {
   display: block;
   background-color: white;
   padding: 0.5rem; }
 
-.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field {
+.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field {
   font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .login-dispatcher > .ld-section > label > input:-moz-placeholder, .pass-recovery > .request > label > input:-moz-placeholder, .search > label > .search-field:-moz-placeholder {
+  .login-dispatcher > .ld-section > label > input:-moz-placeholder, .pass-recovery > .request > label > input:-moz-placeholder, .search > .search-wrapper > .search-field:-moz-placeholder {
     color: #999999; }
-  .login-dispatcher > .ld-section > label > input:-ms-input-placeholder, .pass-recovery > .request > label > input:-ms-input-placeholder, .search > label > .search-field:-ms-input-placeholder {
+  .login-dispatcher > .ld-section > label > input:-ms-input-placeholder, .pass-recovery > .request > label > input:-ms-input-placeholder, .search > .search-wrapper > .search-field:-ms-input-placeholder {
     color: #999999; }
-  .login-dispatcher > .ld-section > label > input::-webkit-input-placeholder, .pass-recovery > .request > label > input::-webkit-input-placeholder, .search > label > .search-field::-webkit-input-placeholder {
+  .login-dispatcher > .ld-section > label > input::-webkit-input-placeholder, .pass-recovery > .request > label > input::-webkit-input-placeholder, .search > .search-wrapper > .search-field::-webkit-input-placeholder {
     color: #999999; }
-  .login-dispatcher > .ld-section > label > input:focus:-moz-placeholder, .pass-recovery > .request > label > input:focus:-moz-placeholder, .search > label > .search-field:focus:-moz-placeholder {
+  .login-dispatcher > .ld-section > label > input:focus:-moz-placeholder, .pass-recovery > .request > label > input:focus:-moz-placeholder, .search > .search-wrapper > .search-field:focus:-moz-placeholder {
     color: white; }
-  .login-dispatcher > .ld-section > label > input:focus:-ms-input-placeholder, .pass-recovery > .request > label > input:focus:-ms-input-placeholder, .search > label > .search-field:focus:-ms-input-placeholder {
+  .login-dispatcher > .ld-section > label > input:focus:-ms-input-placeholder, .pass-recovery > .request > label > input:focus:-ms-input-placeholder, .search > .search-wrapper > .search-field:focus:-ms-input-placeholder {
     color: white; }
-  .login-dispatcher > .ld-section > label > input:focus::-webkit-input-placeholder, .pass-recovery > .request > label > input:focus::-webkit-input-placeholder, .search > label > .search-field:focus::-webkit-input-placeholder {
+  .login-dispatcher > .ld-section > label > input:focus::-webkit-input-placeholder, .pass-recovery > .request > label > input:focus::-webkit-input-placeholder, .search > .search-wrapper > .search-field:focus::-webkit-input-placeholder {
     color: white; }
 
-.search > label > .search-field {
+.search > .search-wrapper > .search-field {
   font-family: Arial, sans-serif; }
-  .search > label > .search-field:-moz-placeholder {
+  .search > .search-wrapper > .search-field:-moz-placeholder {
     color: #196428; }
-  .search > label > .search-field:-ms-input-placeholder {
+  .search > .search-wrapper > .search-field:-ms-input-placeholder {
     color: #196428; }
-  .search > label > .search-field::-webkit-input-placeholder {
+  .search > .search-wrapper > .search-field::-webkit-input-placeholder {
     color: #196428; }
-  .search > label > .search-field:focus:-moz-placeholder {
+  .search > .search-wrapper > .search-field:focus:-moz-placeholder {
     color: white; }
-  .search > label > .search-field:focus:-ms-input-placeholder {
+  .search > .search-wrapper > .search-field:focus:-ms-input-placeholder {
     color: white; }
-  .search > label > .search-field:focus::-webkit-input-placeholder {
+  .search > .search-wrapper > .search-field:focus::-webkit-input-placeholder {
     color: white; }
 
-.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > label > .search-field {
+.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field {
   display: block;
   width: 100%;
   height: 2.5rem;
@@ -759,6 +771,26 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
       margin-top: -0.25rem;
       vertical-align: middle;
       margin-left: 0.4rem; }
+  .main > .list-map-switch {
+    display: block; }
+    .main > .list-map-switch > .list-view,
+    .main > .list-map-switch > .map-view {
+      display: block;
+      width: 50%;
+      float: left;
+      text-align: center;
+      padding: 0;
+      height: auto;
+      padding: 0.5rem; }
+      .main > .list-map-switch > .list-view.current,
+      .main > .list-map-switch > .map-view.current {
+        background-image: none;
+        background-color: white;
+        color: #333333;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        cursor: default; }
 
 .navi-panel {
   padding-right: 20%;
@@ -855,33 +887,57 @@ footer {
 .search {
   display: block;
   margin: 0.5rem -0.5rem; }
-  .search > label {
+  .search > .search-wrapper {
     display: block;
-    padding: 0 2rem 0 0.5rem;
-    position: relative; }
-    .search > label > .search-field {
+    padding: 0 2rem 0 0rem;
+    position: relative;
+    background-color: white;
+    margin: 0 0.5rem; }
+    .search > .search-wrapper > .search-field {
+      width: calc(100% - 1.5rem);
       color: #196428;
       border-color: white;
       font-weight: bold; }
-    .search > label > .form-submit {
+    .search > .search-wrapper > .form-submit {
       display: block;
       border: 0;
       position: absolute;
-      right: 0.5rem;
+      right: 0rem;
       top: 0;
       width: 2.5rem;
       height: 2.5rem;
       background-color: #d4d2ce;
       color: #196428;
       font-size: 1.4rem;
-      line-height: 1; }
-      .search > label > .form-submit:before {
+      line-height: 1;
+      cursor: pointer; }
+      .search > .search-wrapper > .form-submit:before {
         content: "\e60d";
         position: absolute;
         display: block;
         line-height: 1;
         left: 0.5rem;
         top: 0.5rem; }
+      .search > .search-wrapper > .form-submit:hover, .search > .search-wrapper > .form-submit:focus {
+        background-color: #60843e;
+        color: white; }
+      .search > .search-wrapper > .form-submit:active {
+        background-color: #143800; }
+  .search.store-locator > .search-wrapper {
+    margin-left: 3.5rem; }
+    .search.store-locator > .search-wrapper > .locator {
+      text-align: center;
+      padding: 0.5rem;
+      min-width: 2.5rem;
+      font-size: 1.25rem;
+      height: auto;
+      line-height: 1;
+      position: absolute;
+      left: -3rem;
+      top: 0;
+      padding: 0.6rem 0.5rem 0.4rem 0.5rem; }
+      .search.store-locator > .search-wrapper > .locator:before {
+        content: "\e6a0"; }
 
 .navi:not(.central) {
   display: block;
@@ -1938,3 +1994,55 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     color: #e7001f; }
     .top-message.error:before {
       content: "\e615"; }
+
+.store-finder-list {
+  display: block; }
+  .store-finder-list > .store {
+    position: relative;
+    padding-right: 5.5rem;
+    min-height: 6rem;
+    margin: 0.5rem 0; }
+    .store-finder-list > .store > .info,
+    .store-finder-list > .store > .route {
+      display: block; }
+    .store-finder-list > .store > .info > .store-title {
+      color: #196428;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 1.15;
+      text-decoration: none;
+      padding-bottom: 0.5rem; }
+      .store-finder-list > .store > .info > .store-title:active {
+        color: white; }
+    .store-finder-list > .store > .info > .address,
+    .store-finder-list > .store > .info > .working-hours {
+      display: block;
+      line-height: 1.25; }
+    .store-finder-list > .store > .info > .working-hours:before {
+      content: "\e608";
+      font-size: 0.85rem;
+      margin-right: 0.25rem; }
+    .store-finder-list > .store > .route {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 5.5rem;
+      padding: 0.5rem;
+      padding-top: 0.55rem; }
+      .store-finder-list > .store > .route > .distance {
+        display: blocke; }
+        .store-finder-list > .store > .route > .distance:before {
+          content: "\e698";
+          font-size: 0.85rem;
+          margin-right: 0.25rem; }
+      .store-finder-list > .store > .route > .route-calculation {
+        text-align: center;
+        padding: 1.25rem 0.5rem;
+        font-size: 1.25rem;
+        height: auto;
+        line-height: 1; }
+        .store-finder-list > .store > .route > .route-calculation > span {
+          height: auto;
+          line-height: 1;
+          font-size: 0.75rem;
+          font-weight: normal; }
