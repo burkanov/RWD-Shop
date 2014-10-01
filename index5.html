@@ -563,9 +563,22 @@
 				</ul>
 			</div>
 
-			<a class="coupon">
-				<span>Gutschein einl&ouml;sen</span>
-			</a>
+			<form class="coupon" action="#" method="post">
+				<fieldset>
+					<legend>
+						<span>Gutschein einl&ouml;sen</span>
+					</legend>
+					<div>
+						<label>
+							<span>Gutschein Code</span>
+							<input type="text" name="coupon-code" id="coupon-code" placeholder="Gutschein Code eingeben"/>
+						</label>
+						<a class="form-submit-button">
+							<span>Einl&ouml;sen</span>
+						</a>
+					</div>
+				</fieldset>
+			</form>
 
 			<table class="invoice">
 				<tbody>

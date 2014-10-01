@@ -14,6 +14,8 @@
 	var rememberButton = $(".remember-button");
 	var addToCartMessage = $(".variant-matrix").attr('data-add-to-card-message');
 	var formSubmitTrigger = $(".form-submit-button");
+	var couponTrigger = $(".coupon > fieldset > legend");
+	var couponArea = $(".coupon > fieldset > div");
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -145,6 +147,13 @@
 		});
 	};
 
+	var prepareCouponSwitch = function() {
+		couponTrigger.click(function(event) {
+			couponArea.slideToggle("400", function() {
+			});
+		});
+	};
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
@@ -155,6 +164,7 @@
 		prepareRememberButton();
 		prepareBuyingBubble();
 		prepareFormSubmit();
+		prepareCouponSwitch();
 	});
 
 
