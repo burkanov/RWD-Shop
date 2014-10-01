@@ -26,6 +26,7 @@ Modernizr.load([
 		load: [
 			'js/vendor/mobify/carousel.js',
 			'js/vendor/mobify/accordion.js',
+			'js/vendor/facebug/fb-int.js',
 			'js/project/things.js' // Different things (why not)
 		]
 	},

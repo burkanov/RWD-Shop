@@ -9,12 +9,13 @@
 			@extend %base-headline
 			font-size: 1.25rem
 		> .login,
-		> .signup,
-		> .fb-login
+		> .signup
 			@extend %primary-button
 			&:before
 				@extend %cap-left
 				content: "\e3b1"
+		> .fb-login-button
+			margin: 0.75rem 0 1rem 0
 		> label
 			@extend %field-in-label
 		> .forgot

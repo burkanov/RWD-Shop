@@ -68,8 +68,7 @@ footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .cart > .coupon > fieldset > div > .form-submit-button:before, .login-dispatcher > .ld-section > .login:before,
-.login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before, .ingredients > div ul > li:before, .product-details > div ul > li:before, .product-delivery-info > div ul > li:before, .header > .shopping-cart:before, .main > .product-video > span:after, .search > .search-wrapper > .form-submit:before, .search.store-locator > .search-wrapper > .locator:before, .navi:not(.central) > li.cats > a > span:after,
+.login-dispatcher > .ld-section > .signup:before, .pass-recovery > .request > .send:before, .ingredients > div ul > li:before, .product-details > div ul > li:before, .product-delivery-info > div ul > li:before, .header > .shopping-cart:before, .main > .product-video > span:after, .search > .search-wrapper > .form-submit:before, .search.store-locator > .search-wrapper > .locator:before, .navi:not(.central) > li.cats > a > span:after,
 .navi:not(.central) > li.cats > span:after, .navi:not(.central) > li.dogs > a > span:after,
 .navi:not(.central) > li.dogs > span:after, .navi:not(.central) > li.rodents > a > span:after,
 .navi:not(.central) > li.rodents > span:after, .navi:not(.central) > li.birds > a > span:after,
@@ -170,8 +169,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .login-dispatcher > .ld-section > .login,
-.login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
+.login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
 .products-set > ul > li > .product-wrapper, .remember-button, .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon, .amount-control-bar > .delete,
 .amount-control-bar > .decrease,
 .amount-control-bar > .increase, .store-finder-list > .store > .info > .store-title {
@@ -209,8 +207,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .login-dispatcher > .ld-section > .login,
-.login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
+.login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
 .variant-matrix > li > ul > .product-single > .ghost > .ghost, .variant-matrix > li > ul > .product-single > .message,
 .variant-matrix > li > ul > .product-single > .ghost > .message, .top-message, .store-finder-list > .store > .route {
   -webkit-box-sizing: border-box;
@@ -255,8 +252,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .login-dispatcher > .ld-section > .login,
-.login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation {
+.login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation {
   display: block;
   text-decoration: none;
   color: white;
@@ -281,22 +277,19 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
   .main > .to-payment:hover, .main > .product-video:hover, .main > .list-map-switch > .list-view:hover,
   .main > .list-map-switch > .map-view:hover, .search.store-locator > .search-wrapper > .locator:hover, .products-set > .load-more-products:hover, .cart > .coupon > fieldset > div > .form-submit-button:hover, .login-dispatcher > .ld-section > .login:hover,
-  .login-dispatcher > .ld-section > .signup:hover,
-  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
+  .login-dispatcher > .ld-section > .signup:hover, .pass-recovery > .request > .send:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
   footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
   .main > .to-payment:focus, .main > .product-video:focus, .main > .list-map-switch > .list-view:focus,
   .main > .list-map-switch > .map-view:focus, .search.store-locator > .search-wrapper > .locator:focus, .products-set > .load-more-products:focus, .cart > .coupon > fieldset > div > .form-submit-button:focus, .login-dispatcher > .ld-section > .login:focus,
-  .login-dispatcher > .ld-section > .signup:focus,
-  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus, .store-finder-list > .store > .route > .route-calculation:focus, footer > .delivery-options:active,
+  .login-dispatcher > .ld-section > .signup:focus, .pass-recovery > .request > .send:focus, .store-finder-list > .store > .route > .route-calculation:focus, footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
   footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
   .main > .to-payment:active, .main > .product-video:active, .main > .list-map-switch > .list-view:active,
   .main > .list-map-switch > .map-view:active, .search.store-locator > .search-wrapper > .locator:active, .products-set > .load-more-products:active, .cart > .coupon > fieldset > div > .form-submit-button:active, .login-dispatcher > .ld-section > .login:active,
-  .login-dispatcher > .ld-section > .signup:active,
-  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active, .store-finder-list > .store > .route > .route-calculation:active {
+  .login-dispatcher > .ld-section > .signup:active, .pass-recovery > .request > .send:active, .store-finder-list > .store > .route > .route-calculation:active {
     cursor: pointer; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
@@ -304,15 +297,13 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .main > .store-finder:hover,
   .main > .to-payment:hover, .main > .product-video:hover, .main > .list-map-switch > .list-view:hover,
   .main > .list-map-switch > .map-view:hover, .search.store-locator > .search-wrapper > .locator:hover, .products-set > .load-more-products:hover, .cart > .coupon > fieldset > div > .form-submit-button:hover, .login-dispatcher > .ld-section > .login:hover,
-  .login-dispatcher > .ld-section > .signup:hover,
-  .login-dispatcher > .ld-section > .fb-login:hover, .pass-recovery > .request > .send:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
+  .login-dispatcher > .ld-section > .signup:hover, .pass-recovery > .request > .send:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
   footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .main > .store-finder:focus,
   .main > .to-payment:focus, .main > .product-video:focus, .main > .list-map-switch > .list-view:focus,
   .main > .list-map-switch > .map-view:focus, .search.store-locator > .search-wrapper > .locator:focus, .products-set > .load-more-products:focus, .cart > .coupon > fieldset > div > .form-submit-button:focus, .login-dispatcher > .ld-section > .login:focus,
-  .login-dispatcher > .ld-section > .signup:focus,
-  .login-dispatcher > .ld-section > .fb-login:focus, .pass-recovery > .request > .send:focus, .store-finder-list > .store > .route > .route-calculation:focus {
+  .login-dispatcher > .ld-section > .signup:focus, .pass-recovery > .request > .send:focus, .store-finder-list > .store > .route > .route-calculation:focus {
     background-color: #c3d255;
     color: white;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -0.25rem 1.25rem #60843e;
@@ -324,8 +315,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .main > .store-finder:active,
   .main > .to-payment:active, .main > .product-video:active, .main > .list-map-switch > .list-view:active,
   .main > .list-map-switch > .map-view:active, .search.store-locator > .search-wrapper > .locator:active, .products-set > .load-more-products:active, .cart > .coupon > fieldset > div > .form-submit-button:active, .login-dispatcher > .ld-section > .login:active,
-  .login-dispatcher > .ld-section > .signup:active,
-  .login-dispatcher > .ld-section > .fb-login:active, .pass-recovery > .request > .send:active, .store-finder-list > .store > .route > .route-calculation:active {
+  .login-dispatcher > .ld-section > .signup:active, .pass-recovery > .request > .send:active, .store-finder-list > .store > .route > .route-calculation:active {
     background-color: #196428;
     -webkit-box-shadow: inset 0 -0.25rem 1.25rem #143800;
     -moz-box-shadow: inset 0 -0.25rem 1.25rem #143800;
@@ -336,8 +326,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .help-link > span, .filtering > .filtering-area > span, .login-dispatcher > .contact > .call > span, .main > .store-finder > span,
   .main > .to-payment > span, .main > .product-video > span, .main > .list-map-switch > .list-view > span,
   .main > .list-map-switch > .map-view > span, .search.store-locator > .search-wrapper > .locator > span, .products-set > .load-more-products > span, .cart > .coupon > fieldset > div > .form-submit-button > span, .login-dispatcher > .ld-section > .login > span,
-  .login-dispatcher > .ld-section > .signup > span,
-  .login-dispatcher > .ld-section > .fb-login > span, .pass-recovery > .request > .send > span, .store-finder-list > .store > .route > .route-calculation > span {
+  .login-dispatcher > .ld-section > .signup > span, .pass-recovery > .request > .send > span, .store-finder-list > .store > .route > .route-calculation > span {
     font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     height: 1rem;
@@ -395,8 +384,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .login-dispatcher > .ld-section > .login,
-.login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
+.login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .navi:not(.central) > li > div > .second-level-navi > li > a > span:after,
 .navi:not(.central) > li > div > .second-level-navi > li > span:after, .navi.central > li > a > span:after, .navi.central > li > div > .second-level-navi > li > a > span:after, .breadcrumb > li > a > span:after {
   background-color: rgba(96, 132, 62, 0);
   background: -moz-linear-gradient(top, rgba(96, 132, 62, 0) 0%, #60843e 100%);
@@ -412,8 +400,7 @@ footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .cart > .coupon > fieldset > div > .form-submit-button:before, .login-dispatcher > .ld-section > .login:before,
-.login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before {
+.login-dispatcher > .ld-section > .signup:before, .pass-recovery > .request > .send:before {
   background-color: #758c30;
   background: -moz-linear-gradient(top, #758c30 0%, #4e6b32 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #758c30), color-stop(100%, #4e6b32));
@@ -475,8 +462,7 @@ footer > .return-options:before,
 footer > .newsletter-link:before,
 footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main > .store-finder:before,
 .main > .to-payment:before, .filtering > .select-icon, .filtering > .filtering-area > span:before, .cart > .coupon > fieldset > div > .form-submit-button:before, .login-dispatcher > .ld-section > .login:before,
-.login-dispatcher > .ld-section > .signup:before,
-.login-dispatcher > .ld-section > .fb-login:before, .pass-recovery > .request > .send:before {
+.login-dispatcher > .ld-section > .signup:before, .pass-recovery > .request > .send:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -529,8 +515,7 @@ footer > .newsletter-link,
 footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .main > .store-finder,
 .main > .to-payment, .main > .product-video, .main > .list-map-switch > .list-view,
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .login-dispatcher > .ld-section > .login,
-.login-dispatcher > .ld-section > .signup,
-.login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation {
+.login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -1956,9 +1941,10 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     .login-dispatcher > .ld-section > .title {
       font-size: 1.25rem; }
     .login-dispatcher > .ld-section > .login:before,
-    .login-dispatcher > .ld-section > .signup:before,
-    .login-dispatcher > .ld-section > .fb-login:before {
+    .login-dispatcher > .ld-section > .signup:before {
       content: "\e3b1"; }
+    .login-dispatcher > .ld-section > .fb-login-button {
+      margin: 0.75rem 0 1rem 0; }
     .login-dispatcher > .ld-section > .forgot {
       display: inline-block;
       margin: 0.5rem 0 1rem 0; }
