@@ -54,8 +54,39 @@
 				> td
 					border: 1px solid $fn-gray-light
 					padding: 0.25rem
+					vertical-align: middle
 					&:last-child
 						text-align: right
 					&.sum
 						background-color: $fn-gray-light
 						font-weight: bold
+				&.coupon-data
+					> .description
+						> span
+							display: block
+							float: left
+							line-height: 2rem
+						> .remove-coupon
+							display: block
+							color: $white
+							@extend %pure
+							cursor: pointer
+							background-color: $fn-red
+							font-size: 1.25rem
+							text-align: center
+							vertical-align: middle
+							float: right
+							&:before
+								display: block
+								content: "\e60a"
+								@extend [class^="icon-"]
+								width: 2rem
+								line-height: 2rem
+							&:hover,
+							&:focus
+								background-color: $fn-red-accent
+							&:active
+								background-color: $fn-orange
+								color: $fn-gray
+					> .correction-sum
+						color: $fn-green

@@ -77,7 +77,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main >
 .navi:not(.central) > li.aquarium > span:after, .navi:not(.central) > li.reptile > a > span:after,
 .navi:not(.central) > li.reptile > span:after, .navi:not(.central) > li.garden > a > span:after,
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
-.rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon > fieldset > legend:before, .amount-control-bar > .delete:before,
+.rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon > fieldset > legend:before, .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
 .amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, [class*=" icon-"] {
   font-family: "icomoon";
@@ -172,7 +172,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup,
 .login-dispatcher > .ld-section > .fb-login, .pass-recovery > .request > .send, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
-.products-set > ul > li > .product-wrapper, .remember-button, .amount-control-bar > .delete,
+.products-set > ul > li > .product-wrapper, .remember-button, .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon, .amount-control-bar > .delete,
 .amount-control-bar > .decrease,
 .amount-control-bar > .increase, .store-finder-list > .store > .info > .store-title {
   padding: 0;
@@ -1847,12 +1847,38 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   margin-top: 1.5rem; }
   .cart > .invoice > tbody > tr > td {
     border: 1px solid #d4d2ce;
-    padding: 0.25rem; }
+    padding: 0.25rem;
+    vertical-align: middle; }
     .cart > .invoice > tbody > tr > td:last-child {
       text-align: right; }
     .cart > .invoice > tbody > tr > td.sum {
       background-color: #d4d2ce;
       font-weight: bold; }
+  .cart > .invoice > tbody > tr.coupon-data > .description > span {
+    display: block;
+    float: left;
+    line-height: 2rem; }
+  .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon {
+    display: block;
+    color: white;
+    cursor: pointer;
+    background-color: #e7001f;
+    font-size: 1.25rem;
+    text-align: center;
+    vertical-align: middle;
+    float: right; }
+    .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon:before {
+      display: block;
+      content: "\e60a";
+      width: 2rem;
+      line-height: 2rem; }
+    .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon:hover, .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon:focus {
+      background-color: #b1181e; }
+    .cart > .invoice > tbody > tr.coupon-data > .description > .remove-coupon:active {
+      background-color: #f2761b;
+      color: #333333; }
+  .cart > .invoice > tbody > tr.coupon-data > .correction-sum {
+    color: #196428; }
 
 .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
