@@ -1,0 +1,79 @@
+// Standard styles for module
+
+.checkout-progress-bar
+	display: -webkit-flex
+	display: flex
+	-webkit-flex-direction: row
+	flex-direction: row
+	margin: 0.5rem 0
+	> .segment
+		-webkit-flex: auto
+		flex: auto
+		font-size: 1.25rem
+		line-height: 1
+		> .segment-data-wrapper
+			background-color: $white
+			text-align: center
+			display: block
+			padding: 0.6rem 0.1rem 0.4rem 0.1rem
+			margin: 0
+			position: relative
+			&:before,
+			&:after
+				display: block
+				content: ""
+				background-color: $fn-almost-white
+				width: 0
+				height: 0.25rem
+				position: absolute
+				right: 0
+				top: 0
+				border-left: 0.5rem solid $white
+				border-top: 1rem solid transparent
+				border-bottom: 1rem solid transparent
+			&:before
+				left: 0
+				border-left-color: $fn-almost-white
+				background-color: $white
+			&:after
+				background-color: $fn-almost-white
+				right: 0
+				border-left-color: $white
+			> .span
+				display: inline-block
+		&:first-child
+			> .segment-data-wrapper
+				&:before
+					display: none
+		&:last-child
+			> .segment-data-wrapper
+				&:after
+					display: none
+		&.done
+			> .segment-data-wrapper
+				text-decoration: none
+				> .counter
+					color: $fn-green
+					&:before
+						@extend [class^="icon-"]
+						content: "\e616"
+						font-size: 1rem
+						display: inline-block
+						margin-right: 0.15rem
+				&:hover,
+				&:focus
+					> .counter
+						color: $fn-green-medium
+				&:active
+					> .counter
+						color: $fn-green-accent
+		&.current
+			> .segment-data-wrapper
+				font-weight: 800
+		&.disabled
+			> .segment-data-wrapper
+				color: $fn-gray-light
+		&:not(.current)
+			> .segment-data-wrapper
+				> .title
+					@extend %away

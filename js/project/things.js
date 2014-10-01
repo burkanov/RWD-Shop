@@ -16,6 +16,7 @@
 	var formSubmitTrigger = $(".form-submit-button");
 	var couponTrigger = $(".coupon > fieldset > legend");
 	var couponArea = $(".coupon > fieldset > div");
+	var checkboxLabel = $('.c-group > p > span');
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -154,6 +155,23 @@
 		});
 	};
 
+	var fixCheckboxLabelTouch = function() {
+		checkboxLabel.click(function() {
+			
+			event.preventDefault();
+			
+			var checkbox = $(this).parent().parent().find('input:checkbox');
+			var isChecked = checkbox.is(':checked');
+
+			if(isChecked) {
+				checkbox.prop('checked',false);
+			} else {
+				checkbox.prop('checked', true);
+			}
+
+		});
+	};
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
@@ -165,6 +183,7 @@
 		prepareBuyingBubble();
 		prepareFormSubmit();
 		prepareCouponSwitch();
+		fixCheckboxLabelTouch();
 	});
 
 
