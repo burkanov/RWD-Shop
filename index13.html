@@ -29,13 +29,13 @@
 					<span class="title">Adresse</span>
 				</a>
 			</li>
-			<li class="segment current">
-				<div class="segment-data-wrapper">
+			<li class="segment done">
+				<a href="index12.html" class="segment-data-wrapper">
 					<span class="counter">2.</span>
 					<span class="title">Lieferung</span>
-				</div>
+				</a>
 			</li>
-			<li class="segment disabled">
+			<li class="segment current">
 				<div class="segment-data-wrapper">
 					<span class="counter">3.</span>
 					<span class="title">Zahlung</span>
@@ -49,14 +49,96 @@
 			</li>
 		</ul>
 
-		<form class="module address" method="get" action="index13.html">
-			<label class="c-group">
-				<input type="radio" name="delivery" id="opt1" value="opt1" />
-				Standardlieferung 2-3 Werktage 0,00 &euro;
+		<form class="module address payment" method="get" action="index14.html">
+			<label class="c-group lined">
+				<input type="radio" name="payment" id="creditCard" value="creditCard" />
+				<div class="title-wrapper">
+					<span class="title">Kreditkarte</span>
+					<div class="illustration">
+						<img src="img/visa-logo.svg" alt="Visa">
+					</div>
+					<div class="illustration">
+						<img src="img/master-card-logo.svg"alt="Master Card">
+					</div>
+				</div>
 			</label>
-			<label class="c-group">
-				<input type="radio" name="delivery" id="opt2" value="opt2" />
-				Expresslieferung 1-2 Werktage 5,00 &euro;
+			<fieldset class="credit-card-info">
+				<label class="card-type-wrapper i-group">
+					<span>Kartentyp</span>
+					<select name="card-type" id="card-type">
+						<option value="visa">Visa</option>
+						<option value="master">Mastercard</option>
+					</select>
+				</label>
+				<label class="i-group">
+					<span>Karteninhaber</span>
+					<input type="text" name="credit-card-holder" id="credit-card-holder" placeholder="Karteninhaber*" />
+				</label>
+				<label class="i-group">
+					<span>Kartennummer</span>
+					<input type="text" name="credit-card-nummer" id="credit-card-nummer" placeholder="Kartennummer*" />
+				</label>
+				<p>Ablaufdatum:*</p>
+				<div class="multi-holder">
+					<label class="expiration-date-month-wrapper i-group">
+						<span>Monat</span>
+						<select name="expiration-date-month" id="expiration-date-month">
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</label>
+					<label class="expiration-date-year-wrapper i-group">
+						<span>Jahr</span>
+						<select name="expiration-date-year" id="expiration-date-year">
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+						</select>
+					</label>
+				</div>
+				<div class="multi-holder">
+					<label class="card-security-code-wrapper i-group">
+						<span>Kartenpr&uuml;fnummer</span>
+						<input type="text" name="card-security-code" id="card-security-code" placeholder="Kartenpr&uuml;fnr*" />
+					</label>
+					<a href="#" class="explain-securitry-code">Was ist das?</a>
+				</div>
+				<p class="small">* Erforderliche Angaben</p>
+			</fieldset>
+
+			<label class="c-group lined">
+				<input type="radio" name="payment" id="opt2" value="opt2" />
+				<div class="title-wrapper">
+					<span class="title">Sofort&uuml;berweisung</span>
+					<div class="illustration">
+						<!-- need an image here -->
+					</div>
+				</div>
+			</label>
+			<label class="c-group lined">
+				<input type="radio" name="payment" id="opt3" value="opt3" />
+				<div class="title-wrapper">
+					<span class="title">PayPal</span>
+					<div class="illustration">
+						<img src="img/paypal-logo.svg" alt="Visa">
+					</div>
+				</div>
 			</label>
 			<a class="continue form-submit-button"><span>Weiter</span></a>
 		</form>

@@ -3,7 +3,8 @@
 .address
 	@extend %content-container
 	> .invoice,
-	> .delivery
+	> .delivery,
+	> .credit-card-info
 		> .attention
 			display: block
 			line-height: 1.25
@@ -33,12 +34,32 @@
 			> .title-wrapper,
 			> .birth-day-wrapper,
 			> .birth-month-wrapper,
-			> .birth-year-wrapper
+			> .birth-year-wrapper,
+			> .expiration-date-month-wrapper,
+			> .expiration-date-year-wrapper
 				> select
 					@extend %full-select
+			> .expiration-date-month-wrapper,
+			> .expiration-date-year-wrapper,
+			> .card-security-code-wrapper,
+			> .explain-securitry-code
+				width: 50%
+			> .expiration-date-month-wrapper,
+			> .card-security-code-wrapper
+				margin-right: 0.5rem
 			> .house-nr-wrapper
 				margin-left: 0.5rem
 				max-width: 5rem
+			> .explain-securitry-code
+				line-height: 3.5rem
+				text-align: left
+		> .card-type-wrapper
+			> select
+				@extend %full-select
+	> .credit-card-info
+		display: none
+		padding-bottom: 2rem
+		border-bottom: 1px solid $fn-gray-light
 	> .delivery
 		margin-bottom: 1.5rem
 		display: none
@@ -56,9 +77,38 @@
 			height: 1rem
 		> p
 			display: block
+		&.lined
+			border-bottom: 1px solid $fn-gray-light
+			margin: 0 -0.5rem
+			padding: 1rem 1rem 1rem 2rem
+			> .title-wrapper
+				@extend %clearfix
+				> .title
+					@extend %base-headline
+					margin-right: 1rem
+					> .conditions
+						display: block
+						font-weight: normal
+						font-style: italic
+				> .title,
+				> .illustration
+					float: left
+				> .illustration
+					display: block
+					height: 1.5rem
+					width: 3rem
+					margin-top: -0.25rem
+					float: right
+					> img
+						display: block
+						height: 100%
+						width: auto
+			> input
+				left: 0.5rem
+				top: 0.85rem
 		&.different-delivery-address-wrapper
 			margin: 1.5rem 0
-	>.small
+	.small
 		@extend %small
 		display: block
 		margin: 1rem 0
@@ -69,3 +119,11 @@
 		&:before
 			@extend %cap-left
 			content: "\e3b1"
+	&.payment
+		padding-top: 0
+		> .c-group
+			&.lined
+				&.expanded
+					border-bottom: none
+		> .continue
+			margin-top: 2rem

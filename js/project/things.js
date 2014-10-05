@@ -17,8 +17,13 @@
 	var couponTrigger = $(".coupon > fieldset > legend");
 	var couponArea = $(".coupon > fieldset > div");
 	var checkboxLabel = $(".c-group > p > span");
+
 	var activateDeliveryAddress = $("#different-delivery-address");
 	var deliveryForm = $(".address > .delivery");
+
+	var paymentOptions = $("input[name='payment']");
+	var creditCardOption = $("#creditCard");
+	var creditCardInfo = $(".credit-card-info");
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -185,6 +190,21 @@
 
 	};
 
+	var preparePaymentForm = function() {
+
+		paymentOptions.on('change', function(event) {
+			event.preventDefault();
+			if ( creditCardOption.prop('checked') ){
+				creditCardInfo.slideDown('400');
+				creditCardOption.parent().addClass('expanded');
+			}else{
+				creditCardInfo.slideUp('fast');
+				creditCardOption.parent().removeClass('expanded');
+			}
+		});
+
+	}
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
@@ -198,6 +218,7 @@
 		prepareCouponSwitch();
 		fixCheckboxLabelTouch();
 		prepareDeliveryForm();
+		preparePaymentForm();
 	});
 
 
