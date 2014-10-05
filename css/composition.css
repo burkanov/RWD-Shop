@@ -2193,19 +2193,21 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       display: none; }
     .checkout-progress-bar > .segment:last-child > .segment-data-wrapper:after {
       display: none; }
-    .checkout-progress-bar > .segment.done > .segment-data-wrapper {
-      text-decoration: none; }
-      .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter {
-        color: #196428; }
-        .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before {
-          content: "\e616";
-          font-size: 1rem;
-          display: inline-block;
-          margin-right: 0.15rem; }
-      .checkout-progress-bar > .segment.done > .segment-data-wrapper:hover > .counter, .checkout-progress-bar > .segment.done > .segment-data-wrapper:focus > .counter {
-        color: #60843e; }
-      .checkout-progress-bar > .segment.done > .segment-data-wrapper:active > .counter {
-        color: #143800; }
+    .checkout-progress-bar > .segment.done {
+      cursor: pointer; }
+      .checkout-progress-bar > .segment.done > .segment-data-wrapper {
+        text-decoration: none; }
+        .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter {
+          color: #196428; }
+          .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before {
+            content: "\e616";
+            font-size: 1rem;
+            display: inline-block;
+            margin-right: 0.15rem; }
+        .checkout-progress-bar > .segment.done > .segment-data-wrapper:hover > .counter, .checkout-progress-bar > .segment.done > .segment-data-wrapper:focus > .counter {
+          color: #60843e; }
+        .checkout-progress-bar > .segment.done > .segment-data-wrapper:active > .counter {
+          color: #143800; }
     .checkout-progress-bar > .segment.current > .segment-data-wrapper {
       font-weight: 800; }
     .checkout-progress-bar > .segment.disabled > .segment-data-wrapper {
@@ -2270,6 +2272,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   display: block;
   margin: 1rem 0; }
 .address > .continue {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin-top: 1rem; }
   .address > .continue:before {
     content: "\e3b1"; }
