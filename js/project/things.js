@@ -12,11 +12,13 @@
 	var searchField = $(".search-field");
 	var centralNavi = $(".central-navi");
 	var rememberButton = $(".remember-button");
-	var addToCartMessage = $(".variant-matrix").attr('data-add-to-card-message');
+	var addToCartMessage = $(".variant-matrix").attr("data-add-to-card-message");
 	var formSubmitTrigger = $(".form-submit-button");
 	var couponTrigger = $(".coupon > fieldset > legend");
 	var couponArea = $(".coupon > fieldset > div");
-	var checkboxLabel = $('.c-group > p > span');
+	var checkboxLabel = $(".c-group > p > span");
+	var activateDeliveryAddress = $("#different-delivery-address");
+	var deliveryForm = $(".address > .delivery");
 
 	var header = {};
 		header.selector = $(".module.header");
@@ -156,20 +158,31 @@
 	};
 
 	var fixCheckboxLabelTouch = function() {
-		checkboxLabel.click(function() {
-			
+
+		checkboxLabel.on('click', function(event) {
 			event.preventDefault();
-			
 			var checkbox = $(this).parent().parent().find('input:checkbox');
 			var isChecked = checkbox.is(':checked');
 
 			if(isChecked) {
-				checkbox.prop('checked',false);
+				checkbox.prop('checked', false).change();
 			} else {
-				checkbox.prop('checked', true);
+				checkbox.prop('checked', true).change();
 			}
 
 		});
+	};
+
+	var prepareDeliveryForm = function() {
+
+		activateDeliveryAddress.on('change', function(event) {
+			if ( $(this).prop('checked') ){
+				deliveryForm.slideDown('fast');
+			}else{
+				deliveryForm.hide();
+			}
+		});
+
 	};
 
 	$(document).ready(function () {
@@ -184,6 +197,7 @@
 		prepareFormSubmit();
 		prepareCouponSwitch();
 		fixCheckboxLabelTouch();
+		prepareDeliveryForm();
 	});
 
 
