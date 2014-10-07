@@ -1,0 +1,32 @@
+// Standard styles for module
+
+.content-navigation
+	display: block
+	background-color: $white
+	font-weight: 800
+	padding-left: 0.5rem
+	margin-top: 0.5rem
+	@extend %clearfix
+	> li
+		display: block
+		float: left
+		span
+			display: block
+			position: relative
+			line-height: 3rem
+			padding-right: 0.5rem
+			color: $fn-gray-medium
+		> a
+			@extend %pure
+			color: $fn-green
+			text-decoration: none
+			> span
+				padding-left: 1rem
+				color: #000000
+				&:before
+					@extend %cap-right
+					background: none
+					+border-radius(0)
+					color: #000000
+					font-size: 0.75rem
+					left: -1.25rem
