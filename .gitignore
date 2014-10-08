@@ -25,3 +25,7 @@
 *.sassc
 
 *.sassc
+
+*.sublime-project
+
+*.sublime-workspace
