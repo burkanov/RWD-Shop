@@ -49,6 +49,13 @@
 			> .segment-data-wrapper
 				&:after
 					display: none
+		&.current
+			> .segment-data-wrapper
+				font-weight: 800
+		&.disabled
+			> .segment-data-wrapper
+				color: $fn-gray-light
+		&.future,
 		&.done
 			cursor: pointer
 			> .segment-data-wrapper
@@ -68,12 +75,6 @@
 				&:active
 					> .counter
 						color: $fn-green-accent
-		&.current
-			> .segment-data-wrapper
-				font-weight: 800
-		&.disabled
-			> .segment-data-wrapper
-				color: $fn-gray-light
 		&:not(.current)
 			> .segment-data-wrapper
 				> .title

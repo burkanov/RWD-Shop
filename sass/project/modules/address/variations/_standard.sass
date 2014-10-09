@@ -12,8 +12,7 @@
 			@extend %base-headline
 			position: relative
 			font-size: 1.25rem
-		> .i-group,
-		> .multi-holder > .i-group
+		.i-group
 			@extend %field-in-label
 		> .multi-holder
 			display: -webkit-flex
@@ -64,19 +63,7 @@
 		margin-bottom: 1.5rem
 		display: none
 	> .c-group
-		position: relative
-		display: block
-		padding-left: 1.5rem
-		line-height: 1.25
-		margin: 0.5rem 0
-		> input
-			position: absolute
-			left: 0
-			top: -0.15rem
-			width: 1rem
-			height: 1rem
-		> p
-			display: block
+		@extend %checkbox-container
 		&.lined
 			border-bottom: 1px solid $fn-gray-light
 			margin: 0 -0.5rem
@@ -107,7 +94,7 @@
 				left: 0.5rem
 				top: 0.85rem
 		&.different-delivery-address-wrapper
-			margin: 1.5rem 0
+			margin-top: 1.5rem
 	.small
 		@extend %small
 		display: block

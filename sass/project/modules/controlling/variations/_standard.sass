@@ -1,0 +1,42 @@
+// Standard styles for module
+
+.controlling
+	display: block
+	> .option
+		@extend %content-container
+		position: relative
+		margin-top: 0.5rem
+		> .title
+			@extend %base-headline
+			font-size: 1.25rem
+			margin-bottom: 0.5rem
+		> .details
+			line-height: 1.25
+			display: block
+			width: calc(100% - 6rem)
+		> .edit
+			position: absolute
+			right: 0.5rem
+			bottom: 0.5rem
+			@extend %pointer-link
+	> .invoice-table-wrapper
+		display: block
+		background-color: $white
+		padding: 0.5rem
+		> .edit-card
+			@extend %pointer-link
+			margin: 0.5rem 0 0.5rem 0
+		> .c-group
+			@extend %checkbox-container
+			margin: 2rem 0 1rem 0
+		> .small
+			@extend %small
+			display: block
+			margin-left: 1rem
+		> .continue
+			@extend %primary-button
+			font-size: 1.25rem
+			margin: 2rem 0 1rem 0
+			&:before
+				@extend %cap-left
+				content: "\e3b1"

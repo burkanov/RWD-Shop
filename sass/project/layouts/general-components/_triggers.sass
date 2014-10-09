@@ -47,7 +47,7 @@ a
 	text-align: left
 	padding-left: 3.5rem
 	height: 3rem
-	font-weight: bold
+	font-weight: 800
 	+box-shadow(0 2px 2px rgba(0, 0, 0, 0.25))
 	+user-select()
 	+user-drag()
@@ -91,3 +91,13 @@ a
 	&:active
 		background-color: $fn-gray-medium
 		+box-shadow(inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35))
+
+%pointer-link
+	display: inline-block
+	text-decoration: none
+	&:before
+		content: "\e3b1"
+		@extend [class^="icon-"]
+		font-size: 0.75rem
+	> span
+		text-decoration: underline
