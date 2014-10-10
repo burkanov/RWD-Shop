@@ -3,8 +3,7 @@
 .address
 	@extend %content-container
 	> .invoice,
-	> .delivery,
-	> .credit-card-info
+	> .delivery
 		> .attention
 			display: block
 			line-height: 1.25
@@ -15,13 +14,7 @@
 		.i-group
 			@extend %field-in-label
 		> .multi-holder
-			display: -webkit-flex
-			display: flex
-			-webkit-flex-direction: row
-			flex-direction: row
-			> *
-				-webkit-flex: auto
-				flex: auto
+			@extend %simple-flex
 			> .title-wrapper,
 			> .zip-wrapper
 				max-width: 5rem
@@ -55,44 +48,11 @@
 		> .card-type-wrapper
 			> select
 				@extend %full-select
-	> .credit-card-info
-		display: none
-		padding-bottom: 2rem
-		border-bottom: 1px solid $fn-gray-light
 	> .delivery
 		margin-bottom: 1.5rem
 		display: none
 	> .c-group
 		@extend %checkbox-container
-		&.lined
-			border-bottom: 1px solid $fn-gray-light
-			margin: 0 -0.5rem
-			padding: 1rem 1rem 1rem 2rem
-			> .title-wrapper
-				@extend %clearfix
-				> .title
-					@extend %base-headline
-					margin-right: 1rem
-					> .conditions
-						display: block
-						font-weight: normal
-						font-style: italic
-				> .title,
-				> .illustration
-					float: left
-				> .illustration
-					display: block
-					height: 1.5rem
-					width: 3rem
-					margin-top: -0.25rem
-					float: right
-					> img
-						display: block
-						height: 100%
-						width: auto
-			> input
-				left: 0.5rem
-				top: 0.85rem
 		&.different-delivery-address-wrapper
 			margin-top: 1.5rem
 	.small
@@ -101,11 +61,3 @@
 		margin: 1rem 0
 	> .continue
 		@extend %next-action-button
-	&.payment
-		padding-top: 0
-		> .c-group
-			&.lined
-				&.expanded
-					border-bottom: none
-		> .continue
-			margin-top: 2rem

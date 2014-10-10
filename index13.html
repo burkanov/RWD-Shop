@@ -49,19 +49,19 @@
 			</li>
 		</ul>
 
-		<form class="module address payment" method="get" action="index14.html">
-			<label class="c-group lined">
-				<input type="radio" name="payment" id="creditCard" value="creditCard" />
-				<div class="title-wrapper">
-					<span class="title">Kreditkarte</span>
-					<div class="illustration">
-						<img src="img/visa-logo.svg" alt="Visa">
-					</div>
-					<div class="illustration">
-						<img src="img/master-card-logo.svg"alt="Master Card">
-					</div>
+		<form class="module payment" method="get" action="index14.html">
+			
+			<div class="unilable illustrated credit-card">
+				<input type="radio" name="payment-kind" value="credit-card" />
+				<span>Kreditkarte</span>
+				<div class="illustration">
+					<img src="img/visa-logo.svg" alt="Visa">
 				</div>
-			</label>
+				<div class="illustration">
+					<img src="img/master-card-logo.svg" alt="Master Card">
+				</div>
+			</div>
+
 			<fieldset class="credit-card-info">
 				<label class="card-type-wrapper i-group">
 					<span>Kartentyp</span>
@@ -120,27 +120,27 @@
 					<a href="#" class="explain-securitry-code">Was ist das?</a>
 				</div>
 				<p class="small">* Erforderliche Angaben</p>
+
+				<a class="continue form-submit-button"><span>Weiter</span></a>
+
 			</fieldset>
 
-			<label class="c-group lined">
-				<input type="radio" name="payment" id="opt2" value="opt2" />
-				<div class="title-wrapper">
-					<span class="title">Sofort&uuml;berweisung</span>
-					<div class="illustration">
-						<!-- need an image here -->
-					</div>
+			<div class="unilable illustrated">
+				<input type="radio" name="payment-kind" value="prepaid" />
+				<span>Vorauskasse</span>
+				<div class="illustration">
+					<img src="img/vorkasse-logo.svg" alt="Vorauskasse">
 				</div>
-			</label>
-			<label class="c-group lined">
-				<input type="radio" name="payment" id="opt3" value="opt3" />
-				<div class="title-wrapper">
-					<span class="title">PayPal</span>
-					<div class="illustration">
-						<img src="img/paypal-logo.svg" alt="Visa">
-					</div>
+			</div>
+
+			<div class="unilable illustrated">
+				<input type="radio" name="payment-kind" value="paypal" />
+				<span>PayPal</span>
+				<div class="illustration">
+					<img src="img/paypal-logo.svg" alt="PayPal">
 				</div>
-			</label>
-			<a class="continue form-submit-button"><span>Weiter</span></a>
+			</div>
+
 		</form>
 
 		<footer>

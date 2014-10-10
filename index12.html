@@ -49,26 +49,17 @@
 			</li>
 		</ul>
 
-		<form class="module address" method="get" action="index13.html">
-			<label class="c-group lined">
-				<input type="radio" name="delivery" id="opt1" value="opt1" />
-				<div class="title-wrapper">
-					<span class="title">
-						Standardlieferung
-						<em class="conditions">2-3 Werktage 0,00 &euro;</em>
-					</span>
-				</div>
-			</label>
-			<label class="c-group lined">
-				<input type="radio" name="delivery" id="opt2" value="opt2" />
-				<div class="title-wrapper">
-					<span class="title">
-						Expresslieferung
-						<em class="conditions">1-2 Werktage 5,00 &euro;</em>
-					</span>
-				</div>
-			</label>
-			<a class="continue form-submit-button"><span>Weiter</span></a>
+		<form class="module delivery" method="get" action="index13.html">
+			<div class="unilable autosubmit current">
+				<input type="radio" name="delivery-kind" value="standard-delivery" />
+				<span class="delivery-type">Standardlieferung</span>
+				<span class="delivery-details">2-3 Werktage 0,00 €</span>
+			</div>
+			<div class="unilable autosubmit">
+				<input type="radio" name="delivery-kind" value="express-delivery" />
+				<span class="delivery-type">Expresslieferung</span>
+				<span class="delivery-details">2-3 Werktage 5,99 €</span>
+			</div>
 		</form>
 
 		<footer>

@@ -17,12 +17,13 @@
 	var couponTrigger = $(".coupon > fieldset > legend");
 	var couponArea = $(".coupon > fieldset > div");
 	var checkboxLabel = $(".c-group > p > span");
+	var fakeLabels = $(".unilable");
 
 	var activateDeliveryAddress = $("#different-delivery-address");
 	var deliveryForm = $(".address > .delivery");
 
-	var paymentOptions = $("input[name='payment']");
-	var creditCardOption = $("#creditCard");
+	var paymentOptions = $(".module.payment .unilable > input[name='payment-kind']");
+	var creditCardMarker = "credit-card";
 	var creditCardInfo = $(".credit-card-info");
 
 	var header = {};
@@ -162,21 +163,6 @@
 		});
 	};
 
-	var fixCheckboxLabelTouch = function() {
-
-		checkboxLabel.on('click', function(event) {
-			event.preventDefault();
-			var checkbox = $(this).parent().parent().find('input:checkbox');
-			var isChecked = checkbox.is(':checked');
-
-			if(isChecked) {
-				checkbox.prop('checked', false).change();
-			} else {
-				checkbox.prop('checked', true).change();
-			}
-
-		});
-	};
 
 	var prepareDeliveryForm = function() {
 
@@ -192,18 +178,21 @@
 
 	var preparePaymentForm = function() {
 
-		paymentOptions.on('change', function(event) {
-			event.preventDefault();
-			if ( creditCardOption.prop('checked') ){
-				creditCardInfo.slideDown('400');
-				creditCardOption.parent().addClass('expanded');
-			}else{
-				creditCardInfo.slideUp('fast');
-				creditCardOption.parent().removeClass('expanded');
-			}
+		paymentOptions.on('change', function() {
+			alert(1);
 		});
 
-	}
+	};
+
+	var imitateLabels = function() {
+
+		fakeLabels.click(function(event) {
+			$(this).find('input').prop("checked", true);
+			if ($(this).hasClass('autosubmit')){
+				$(this).closest('form').submit();
+			}
+		});
+	};
 
 	$(document).ready(function () {
 		FastClick.attach(document.body);
@@ -216,9 +205,9 @@
 		prepareBuyingBubble();
 		prepareFormSubmit();
 		prepareCouponSwitch();
-		fixCheckboxLabelTouch();
 		prepareDeliveryForm();
 		preparePaymentForm();
+		imitateLabels();
 	});
 
 

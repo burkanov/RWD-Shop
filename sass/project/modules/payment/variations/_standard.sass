@@ -1,0 +1,62 @@
+// Standard styles for module
+
+.payment
+	@extend %content-container
+	> .unilable
+		display: block
+		padding: 0.5rem
+		height: auto
+		position: relative
+		@extend %clearfix
+		@extend %secondary-button
+		margin-bottom: 0.5rem
+		min-height: 3rem
+		> input
+			// @extend %away
+		> span
+			font-size: 1rem
+			padding: 0.25rem 0 0 0
+			display: block
+			float: left
+		> .illustration
+			display: block
+			float: right
+			width: 4rem
+			height: auto
+			> img
+				width: 100%
+				height: auto
+			&:nth-child(even)
+				margin-right: 0.5rem
+		&.illustrated
+			padding-bottom: 0
+		> fieldset
+			display: none
+	> .credit-card-info
+		display: none
+		margin-top: 1rem
+		margin-bottom: 3rem
+		.i-group
+			@extend %field-in-label
+			&.card-type-wrapper,
+			&.expiration-date-month-wrapper,
+			&.expiration-date-year-wrapper
+				> select
+					@extend %full-select
+			&.expiration-date-month-wrapper,
+			&.expiration-date-year-wrapper,
+			&.card-security-code-wrapper,
+			&.explain-securitry-code
+				max-width: 50%
+			&.expiration-date-month-wrapper,
+			&.card-security-code-wrapper
+				padding-right: 0.5rem
+		> .multi-holder
+			@extend %simple-flex
+			> .explain-securitry-code
+				text-align: center
+				line-height: 3.5rem
+		> .small
+			@extend %small
+		> .continue
+			@extend %next-action-button
