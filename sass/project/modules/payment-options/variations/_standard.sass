@@ -2,18 +2,12 @@
 
 .payment-options
 	padding-right: 0
-	width: 100%
-	@extend %clearfix
+	width: 100%	
 	margin-bottom: 0.5rem
-	display: -webkit-flex
-	display: flex
-	-webkit-flex-direction: row
-	flex-direction: row
+	@extend %simple-flex
 	> li
 		background-color: $white
 		width: 25%
-		-webkit-flex: auto
-		flex: auto
 		margin-right: 0.5rem
 		> img
 			display: block

@@ -1,0 +1,18 @@
+// Standard styles for module
+
+.post-purchase
+	@extend %content-container
+	> .title
+		@extend %base-headline
+		font-size: 1.25rem
+		line-height: 1.25
+		color: $fn-green
+		margin-bottom: 1rem
+		&:before
+			content: "\e616"
+			@extend [class^="icon-"]
+			display: inline-block
+			margin-right: 0.25rem
+	> .description
+		display: block
+		margin-bottom: 1rem

@@ -78,7 +78,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .main >
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon > fieldset > legend:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, .checkout-progress-bar > .segment.future > .segment-data-wrapper > .counter:before, .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before, .invoice-table > tbody > tr.coupon-data > .description > .remove-coupon:before, [class*=" icon-"] {
+.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, .checkout-progress-bar > .segment.future > .segment-data-wrapper > .counter:before, .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before, .invoice-table > tbody > tr.coupon-data > .description > .remove-coupon:before, .post-purchase > .title:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -192,7 +192,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   -moz-border-radius: 0px;
   border-radius: 0px; }
 
-.header:after, .main:after, .main > .list-map-switch:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .payment-options:after, .social-bar:after, .breadcrumb:after, .filtering:after, .products-set:after, .products-set > ul > li > a:after,
+.header:after, .main:after, .main > .list-map-switch:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .social-bar:after, .breadcrumb:after, .filtering:after, .products-set:after, .products-set > ul > li > a:after,
 .products-set > ul > li > .product-wrapper:after, .products-set > ul > li > a > .description > div:after,
 .products-set > ul > li > .product-wrapper > .description > div:after, .module.cart > .products-set > ul > li:after,
 .module.controlling > .products-set > ul > li:after, .delivery-status > .indicator:after, .amount-control-bar:after, .address > .c-group.lined > .title-wrapper:after, .content-navigation:after, .content-header:after {
@@ -203,7 +203,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 @media screen {
   .login-dispatcher > .ld-section > label > span, .pass-recovery > .request > label > span, .address > .invoice .i-group > span,
   .address > .delivery .i-group > span,
-  .address > .credit-card-info .i-group > span, .search > .search-wrapper > .search-block-title, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .remember-button > span, .cart > .coupon > fieldset > div > label > span, .checkout-progress-bar > .segment:not(.current) > .segment-data-wrapper > .title {
+  .address > .credit-card-info .i-group > span, .search > .search-wrapper > .search-block-title, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .variant-matrix .remember-button > span, .cart > .coupon > fieldset > div > label > span, .checkout-progress-bar > .segment:not(.current) > .segment-data-wrapper > .title {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -226,6 +226,15 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.payment-options {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+  .payment-options > * {
+    -webkit-flex: auto;
+    flex: auto; }
 
 /* A place for links, buttons, tabs and other things that react on user input */
 a {
@@ -554,7 +563,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .product-delivery-info > div ul h4, footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
 .variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .store-finder-list > .store > .info > .store-title, .address > .invoice > .title,
 .address > .delivery > .title,
-.address > .credit-card-info > .title, .address > .c-group.lined > .title-wrapper > .title, .controlling > .option > .title, .content > h2, .content > h3 {
+.address > .credit-card-info > .title, .address > .c-group.lined > .title-wrapper > .title, .controlling > .option > .title, .post-purchase > .title, .content > h2, .content > h3 {
   display: block;
   font-size: 1rem;
   font-weight: 800;
@@ -594,7 +603,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35); }
 
-.variant-matrix, .cart, .login-dispatcher > .ld-section, .pass-recovery > .back, .pass-recovery > .request, .top-message, .store-finder-list > .store, .address, .controlling > .option {
+.variant-matrix, .cart, .login-dispatcher > .ld-section, .pass-recovery > .back, .pass-recovery > .request, .top-message, .store-finder-list > .store, .address, .controlling > .option, .post-purchase {
   display: block;
   background-color: white;
   padding: 0.5rem; }
@@ -1335,16 +1344,10 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 .payment-options {
   padding-right: 0;
   width: 100%;
-  margin-bottom: 0.5rem;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row; }
+  margin-bottom: 0.5rem; }
   .payment-options > li {
     background-color: white;
     width: 25%;
-    -webkit-flex: auto;
-    flex: auto;
     margin-right: 0.5rem; }
     .payment-options > li > img {
       display: block;
@@ -1796,7 +1799,6 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   cursor: pointer; }
   .remember-button:before {
     content: "\e679";
-    display: block;
     font-size: 1.25rem;
     padding: 0.5rem;
     text-align: center;
@@ -1804,16 +1806,26 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     color: #e7001f;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    margin-right: 0.25rem; }
+  .remember-button > span {
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-right: 0.5rem;
+    margin-right: -0.5rem; }
   .remember-button.on:before {
     content: "\e64f"; }
-  .remember-button:hover:before, .remember-button:focus:before {
-    background-color: #f3faff;
-    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); }
-  .remember-button:active, .remember-button:visited {
+  .remember-button:hover, .remember-button:focus {
     background: none; }
+    .remember-button:hover:before, .remember-button:focus:before {
+      background-color: #f3faff;
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); }
+  .remember-button:active, .remember-button:visited {
+    background: none;
+    color: #e7001f; }
     .remember-button:active:before, .remember-button:visited:before {
       -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -1836,7 +1848,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   cursor: pointer;
   text-align: right;
   position: relative;
-  min-width: 3rem; }
+  min-width: 3.75rem; }
   .add-to-cart-button:after {
     position: absolute;
     right: 0.5rem;
@@ -1914,9 +1926,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   .cart > h2 > div {
     position: absolute;
     right: 0;
-    top: 0.15rem;
-    font-weight: normal;
-    font-size: 1rem; }
+    top: 0; }
 .cart > .coupon {
   display: block; }
   .cart > .coupon > fieldset > legend {
@@ -2441,6 +2451,19 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       color: #333333; }
   .invoice-table > tbody > tr.coupon-data > .correction-sum {
     color: #196428; }
+
+.post-purchase > .title {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #196428;
+  margin-bottom: 1rem; }
+  .post-purchase > .title:before {
+    content: "\e616";
+    display: inline-block;
+    margin-right: 0.25rem; }
+.post-purchase > .description {
+  display: block;
+  margin-bottom: 1rem; }
 
 .content {
   display: block;

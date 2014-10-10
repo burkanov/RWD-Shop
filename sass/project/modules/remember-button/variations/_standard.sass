@@ -5,12 +5,10 @@
 	@extend %pure
 	text-decoration: none
 	cursor: pointer
-	> span
-		@extend %away
+	%simple-flex
 	&:before
 		content: "\e679"
 		@extend [class^="icon-"]
-		display: block
 		font-size: 1.25rem
 		padding: 0.5rem
 		text-align: center
@@ -20,20 +18,34 @@
 		@extend %fn-gray-grad
 		@extend %common-transition
 		+box-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
+		margin-right: 0.25rem
+	> span
+		white-space: nowrap
+		font-size: 1rem
+		font-weight: normal
+		padding-right: 0.5rem
+		margin-right: -0.5rem
 	&.on
 		&:before
 			content: "\e64f"
 	&:hover,
 	&:focus
+		background: none
 		&:before
 			background-color: $fn-blue-lightest
 			+box-shadow(0 2px 3px rgba(0, 0, 0, 0.3))
 	&:active,
 	&:visited
 		background: none
+		color: $fn-red
 		&:before
 			+box-shadow(0 1px 1px rgba(0, 0, 0, 0.25))
 	&.mini
 		&:before
 			font-size: 0.85rem
 			padding: 0.25rem
+
+.variant-matrix
+	.remember-button
+		> span
+			@extend %away
