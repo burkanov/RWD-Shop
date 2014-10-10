@@ -2,6 +2,7 @@
 
 .post-purchase
 	@extend %content-container
+	margin-top: 0.5rem
 	> .title
 		@extend %base-headline
 		font-size: 1.25rem
@@ -16,3 +17,15 @@
 	> .description
 		display: block
 		margin-bottom: 1rem
+	> .create-new-account
+		display: block
+		margin-top: 2rem
+		> .title
+			@extend %base-headline
+			font-size: 1.25rem
+		> label
+			@extend %field-in-label
+		> .send
+			@extend %next-action-button
+	> .forward
+		@extend %next-action-button

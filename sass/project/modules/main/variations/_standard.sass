@@ -12,14 +12,12 @@
 		+opacity(25)
 	> .store-finder,
 	> .to-payment
-		@extend %primary-button
-		font-size: 1.25rem
+		@extend %next-action-button
+	> .store-finder
 		&:before
-			@extend %cap-left
+			content: "\e6b3"
 	> .to-payment
 		margin: 1rem 0
-		&:before
-			content: "\e3b1"
 	> .product-video
 		@extend %primary-button
 		padding: 0
