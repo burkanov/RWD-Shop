@@ -215,8 +215,7 @@
 			}
 
 			if ($(this).hasClass('autosubmit')){
-				// $(this).closest('form').submit();
-				console.log("submit form");
+				$(this).closest('form').submit();
 			}
 		});
 	};
