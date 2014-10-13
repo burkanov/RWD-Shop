@@ -163,7 +163,6 @@
 		});
 	};
 
-
 	var prepareDeliveryForm = function() {
 
 		activateDeliveryAddress.on('change', function(event) {
@@ -177,7 +176,7 @@
 	};
 
 	var openForm = function(selector, action) {
-		var subformName = selector.attr('data-subform-pointer');
+		var subformName = defineSubformName(selector);
 		var formToOpen = $('.subform[data-subform="' + subformName + '"]');
 
 		if (action == 'open'){
@@ -192,11 +191,9 @@
 		formsToClose.hide();
 	};
 
-	var preparePaymentForm = function() {
-		var currentFormBadge = $('.unilable.current');
-		if ( currentFormBadge.attr('data-subform-pointer') ){
-			openForm(currentFormBadge, 'open');
-		}
+	var defineSubformName = function(selector) {
+		var subformName = selector.attr('data-subform-pointer');
+		return subformName;
 	};
 
 	var imitateLabels = function() {
@@ -208,7 +205,10 @@
 			$(this).find('input').prop("checked", true);
 
 			if ( $(this).attr('data-subform-pointer') ){
+
 				openForm( $(this), 'open' );
+				var subformName = defineSubformName( $(this) );
+
 				closeForms('.subform:not([data-subform="' + subformName + '"])');
 			}else{
 				closeForms('.subform');
@@ -218,6 +218,13 @@
 				$(this).closest('form').submit();
 			}
 		});
+	};
+
+	var preparePaymentForm = function() {
+		var currentFormBadge = $('.unilable.current');
+		if ( currentFormBadge.attr('data-subform-pointer') ){
+			openForm(currentFormBadge, 'open');
+		}
 	};
 
 	var prepareIBAN = function() {
