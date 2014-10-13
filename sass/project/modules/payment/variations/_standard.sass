@@ -5,6 +5,7 @@
 	> .unilable
 		display: block
 		padding: 0.5rem
+		padding-left: 2rem
 		height: auto
 		position: relative
 		@extend %clearfix
@@ -12,7 +13,7 @@
 		margin-bottom: 0.5rem
 		min-height: 3rem
 		> input
-			// @extend %away
+			@extend %away
 		> span
 			font-size: 1rem
 			padding: 0.25rem 0 0 0
@@ -32,12 +33,29 @@
 			padding-bottom: 0
 		> fieldset
 			display: none
-	> .credit-card-info
+		&.current
+			color: $fn-green
+			&:before
+				@extend [class^="icon-"]
+				content: "\e616"
+				position: absolute
+				font-size: 1.25rem
+				left: 0.5rem
+				top: 0.75rem
+	> .subform
 		display: none
-		margin-top: 1rem
+	> [data-subform="credit-card-info"],
+	> [data-subform="bank-booking-info"]
+		padding-top: 1rem
 		margin-bottom: 3rem
 		.i-group
 			@extend %field-in-label
+		> .small
+			@extend %small
+		> .continue
+			@extend %next-action-button
+	> [data-subform="credit-card-info"]
+		.i-group
 			&.card-type-wrapper,
 			&.expiration-date-month-wrapper,
 			&.expiration-date-year-wrapper
@@ -56,7 +74,35 @@
 			> .explain-securitry-code
 				text-align: center
 				line-height: 3.5rem
-		> .small
-			@extend %small
-		> .continue
-			@extend %next-action-button
+	> [data-subform="bank-booking-info"]
+		> .iban-unknown
+			float: right
+			text-decoration: underline
+			cursor: pointer
+			clear: right
+			display: inline-block
+		> .iban-calculator
+			display: none
+			padding-top: 1rem
+			clear: both
+			float: none
+			> .calculate
+				@extend %next-action-button
+		> .account-owner
+			padding-top: 2rem
+			clear: both
+			float: none
+			@extend %simple-flex
+			.title
+				@extend %base-headline
+				font-size: 1.25rem
+				line-height: 1
+			> .change-button-container
+				text-align: right
+		> p
+			display: block
+			margin-top: 1rem
+			> a
+				display: inline
+			> strong
+				font-weight: bold

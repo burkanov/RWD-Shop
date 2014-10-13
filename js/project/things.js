@@ -176,21 +176,58 @@
 
 	};
 
+	var openForm = function(selector, action) {
+		var subformName = selector.attr('data-subform-pointer');
+		var formToOpen = $('.subform[data-subform="' + subformName + '"]');
+
+		if (action == 'open'){
+			formToOpen.slideDown('400');
+		}else{
+			return formToOpen;
+		}
+	};
+
+	var closeForms = function(formsSelector) {
+		var formsToClose = $(formsSelector);
+		formsToClose.hide();
+	};
+
 	var preparePaymentForm = function() {
-
-		paymentOptions.on('change', function() {
-			alert(1);
-		});
-
+		var currentFormBadge = $('.unilable.current');
+		if ( currentFormBadge.attr('data-subform-pointer') ){
+			openForm(currentFormBadge, 'open');
+		}
 	};
 
 	var imitateLabels = function() {
 
 		fakeLabels.click(function(event) {
+
+			fakeLabels.removeClass('current');
+			$(this).addClass('current');
 			$(this).find('input').prop("checked", true);
-			if ($(this).hasClass('autosubmit')){
-				$(this).closest('form').submit();
+
+			if ( $(this).attr('data-subform-pointer') ){
+				openForm( $(this), 'open' );
+				closeForms('.subform:not([data-subform="' + subformName + '"])');
+			}else{
+				closeForms('.subform');
 			}
+
+			if ($(this).hasClass('autosubmit')){
+				// $(this).closest('form').submit();
+				console.log("submit form");
+			}
+		});
+	};
+
+	var prepareIBAN = function() {
+		var showIBANButton = $(".iban-unknown");
+		var conainerIBAN = $(".iban-calculator");
+
+		showIBANButton.click(function(event) {
+			showIBANButton.hide();
+			conainerIBAN.slideDown('400');
 		});
 	};
 
@@ -208,6 +245,7 @@
 		prepareDeliveryForm();
 		preparePaymentForm();
 		imitateLabels();
+		prepareIBAN();
 	});
 
 

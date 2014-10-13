@@ -51,7 +51,7 @@
 
 		<form class="module payment" method="get" action="index14.html">
 			
-			<div class="unilable illustrated credit-card">
+			<div class="unilable illustrated" data-subform-pointer="credit-card-info">
 				<input type="radio" name="payment-kind" value="credit-card" />
 				<span>Kreditkarte</span>
 				<div class="illustration">
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 
-			<fieldset class="credit-card-info">
+			<fieldset class="subform" data-subform="credit-card-info">
 				<label class="card-type-wrapper i-group">
 					<span>Kartentyp</span>
 					<select name="card-type" id="card-type">
@@ -125,7 +125,7 @@
 
 			</fieldset>
 
-			<div class="unilable illustrated">
+			<div class="unilable illustrated autosubmit">
 				<input type="radio" name="payment-kind" value="prepaid" />
 				<span>Vorauskasse</span>
 				<div class="illustration">
@@ -133,12 +133,69 @@
 				</div>
 			</div>
 
-			<div class="unilable illustrated">
+			<div class="unilable illustrated autosubmit">
 				<input type="radio" name="payment-kind" value="paypal" />
 				<span>PayPal</span>
 				<div class="illustration">
 					<img src="img/paypal-logo.svg" alt="PayPal">
 				</div>
+			</div>
+
+			<div class="unilable" data-subform-pointer="bank-booking-info">
+				<input type="radio" name="payment-kind" value="bank-booking" />
+				<span>Bankabbuchung</span>
+			</div>
+
+			<fieldset class="subform" data-subform="bank-booking-info">
+				
+				<label class="i-group">
+					<span>IBAN</span>
+					<input type="text" name="iban" placeholder="IBAN*" />
+				</label>
+
+				<a class="iban-unknown">IBAN nicht bekannt</a>
+
+				<div class="iban-calculator">
+					<label class="i-group">
+						<span>Kontonummer</span>
+						<input type="text" name="bank-account-number" placeholder="Kontonummer*" />
+					</label>
+					<label class="i-group">
+						<span>Bankleitzahl</span>
+						<input type="text" name="bank-registration-number" placeholder="Bankleitzahl*" />
+					</label>
+					<a class="calculate"><span>IBAN berechnen</span></a>
+				</div>
+
+				<div class="account-owner">
+					<div>
+						<h3 class="title">Kontoinhaber*</h3>
+						Janina Bolz
+					</div>
+					<div class="change-button-container">
+						<a href="index11.html">
+							&auml;ndern
+						</a>
+					</div>
+				</div>
+
+				<p>
+					<strong>Hinweis:</strong> Mit Auswahl der Zahlart Bankeinzug erteile ich die <a href="#">Einwilligung zum Bankeinzug nach dem SEPA-Lastschriftverfahren.</a>
+				</p>
+
+				<p>
+					<strong>Hinweis:</strong> Mit der Zahlungsart Bankabbuchung bieten wir - positive Bonit&auml;tspr&uuml;fung vorausgesetzt - die M&ouml;glichkeit, deine Bestellung bequem per Kontoeinzug zu begleichen. Ich habe die <a href="#">Einwilligungserkl&auml;rung</a> zur Bonit&auml;tsprüfung gelesen und stimme dieser zu.
+				</p>
+
+				<p class="small">* Erforderliche Angaben</p>
+
+				<a class="continue form-submit-button"><span>Weiter</span></a>
+
+			</fieldset>
+
+			<div class="unilable autosubmit">
+				<input type="radio" name="payment-kind" value="invoice" />
+				<span>Rechnung</span>
 			</div>
 
 		</form>
