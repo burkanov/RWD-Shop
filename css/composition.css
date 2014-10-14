@@ -155,9 +155,9 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-a, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
+a, .cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
 .address > .delivery .i-group > input, .post-purchase > .create-new-account > label > input, .payment > [data-subform="credit-card-info"] .i-group > input,
-.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .search > .search-wrapper > .form-submit, .remember-button:before, .add-to-cart-button {
+.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .search > .search-wrapper > .form-submit, .remember-button:before, .add-to-cart-button {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
@@ -178,9 +178,9 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .main > .to-payment, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .address > .continue, .controlling > .invoice-table-wrapper > .continue, .post-purchase > .create-new-account > .send, .post-purchase > .forward, .payment > [data-subform="credit-card-info"] > .continue,
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .main > .product-video, .main > .list-map-switch > .list-view,
-.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
+.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .store-finder-list > .store > .route > .route-calculation, .cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
 .address > .delivery .i-group > input, .post-purchase > .create-new-account > label > input, .payment > [data-subform="credit-card-info"] .i-group > input,
-.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
+.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
 .products-set > ul > li > .product-wrapper, .remember-button, .amount-control-bar > .delete,
 .amount-control-bar > .decrease,
 .amount-control-bar > .increase, .store-finder-list > .store > .info > .store-title, .invoice-table > tbody.coupon td > .remove-coupon, .content-navigation > li > a {
@@ -189,9 +189,9 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   border: 0;
   outline: none; }
 
-.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
+.cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
 .address > .delivery .i-group > input, .post-purchase > .create-new-account > label > input, .payment > [data-subform="credit-card-info"] .i-group > input,
-.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .search > .search-wrapper > .form-submit {
+.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .search > .search-wrapper > .form-submit {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -208,9 +208,9 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   clear: both; }
 
 @media screen {
-  .login-dispatcher > .ld-section > label > span, .pass-recovery > .request > label > span, .address > .invoice .i-group > span,
+  .cart > .coupon > fieldset > div > label > span, .login-dispatcher > .ld-section > label > span, .pass-recovery > .request > label > span, .address > .invoice .i-group > span,
   .address > .delivery .i-group > span, .post-purchase > .create-new-account > label > span, .payment > [data-subform="credit-card-info"] .i-group > span,
-  .payment > [data-subform="bank-booking-info"] .i-group > span, .search > .search-wrapper > .search-block-title, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .variant-matrix .remember-button > span, .cart > .coupon > fieldset > div > label > span, .checkout-progress-bar > .segment:not(.current) > .segment-data-wrapper > .title, .delivery > .unilable > input, .payment > .unilable > input {
+  .payment > [data-subform="bank-booking-info"] .i-group > span, .search > .search-wrapper > .search-block-title, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a > span, .filtering > .filtering-area > select, .variant-matrix .remember-button > span, .checkout-progress-bar > .segment:not(.current) > .segment-data-wrapper > .title, .delivery > .unilable > input, .payment > .unilable > input {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -224,9 +224,9 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .main > .to-payment, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .address > .continue, .controlling > .invoice-table-wrapper > .continue, .post-purchase > .create-new-account > .send, .post-purchase > .forward, .payment > [data-subform="credit-card-info"] > .continue,
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .main > .product-video, .main > .list-map-switch > .list-view,
-.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .store-finder-list > .store > .route > .route-calculation, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
+.main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .store-finder-list > .store > .route > .route-calculation, .cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
 .address > .delivery .i-group > input, .post-purchase > .create-new-account > label > input, .payment > [data-subform="credit-card-info"] .i-group > input,
-.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label, .pass-recovery > .request > label, .address > .invoice .i-group,
+.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label, .login-dispatcher > .ld-section > label, .pass-recovery > .request > label, .address > .invoice .i-group,
 .address > .delivery .i-group, .post-purchase > .create-new-account > label, .payment > [data-subform="credit-card-info"] .i-group,
 .payment > [data-subform="bank-booking-info"] .i-group, .address > .c-group, .controlling > .invoice-table-wrapper > .c-group, .m-carousel.m-fluid > .m-carousel-inner > .m-item, .pbox > .description, .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox, .variant-matrix > li > ul > .product-single > .ghost,
 .variant-matrix > li > ul > .product-single > .ghost > .ghost, .variant-matrix > li > ul > .product-single > .message,
@@ -627,6 +627,9 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
     margin-top: 1rem;
     line-height: 1.25; }
 
+.error {
+  color: #e7001f; }
+
 .navi.central > li > div > .second-level-navi, .ingredients, .product-details, .product-ratings-overview, .product-delivery-info {
   display: block;
   background-color: #d4d2ce;
@@ -641,33 +644,33 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   background-color: white;
   padding: 0.5rem; }
 
-.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
+.cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
 .address > .delivery .i-group > input, .post-purchase > .create-new-account > label > input, .payment > [data-subform="credit-card-info"] .i-group > input,
-.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input {
+.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field {
   font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .login-dispatcher > .ld-section > label > input:-moz-placeholder, .pass-recovery > .request > label > input:-moz-placeholder, .address > .invoice .i-group > input:-moz-placeholder,
+  .cart > .coupon > fieldset > div > label > input:-moz-placeholder, .login-dispatcher > .ld-section > label > input:-moz-placeholder, .pass-recovery > .request > label > input:-moz-placeholder, .address > .invoice .i-group > input:-moz-placeholder,
   .address > .delivery .i-group > input:-moz-placeholder, .post-purchase > .create-new-account > label > input:-moz-placeholder, .payment > [data-subform="credit-card-info"] .i-group > input:-moz-placeholder,
-  .payment > [data-subform="bank-booking-info"] .i-group > input:-moz-placeholder, .search > .search-wrapper > .search-field:-moz-placeholder, .cart > .coupon > fieldset > div > label > input:-moz-placeholder {
+  .payment > [data-subform="bank-booking-info"] .i-group > input:-moz-placeholder, .search > .search-wrapper > .search-field:-moz-placeholder {
     color: #999999; }
-  .login-dispatcher > .ld-section > label > input:-ms-input-placeholder, .pass-recovery > .request > label > input:-ms-input-placeholder, .address > .invoice .i-group > input:-ms-input-placeholder,
+  .cart > .coupon > fieldset > div > label > input:-ms-input-placeholder, .login-dispatcher > .ld-section > label > input:-ms-input-placeholder, .pass-recovery > .request > label > input:-ms-input-placeholder, .address > .invoice .i-group > input:-ms-input-placeholder,
   .address > .delivery .i-group > input:-ms-input-placeholder, .post-purchase > .create-new-account > label > input:-ms-input-placeholder, .payment > [data-subform="credit-card-info"] .i-group > input:-ms-input-placeholder,
-  .payment > [data-subform="bank-booking-info"] .i-group > input:-ms-input-placeholder, .search > .search-wrapper > .search-field:-ms-input-placeholder, .cart > .coupon > fieldset > div > label > input:-ms-input-placeholder {
+  .payment > [data-subform="bank-booking-info"] .i-group > input:-ms-input-placeholder, .search > .search-wrapper > .search-field:-ms-input-placeholder {
     color: #999999; }
-  .login-dispatcher > .ld-section > label > input::-webkit-input-placeholder, .pass-recovery > .request > label > input::-webkit-input-placeholder, .address > .invoice .i-group > input::-webkit-input-placeholder,
+  .cart > .coupon > fieldset > div > label > input::-webkit-input-placeholder, .login-dispatcher > .ld-section > label > input::-webkit-input-placeholder, .pass-recovery > .request > label > input::-webkit-input-placeholder, .address > .invoice .i-group > input::-webkit-input-placeholder,
   .address > .delivery .i-group > input::-webkit-input-placeholder, .post-purchase > .create-new-account > label > input::-webkit-input-placeholder, .payment > [data-subform="credit-card-info"] .i-group > input::-webkit-input-placeholder,
-  .payment > [data-subform="bank-booking-info"] .i-group > input::-webkit-input-placeholder, .search > .search-wrapper > .search-field::-webkit-input-placeholder, .cart > .coupon > fieldset > div > label > input::-webkit-input-placeholder {
+  .payment > [data-subform="bank-booking-info"] .i-group > input::-webkit-input-placeholder, .search > .search-wrapper > .search-field::-webkit-input-placeholder {
     color: #999999; }
-  .login-dispatcher > .ld-section > label > input:focus:-moz-placeholder, .pass-recovery > .request > label > input:focus:-moz-placeholder, .address > .invoice .i-group > input:focus:-moz-placeholder,
+  .cart > .coupon > fieldset > div > label > input:focus:-moz-placeholder, .login-dispatcher > .ld-section > label > input:focus:-moz-placeholder, .pass-recovery > .request > label > input:focus:-moz-placeholder, .address > .invoice .i-group > input:focus:-moz-placeholder,
   .address > .delivery .i-group > input:focus:-moz-placeholder, .post-purchase > .create-new-account > label > input:focus:-moz-placeholder, .payment > [data-subform="credit-card-info"] .i-group > input:focus:-moz-placeholder,
-  .payment > [data-subform="bank-booking-info"] .i-group > input:focus:-moz-placeholder, .search > .search-wrapper > .search-field:focus:-moz-placeholder, .cart > .coupon > fieldset > div > label > input:focus:-moz-placeholder {
+  .payment > [data-subform="bank-booking-info"] .i-group > input:focus:-moz-placeholder, .search > .search-wrapper > .search-field:focus:-moz-placeholder {
     color: white; }
-  .login-dispatcher > .ld-section > label > input:focus:-ms-input-placeholder, .pass-recovery > .request > label > input:focus:-ms-input-placeholder, .address > .invoice .i-group > input:focus:-ms-input-placeholder,
+  .cart > .coupon > fieldset > div > label > input:focus:-ms-input-placeholder, .login-dispatcher > .ld-section > label > input:focus:-ms-input-placeholder, .pass-recovery > .request > label > input:focus:-ms-input-placeholder, .address > .invoice .i-group > input:focus:-ms-input-placeholder,
   .address > .delivery .i-group > input:focus:-ms-input-placeholder, .post-purchase > .create-new-account > label > input:focus:-ms-input-placeholder, .payment > [data-subform="credit-card-info"] .i-group > input:focus:-ms-input-placeholder,
-  .payment > [data-subform="bank-booking-info"] .i-group > input:focus:-ms-input-placeholder, .search > .search-wrapper > .search-field:focus:-ms-input-placeholder, .cart > .coupon > fieldset > div > label > input:focus:-ms-input-placeholder {
+  .payment > [data-subform="bank-booking-info"] .i-group > input:focus:-ms-input-placeholder, .search > .search-wrapper > .search-field:focus:-ms-input-placeholder {
     color: white; }
-  .login-dispatcher > .ld-section > label > input:focus::-webkit-input-placeholder, .pass-recovery > .request > label > input:focus::-webkit-input-placeholder, .address > .invoice .i-group > input:focus::-webkit-input-placeholder,
+  .cart > .coupon > fieldset > div > label > input:focus::-webkit-input-placeholder, .login-dispatcher > .ld-section > label > input:focus::-webkit-input-placeholder, .pass-recovery > .request > label > input:focus::-webkit-input-placeholder, .address > .invoice .i-group > input:focus::-webkit-input-placeholder,
   .address > .delivery .i-group > input:focus::-webkit-input-placeholder, .post-purchase > .create-new-account > label > input:focus::-webkit-input-placeholder, .payment > [data-subform="credit-card-info"] .i-group > input:focus::-webkit-input-placeholder,
-  .payment > [data-subform="bank-booking-info"] .i-group > input:focus::-webkit-input-placeholder, .search > .search-wrapper > .search-field:focus::-webkit-input-placeholder, .cart > .coupon > fieldset > div > label > input:focus::-webkit-input-placeholder {
+  .payment > [data-subform="bank-booking-info"] .i-group > input:focus::-webkit-input-placeholder, .search > .search-wrapper > .search-field:focus::-webkit-input-placeholder {
     color: white; }
 
 .search > .search-wrapper > .search-field {
@@ -685,9 +688,9 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   .search > .search-wrapper > .search-field:focus::-webkit-input-placeholder {
     color: white; }
 
-.login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
+.cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
 .address > .delivery .i-group > input, .post-purchase > .create-new-account > label > input, .payment > [data-subform="credit-card-info"] .i-group > input,
-.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .cart > .coupon > fieldset > div > label > input {
+.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field {
   display: block;
   width: 100%;
   height: 2.5rem;
@@ -699,12 +702,12 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   border: 1px solid #d4d2ce;
   padding-left: 0.5rem; }
 
-.login-dispatcher > .ld-section > label, .pass-recovery > .request > label, .address > .invoice .i-group,
+.cart > .coupon > fieldset > div > label, .login-dispatcher > .ld-section > label, .pass-recovery > .request > label, .address > .invoice .i-group,
 .address > .delivery .i-group, .post-purchase > .create-new-account > label, .payment > [data-subform="credit-card-info"] .i-group,
 .payment > [data-subform="bank-booking-info"] .i-group {
   display: block;
   margin: 0.5rem 0; }
-  .login-dispatcher > .ld-section > label.error, .pass-recovery > .request > label.error, .address > .invoice .error.i-group,
+  .cart > .coupon > fieldset > div > label.error, .login-dispatcher > .ld-section > label.error, .pass-recovery > .request > label.error, .address > .invoice .error.i-group,
   .address > .delivery .error.i-group, .post-purchase > .create-new-account > label.error, .payment > [data-subform="credit-card-info"] .error.i-group,
   .payment > [data-subform="bank-booking-info"] .error.i-group {
     border: 1px solid #e7001f;
@@ -1968,6 +1971,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     border: 0.5rem solid #d4d2ce;
     background-color: white;
     padding: 1rem;
+    padding-top: 0.5rem;
     margin-bottom: 1.5rem; }
     .cart > .coupon > fieldset > div > .form-submit-button {
       font-size: 1.25rem;

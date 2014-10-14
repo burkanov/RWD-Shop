@@ -30,13 +30,11 @@
 				border: 0.5rem solid $fn-gray-light
 				background-color: $white
 				padding: 1rem
+				padding-top: 0.5rem
 				margin-bottom: 1.5rem
 				@extend %fn-box-shadow
 				> label
-					> span
-						@extend %away
-					> input
-						@extend %field
+					@extend %field-in-label
 				> .form-submit-button
 					@extend %primary-button
 					font-size: 1.25rem
