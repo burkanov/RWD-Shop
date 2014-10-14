@@ -135,9 +135,18 @@
 					border-top: none
 				> .product-wrapper
 					> .description
-						> .new-price
+						> .amount-and-price
 							display: block
-							font-weight: 800
-							padding: 0.5rem 0
-							text-align: right
-							color: $black
+							@extend %clearfix
+							> .amount,
+							> .new-price
+								display: block
+								font-weight: 800
+								padding: 0.5rem 0
+								color: $black
+							> .amount
+								float: left
+							> .new-price
+								text-align: right
+								float: right
+								

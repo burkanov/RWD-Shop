@@ -197,7 +197,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .header:after, .main:after, .main > .list-map-switch:after, .navi-panel:after, footer:after, footer > .footer-links > ul:after, .social-bar:after, .breadcrumb:after, .filtering:after, .products-set:after, .products-set > ul > li > a:after,
 .products-set > ul > li > .product-wrapper:after, .products-set > ul > li > a > .description > div:after,
 .products-set > ul > li > .product-wrapper > .description > div:after, .module.cart .products-set > ul > li:after,
-.module.controlling .products-set > ul > li:after, .delivery-status > .indicator:after, .amount-control-bar:after, .payment > .unilable:after, .content-navigation:after, .content-header:after {
+.module.controlling .products-set > ul > li:after, .module.controlling .products-set > ul > li > .product-wrapper > .description > .amount-and-price:after, .delivery-status > .indicator:after, .amount-control-bar:after, .payment > .unilable:after, .content-navigation:after, .content-header:after {
   content: "";
   display: table;
   clear: both; }
@@ -1643,12 +1643,19 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       margin-top: 0; }
       .module.controlling .products-set > ul > li:first-child {
         border-top: none; }
-      .module.controlling .products-set > ul > li > .product-wrapper > .description > .new-price {
-        display: block;
-        font-weight: 800;
-        padding: 0.5rem 0;
-        text-align: right;
-        color: black; }
+      .module.controlling .products-set > ul > li > .product-wrapper > .description > .amount-and-price {
+        display: block; }
+        .module.controlling .products-set > ul > li > .product-wrapper > .description > .amount-and-price > .amount,
+        .module.controlling .products-set > ul > li > .product-wrapper > .description > .amount-and-price > .new-price {
+          display: block;
+          font-weight: 800;
+          padding: 0.5rem 0;
+          color: black; }
+        .module.controlling .products-set > ul > li > .product-wrapper > .description > .amount-and-price > .amount {
+          float: left; }
+        .module.controlling .products-set > ul > li > .product-wrapper > .description > .amount-and-price > .new-price {
+          text-align: right;
+          float: right; }
 
 .rating.r-1 > .star-1:before, .rating.r-1_5 > .star-1:before, .rating.r-2 > .star-1:before,
 .rating.r-2 > .star-2:before, .rating.r-2_5 > .star-1:before,
