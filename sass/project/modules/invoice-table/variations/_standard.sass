@@ -3,6 +3,29 @@
 .invoice-table
 	width: 100%
 	margin-top: 1.5rem
+	> tbody.coupon
+		td[colspan="2"]
+			text-align: left
+			h2
+				font-weight: bold
+		td
+			border-color: white
+			> .remove-coupon
+				display: block
+				color: $white
+				@extend %pure
+				cursor: pointer
+				background-color: $fn-red
+				font-size: 1.25rem
+				text-align: center
+				vertical-align: middle
+				float: right
+				&:before
+					display: block
+					content: "\e60a"
+					@extend [class^="icon-"]
+					width: 2rem
+					line-height: 2rem
 	> tbody
 		> tr
 			> td
@@ -11,6 +34,7 @@
 				vertical-align: middle
 				&:last-child
 					text-align: right
+					width: 30%
 				&.sum
 					background-color: $fn-gray-light
 					font-weight: bold
@@ -20,22 +44,6 @@
 						display: block
 						float: left
 						line-height: 2rem
-					> .remove-coupon
-						display: block
-						color: $white
-						@extend %pure
-						cursor: pointer
-						background-color: $fn-red
-						font-size: 1.25rem
-						text-align: center
-						vertical-align: middle
-						float: right
-						&:before
-							display: block
-							content: "\e60a"
-							@extend [class^="icon-"]
-							width: 2rem
-							line-height: 2rem
 						&:hover,
 						&:focus
 							background-color: $fn-red-accent
