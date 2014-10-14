@@ -2,36 +2,39 @@
 
 .controlling
 	display: block
-	> .option
-		@extend %content-container
-		position: relative
-		margin-top: 0.5rem
-		> .title
-			@extend %base-headline
-			font-size: 1.25rem
-			margin-bottom: 0.5rem
-		> .details
-			line-height: 1.25
-			display: block
-			width: calc(100% - 6rem)
-		> .edit
-			position: absolute
-			right: 0.5rem
-			bottom: 0.5rem
-			@extend %pointer-link
-	> .invoice-table-wrapper
+	> .invoice-wrapper
 		display: block
-		background-color: $white
-		padding: 0.5rem
-		> .edit-card
-			@extend %pointer-link
-			margin: 0.5rem 0 0.5rem 0
+		> .option
+			@extend %content-container
+			position: relative
+			margin-top: 0.5rem
+			> .title
+				@extend %base-headline
+				font-size: 1.25rem
+				margin-bottom: 0.5rem
+			> .details
+				line-height: 1.25
+				display: block
+				width: calc(100% - 6rem)
+			> .edit
+				position: absolute
+				right: 0.5rem
+				bottom: 0.5rem
+				@extend %pointer-link
 		> .c-group
 			@extend %checkbox-container
-			margin: 2rem 0 1rem 0
-		> .small
-			@extend %small
+			margin: 0 0 0.5rem 0
+			background-color: $white
+		> .invoice-table-wrapper
 			display: block
-			margin-left: 1rem
-		> .continue
-			@extend %next-action-button
+			background-color: $white
+			padding: 0.5rem
+			> .edit-card
+				@extend %pointer-link
+				margin: 0.5rem 0 0.5rem 0
+			> .small
+				@extend %small
+				display: block
+				margin-top: 1rem
+			> .continue
+				@extend %next-action-button

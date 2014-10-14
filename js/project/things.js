@@ -196,27 +196,47 @@
 		return subformName;
 	};
 
-	var imitateLabels = function() {
+	var imitateLabels = function() { // We need because on mobile clicks on label often don't trigger the inputs to change
 
 		fakeLabels.click(function(event) {
 
-			fakeLabels.removeClass('current');
-			$(this).addClass('current');
-			$(this).find('input').prop("checked", true);
-
-			if ( $(this).attr('data-subform-pointer') ){
-
-				openForm( $(this), 'open' );
-				var subformName = defineSubformName( $(this) );
-
-				closeForms('.subform:not([data-subform="' + subformName + '"])');
+			var clickTarget = event.target.nodeName;
+			
+			if ( clickTarget == 'A'){ // This is for the cases, if there are links in "labels", that must be followed
+				return;
 			}else{
-				closeForms('.subform');
+				event.preventDefault();
+				fakeLabels.removeClass('current');
+
+				var inputField = $(this).find('input');
+				var inputType = inputField.attr('type');
+
+				if (inputType == 'radio') {
+					$(this).addClass('current');
+					inputField.prop("checked", true);
+				}else if (inputType == 'checkbox') {
+					if ( inputField.prop( 'checked' ) ){
+						inputField.prop( 'checked', false);
+					}else{
+						inputField.prop( 'checked', true);
+					}
+				}
+
+				if ( $(this).attr('data-subform-pointer') ){
+
+					openForm( $(this), 'open' );
+					var subformName = defineSubformName( $(this) );
+
+					closeForms('.subform:not([data-subform="' + subformName + '"])');
+				}else{
+					closeForms('.subform');
+				}
+
+				if ($(this).hasClass('autosubmit')){
+					$(this).closest('form').submit();
+				}
 			}
 
-			if ($(this).hasClass('autosubmit')){
-				$(this).closest('form').submit();
-			}
 		});
 	};
 
