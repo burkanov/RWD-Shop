@@ -21,6 +21,8 @@
 
 	var activateDeliveryAddress = $("#different-delivery-address");
 	var deliveryForm = $(".address > .delivery");
+	var createNewButton = $('.create-new-address');
+	var editExistingButton = $('.optional-delivery-addresses .edit');
 
 	var paymentOptions = $(".module.payment .unilable > input[name='payment-kind']");
 	var creditCardMarker = "credit-card";
@@ -257,6 +259,64 @@
 		});
 	};
 
+	var showDeliveryForm = function() {
+		createNewButton.hide();
+		deliveryForm.slideDown('400');
+		deliveryForm.velocity("scroll", { offset: -40, mobileHA: false });
+	};
+
+	var createNewDeliveryAddress = function() {
+		createNewButton.click(function(event) {
+			showDeliveryForm();
+		});
+	};
+
+	var deliveryAddress = function(){
+		var sex, firstName, lastName, street, house, addition, zip, city, birthDay, birthMonth, birthYear, phone;
+	};
+
+	var editExistingDeliveryAddress = function() {
+		editExistingButton.click(function(event) {
+
+			var existingAddress = new deliveryAddress;
+
+			var dataStorage = $(this).parents('li');
+			var gd = function(p){
+				return dataStorage.attr('data-' + p);
+			};
+
+			existingAddress.sex = gd('sex');
+			existingAddress.firstName = gd('firstName');
+			existingAddress.lastName = gd('lastName');
+			existingAddress.street = gd('street');
+			existingAddress.house = gd('house');
+			existingAddress.addition = gd('addressAddition');
+			existingAddress.zip = gd('zip');
+			existingAddress.city = gd('city');
+			existingAddress.birthDay = gd('birthDay');
+			existingAddress.birthMonth = gd('birthMonth');
+			existingAddress.birthYear = gd('birthYear');
+			existingAddress.phone = gd('phone');
+
+			deliveryForm.find('#delivery-title').val(existingAddress.sex);
+			deliveryForm.find('#delivery-first-name').val(existingAddress.firstName);
+			deliveryForm.find('#delivery-last-name').val(existingAddress.lastName);
+			deliveryForm.find('#delivery-street').val(existingAddress.street);
+			deliveryForm.find('#delivery-house').val(existingAddress.house);
+			deliveryForm.find('#delivery-address-addition').val(existingAddress.addition);
+			deliveryForm.find('#delivery-zip').val(existingAddress.zip);
+			deliveryForm.find('#delivery-place').val(existingAddress.city);
+			deliveryForm.find('#delivery-birth-day').val(existingAddress.birthDay);
+			deliveryForm.find('#delivery-birth-month').val(existingAddress.birthMonth);
+			deliveryForm.find('#delivery-birth-year').val(existingAddress.birthYear);
+			deliveryForm.find('#delivery-phone').val(existingAddress.phone);
+
+			showDeliveryForm();
+
+			console.log(existingAddress);
+		});
+	};
+
 	$(document).ready(function () {
 		FastClick.attach(document.body);
 		prepareNavigationToggle();
@@ -272,6 +332,8 @@
 		preparePaymentForm();
 		imitateLabels();
 		prepareIBAN();
+		createNewDeliveryAddress();
+		editExistingDeliveryAddress();
 	});
 
 

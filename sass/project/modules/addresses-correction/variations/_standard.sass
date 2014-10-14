@@ -1,0 +1,91 @@
+// Standard styles for module
+
+.addresses-correction
+	display: block
+	> .title
+		@extend %base-headline
+		margin-top: 1rem
+	> ul
+		> li
+			display: block
+			margin-bottom: 1rem
+			position: relative
+			> .option
+				@extend %secondary-button
+				height: auto
+				padding-left: 2rem
+				> span
+					display: block
+					line-height: 1.25
+					height: auto
+					padding: 0.65rem 0 0.5rem 0
+					font-size: 1rem
+					> .title
+						font-weight: bold
+						display: block
+			&.current
+				> .option
+					color: $fn-green
+					&:before
+						@extend [class^="icon-"]
+						content: "\e616"
+						position: absolute
+						font-size: 1.25rem
+						left: 0.5rem
+						top: 0.5rem
+			&:not(.invoice-address)
+				margin-right: 4rem
+				> .option
+					min-height: 4rem
+				> .edit,
+				> .delete
+					display: block
+					position: absolute
+					background-color: $fn-gray
+					color: $white
+					@extend %pure
+					cursor: pointer
+					right: -3rem
+					&:before
+						display: block
+						content: "\e60a"
+						@extend [class^="icon-"]
+						@extend %acb-element
+						width: 2rem
+					> span
+						@extend %away
+				> .edit
+					top: 0
+					&:before
+						content: "\e609"
+					&:hover,
+					&:focus
+						background-color: $fn-green
+					&:active
+						background-color: $fn-green-yellow
+						color: $fn-gray
+				> .delete
+					bottom: 0
+					&:hover,
+					&:focus
+						background-color: $fn-red
+					&:active
+						background-color: $fn-orange
+						color: $fn-gray
+	> .create-new-address
+		@extend %secondary-button
+		text-align: center
+		position: relative
+		margin-bottom: 1rem
+		> span
+			font-size: 1rem
+			padding-top: 0.85rem
+			position: relative
+			display: inline-block
+			&:before
+				@extend [class^="icon-"]
+				content: "\e613"
+				position: absolute
+				font-size: 1.25rem
+				left: -1.5rem
+				top: 0.85rem
