@@ -263,6 +263,7 @@
 		createNewButton.hide();
 		deliveryForm.slideDown('400');
 		deliveryForm.velocity("scroll", { offset: -40, mobileHA: false });
+		editExistingButton.parents('.optional-delivery-addresses').find('.current').removeClass('current');
 	};
 
 	var createNewDeliveryAddress = function() {
