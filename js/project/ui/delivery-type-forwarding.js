@@ -8,6 +8,10 @@
 
 	var deliveryTypeTrigger = $('.module.delivery-type.forwarding > a');
 	var deliveryTypeInfoWrapper = $('.module.navi.central .module.product-delivery-info').parent().parent();
+
+	/* Primary Action ----------------*/
+	//
+	//
 	
 	var deliveryTypeForwarding = function() {
 		deliveryTypeTrigger.click(function(event) {
@@ -15,6 +19,10 @@
 			deliveryTypeInfoWrapper.velocity("scroll", { offset: -35, mobileHA: false });
 		});
 	};
+
+	//
+	//
+	/* Launch ----------------*/
 
 	$(document).ready(function () {
 		deliveryTypeForwarding();
