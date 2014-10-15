@@ -76,7 +76,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .filter
 .navi:not(.central) > li.birds > span:after, .navi:not(.central) > li.aquarium > a > span:after,
 .navi:not(.central) > li.aquarium > span:after, .navi:not(.central) > li.reptile > a > span:after,
 .navi:not(.central) > li.reptile > span:after, .navi:not(.central) > li.garden > a > span:after,
-.navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .rating > [class^="star-"]:before,
+.navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .social-bar.share > li.email > a:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon > fieldset > legend:before, .amount-control-bar > .delete:before,
 .amount-control-bar > .decrease:before,
 .amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, .checkout-progress-bar > .segment.future > .segment-data-wrapper > .counter:before, .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before, .invoice-table > tbody.coupon td > .remove-coupon:before, .post-purchase > .title:before, .delivery > .unilable.current:before, .payment > .unilable.current:before, .addresses-correction > ul > li.current > .option:before, .addresses-correction > ul > li:not(.invoice-address) > .edit:before,
@@ -176,7 +176,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .main > .product-video, .main > .list-map-switch > .list-view,
 .main > .list-map-switch > .map-view, .search.store-locator > .search-wrapper > .locator, .products-set > .load-more-products, .cart > .coupon > fieldset > div > .form-submit-button, .store-finder-list > .store > .route > .route-calculation, .cart > .coupon > fieldset > div > label > input, .login-dispatcher > .ld-section > label > input, .pass-recovery > .request > label > input, .address > .invoice .i-group > input,
 .address > .delivery .i-group > input, .post-purchase > .create-new-account > label > input, .payment > [data-subform="credit-card-info"] .i-group > input,
-.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
+.payment > [data-subform="bank-booking-info"] .i-group > input, .search > .search-wrapper > .search-field, .header > .toggle-navigation, .header > .shopping-cart, .social-bar, .social-bar > li > a, .pbox, .breadcrumb > li > a, .products-set > ul > li > a,
 .products-set > ul > li > .product-wrapper, .remember-button, .amount-control-bar > .delete,
 .amount-control-bar > .decrease,
 .amount-control-bar > .increase, .store-finder-list > .store > .info > .store-title, .invoice-table > tbody.coupon td > .remove-coupon, .addresses-correction > ul > li:not(.invoice-address) > .edit,
@@ -1332,16 +1332,18 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       -webkit-border-radius: 0.33rem;
       -moz-border-radius: 0.33rem;
       border-radius: 0.33rem; }
+      .m-carousel.m-carousel-products > .m-carousel-controls.m-carousel-bulleted > a:before {
+        font-size: 1rem; }
       .m-carousel.m-carousel-products > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"], .m-carousel.m-carousel-products > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"] {
-        padding: 1.25rem;
-        -webkit-border-radius: 1.25rem;
-        -moz-border-radius: 1.25rem;
-        border-radius: 1.25rem;
-        bottom: 3rem; }
+        padding: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        border-radius: 1rem;
+        bottom: 3.75rem; }
       .m-carousel.m-carousel-products > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"] {
-        left: 0.5rem; }
+        left: 0.25rem; }
       .m-carousel.m-carousel-products > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"] {
-        right: 0.5rem; }
+        right: 0.25rem; }
 
 .product > .photos > .m-carousel {
   border: 1px solid #d4d2ce;
@@ -1392,11 +1394,37 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     margin: 0 0.2rem; }
     .social-bar > li > a {
       display: block;
-      width: 2rem; }
+      width: 2rem;
+      color: #333333; }
+      .social-bar > li > a:hover, .social-bar > li > a:focus {
+        background-color: transparent; }
+      .social-bar > li > a:active {
+        color: black; }
       .social-bar > li > a > img {
         display: block;
         width: 100%;
         height: auto; }
+  .social-bar.share {
+    background-color: white;
+    margin: 1rem 0 0.5rem 0;
+    padding: 0.5rem 0.3rem 0.5rem 0.5rem; }
+    .social-bar.share > li {
+      display: block;
+      float: right; }
+      .social-bar.share > li.title {
+        float: left;
+        font-weight: bold;
+        color: #196428;
+        font-size: 1rem;
+        line-height: 2; }
+      .social-bar.share > li.email > a {
+        text-decoration: none;
+        text-align: right; }
+        .social-bar.share > li.email > a:before {
+          content: "\e631";
+          font-size: 1.5rem;
+          display: block;
+          padding-top: 0.25rem; }
 
 .pbox {
   display: block;
@@ -1438,16 +1466,16 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox {
   display: block;
   min-height: 6rem;
-  width: calc(50% - 3.5rem);
+  width: calc(50% - 2.5rem);
   border: 1px solid #d4d2ce;
   float: left;
   margin-bottom: 1.25rem;
   margin-top: 1px; }
   .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox:first-child {
     margin-right: 1rem;
-    margin-left: 3rem; }
+    margin-left: 2rem; }
   .m-carousel.m-carousel-products > .m-carousel-inner > .m-item .pbox:last-child {
-    margin-right: 3rem; }
+    margin-right: 2rem; }
 
 .breadcrumb {
   display: block;

@@ -13,7 +13,37 @@
 		> a
 			display: block
 			width: 2rem
+			@extend %pure
+			color: $fn-gray
+			&:hover,
+			&:focus
+				background-color: transparent
+			&:active
+				color: $black
 			> img
 				display: block
 				width: 100%
 				height: auto
+	&.share
+		background-color: $white
+		margin: 1rem 0 0.5rem 0
+		padding: 0.5rem 0.3rem 0.5rem 0.5rem
+		> li
+			display: block
+			float: right
+			&.title
+				float: left
+				font-weight: bold
+				color: $fn-green
+				font-size: 1rem
+				line-height: 2
+			&.email
+				> a
+					text-decoration: none
+					text-align: right
+					&:before
+						content: "\e631"
+						@extend [class^="icon-"]
+						font-size: 1.5rem
+						display: block
+						padding-top: 0.25rem
