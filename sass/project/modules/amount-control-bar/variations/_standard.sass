@@ -26,22 +26,25 @@
 	> .delete,
 	> .decrease,
 	> .increase
-		background-color: $fn-green
-		color: $white
+		background-color: $fn-almost-white
+		color: $fn-green
 		@extend %pure
 		cursor: pointer
 		&:before
 			display: block
-			content: "\e60a"
-			@extend [class^="icon-"]
 			@extend %acb-element
 			width: 2rem
 		&:hover,
 		&:focus
-			background-color: $fn-green-accent
+			background-color: $fn-green
+			color: $white
 		&:active
 			background-color: $fn-green-yellow
 			color: $fn-gray
+	> .delete
+		&:before
+			content: "\e60a"
+			@extend [class^="icon-"]
 	> .counter,
 	> .sum
 		@extend %acb-element
@@ -50,7 +53,8 @@
 		width: 1.8em
 		height: 1.4em
 	> .delete
-		background-color: $fn-red
+		background-color: $fn-gray-medium
+		color: $white
 		margin-right: 1rem
 		&:hover,
 		&:focus
@@ -59,10 +63,10 @@
 			background-color: $fn-orange
 	> .decrease
 		&:before
-			content: "\e614"
+			content: "-"
 	> .increase
 		&:before
-			content: "\e613"
+			content: "+"
 	> .minimum
 		background-color: $fn-almost-white
 		cursor: default

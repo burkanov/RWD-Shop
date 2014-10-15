@@ -12,10 +12,10 @@
 			border-color: white
 			> .remove-coupon
 				display: block
-				color: $white
 				@extend %pure
 				cursor: pointer
-				background-color: $fn-red
+				background-color: $fn-gray-medium
+				color: $white
 				font-size: 1.25rem
 				text-align: center
 				vertical-align: middle
@@ -26,6 +26,12 @@
 					@extend [class^="icon-"]
 					width: 2rem
 					line-height: 2rem
+				&:hover,
+				&:focus
+					background-color: $fn-red-accent
+				&:active
+					background-color: $fn-orange
+					color: $fn-gray
 	> tbody
 		> tr
 			> td

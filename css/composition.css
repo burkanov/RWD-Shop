@@ -77,9 +77,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .filter
 .navi:not(.central) > li.aquarium > span:after, .navi:not(.central) > li.reptile > a > span:after,
 .navi:not(.central) > li.reptile > span:after, .navi:not(.central) > li.garden > a > span:after,
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .social-bar.share > li.email > a:before, .rating > [class^="star-"]:before,
-.rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon > fieldset > legend:before, .amount-control-bar > .delete:before,
-.amount-control-bar > .decrease:before,
-.amount-control-bar > .increase:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, .checkout-progress-bar > .segment.future > .segment-data-wrapper > .counter:before, .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before, .invoice-table > tbody.coupon td > .remove-coupon:before, .post-purchase > .title:before, .delivery > .unilable.current:before, .payment > .unilable.current:before, .addresses-correction > ul > li.current > .option:before, .addresses-correction > ul > li:not(.invoice-address) > .edit:before,
+.rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon > fieldset > legend:before, .amount-control-bar > .delete:before, .login-dispatcher > .ld-section > .advantages > li:before, .pass-recovery > .back:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, .checkout-progress-bar > .segment.future > .segment-data-wrapper > .counter:before, .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before, .invoice-table > tbody.coupon td > .remove-coupon:before, .post-purchase > .title:before, .delivery > .unilable.current:before, .payment > .unilable.current:before, .addresses-correction > ul > li.current > .option:before, .addresses-correction > ul > li:not(.invoice-address) > .edit:before,
 .addresses-correction > ul > li:not(.invoice-address) > .delete:before, .addresses-correction > .create-new-address > span:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
@@ -2050,41 +2048,44 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   .amount-control-bar > .delete,
   .amount-control-bar > .decrease,
   .amount-control-bar > .increase {
-    background-color: #196428;
-    color: white;
+    background-color: #eae9e7;
+    color: #196428;
     cursor: pointer; }
     .amount-control-bar > .delete:before,
     .amount-control-bar > .decrease:before,
     .amount-control-bar > .increase:before {
       display: block;
-      content: "\e60a";
       width: 2rem; }
     .amount-control-bar > .delete:hover, .amount-control-bar > .delete:focus,
     .amount-control-bar > .decrease:hover,
     .amount-control-bar > .decrease:focus,
     .amount-control-bar > .increase:hover,
     .amount-control-bar > .increase:focus {
-      background-color: #143800; }
+      background-color: #196428;
+      color: white; }
     .amount-control-bar > .delete:active,
     .amount-control-bar > .decrease:active,
     .amount-control-bar > .increase:active {
       background-color: #c3d255;
       color: #333333; }
+  .amount-control-bar > .delete:before {
+    content: "\e60a"; }
   .amount-control-bar > .counter {
     padding: 0 1rem;
     width: 1.8em;
     height: 1.4em; }
   .amount-control-bar > .delete {
-    background-color: #e7001f;
+    background-color: #999999;
+    color: white;
     margin-right: 1rem; }
     .amount-control-bar > .delete:hover, .amount-control-bar > .delete:focus {
       background-color: #b1181e; }
     .amount-control-bar > .delete:active {
       background-color: #f2761b; }
   .amount-control-bar > .decrease:before {
-    content: "\e614"; }
+    content: "-"; }
   .amount-control-bar > .increase:before {
-    content: "\e613"; }
+    content: "+"; }
   .amount-control-bar > .minimum {
     background-color: #eae9e7;
     cursor: default; }
@@ -2413,9 +2414,9 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     border-color: white; }
     .invoice-table > tbody.coupon td > .remove-coupon {
       display: block;
-      color: white;
       cursor: pointer;
-      background-color: #e7001f;
+      background-color: #999999;
+      color: white;
       font-size: 1.25rem;
       text-align: center;
       vertical-align: middle;
@@ -2425,6 +2426,11 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
         content: "\e60a";
         width: 2rem;
         line-height: 2rem; }
+      .invoice-table > tbody.coupon td > .remove-coupon:hover, .invoice-table > tbody.coupon td > .remove-coupon:focus {
+        background-color: #b1181e; }
+      .invoice-table > tbody.coupon td > .remove-coupon:active {
+        background-color: #f2761b;
+        color: #333333; }
   .invoice-table > tbody > tr > td {
     border: 1px solid #d4d2ce;
     padding: 0.25rem;
