@@ -1730,6 +1730,10 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       vertical-align: top;
       color: #333333;
       font-size: 1.25rem; }
+    .delivery-type.forwarding > a {
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: underline; }
 
 .variant-matrix > li {
   display: block;
