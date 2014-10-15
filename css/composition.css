@@ -492,7 +492,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   background-image: linear-gradient(to right, #b1181e, rgba(231, 0, 31, 0));
   background-color: #e7001f; }
 
-footer > .products-suggestions, .cart > .coupon > fieldset > div {
+.main > .products-suggestions, .cart > .coupon > fieldset > div {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
@@ -591,7 +591,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .product-delivery-info > div ul h3,
 .ingredients > div ul h4,
 .product-details > div ul h4,
-.product-delivery-info > div ul h4, footer > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
+.product-delivery-info > div ul h4, .main > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
 .variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .store-finder-list > .store > .info > .store-title, .address > .invoice > .title,
 .address > .delivery > .title, .controlling > .invoice-wrapper > .option > .title, .post-purchase > .title, .post-purchase > .create-new-account > .title, .payment > [data-subform="bank-booking-info"] > .account-owner .title, .addresses-correction > .title, .content > h2, .content > h3 {
   display: block;
@@ -868,6 +868,12 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
     filter: alpha(opacity=25); }
   .main > .store-finder:before {
     content: "\e6b3"; }
+  .main > .products-suggestions {
+    display: block;
+    background-color: white;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    margin: 1rem 0 0.5rem 0; }
   .main > .to-payment {
     margin: 1rem 0; }
   .main > .product-video {
@@ -942,13 +948,8 @@ footer {
   display: block;
   background-color: #d4d2ce;
   margin: 0.5rem -0.75rem 0 -0.75rem;
-  padding: 0.75rem; }
-  footer > .products-suggestions {
-    display: block;
-    background-color: white;
-    padding: 0.5rem;
-    padding-bottom: 0;
-    margin-bottom: 0.5rem; }
+  padding: 0.75rem;
+  padding-top: 1rem; }
   footer > .delivery-options,
   footer > .return-options,
   footer > .newsletter-link,
@@ -1368,7 +1369,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 .payment-options {
   padding-right: 0;
   width: 100%;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 1rem; }
   .payment-options > li {
     background-color: white;
     width: 25%;
@@ -1510,7 +1511,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     font-size: 1.25rem;
     text-align: center;
     padding: 0;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-top: 1rem; }
   .products-set > ul {
     margin-bottom: 0.5rem; }
     .products-set > ul > li {
