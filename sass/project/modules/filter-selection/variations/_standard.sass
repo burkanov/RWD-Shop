@@ -1,0 +1,76 @@
+// Standard styles for module
+
+.filter-selection
+	> .filer-headline-bar
+		@extend %content-container
+		@extend %clearfix
+		padding: 0
+		margin-top: 0.5rem
+		> .back,
+		> .delete-all
+			@extend %back-button
+			width: calc(50% - 1rem)
+			margin: 0
+		> .back
+			float: left
+		> .delete-all
+			float: right
+			text-align: right
+			&:before
+				content: "\e60a"
+				font-size: 1rem
+	> .title
+		@extend %content-container
+		@extend %base-headline
+		margin-top: 0.5rem
+		font-size: 1.25rem
+		padding-bottom: 0.4rem
+		text-align: center
+		color: $fn-green
+	> .filters-list
+		display: block
+		margin-bottom: 1rem
+		> li
+			display: block
+			margin-top: 0.5rem
+			> a
+				@extend %but-link-container
+				position: relative
+				> span
+					@extend %but-link-insider
+					padding-left: 0.5rem
+					&:after
+						@extend %cap-right
+			> .selected-filters
+				@extend %acco-box
+				margin-bottom: 1rem
+				> li
+					background-color: $white
+					border-top: 1px solid $fn-gray-light
+					> .c-group
+						@extend %checkbox-container
+						padding-top: 1rem
+						padding-bottom: 1rem
+						cursor: pointer
+						> input
+							top: 0.85rem
+						&:after
+							content: "\e615"
+							@extend [class^="icon-"]
+							position: absolute
+							right: 1rem
+							top: 1rem
+		&.details
+			> li
+				margin: 0
+				border-top: 1px solid $fn-gray-light
+				background-color: $white
+				> .c-group
+					@extend %checkbox-container
+					padding-top: 1rem
+					padding-bottom: 1rem
+					cursor: pointer
+					> input
+						top: 0.85rem
+	> .apply
+		@extend %next-action-button

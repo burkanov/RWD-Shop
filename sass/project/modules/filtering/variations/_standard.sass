@@ -32,3 +32,13 @@
 					content: "\e3b2"
 		&:nth-child(odd)
 			margin-right: 0.5rem
+		&.disabled
+			color: $white
+			+box-shadow(none)
+			background-image: none
+			background-color: transparentize($fn-gray-light, 0.5)
+			cursor: default
+			&:hover,
+			&:focus,
+			&:active
+				background-color: transparentize($fn-gray-light, 0.5)

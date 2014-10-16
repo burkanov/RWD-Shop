@@ -29,6 +29,7 @@ Modernizr.load([
 			'js/vendor/mobify/accordion.js',
 			'js/vendor/facebug/fb-int.js',
 			'js/project/things.js', // Different things (why not) - to be refactored and removed
+			'js/project/ui/filter-selection.js'
 		]
 	},
 	{
