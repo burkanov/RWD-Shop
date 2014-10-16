@@ -13,11 +13,12 @@ footer
 	> .help-link
 		@extend %secondary-button
 		margin-bottom: 0.5rem
-		height: 2rem
+		height: 40px
 		> span
-			line-height: 2rem
+			line-height: 2.5rem
 		&:before
 			@extend %cap-left-secondary
+			line-height: 2.6rem
 	> .newsletter-link,
 	> .help-link
 		width: calc(50% - 0.25rem)
@@ -34,10 +35,9 @@ footer
 			margin: 0.5rem 0 1rem 0
 		> ul
 			@extend %clearfix
-			display: block
-			text-align: center
+			@extend %simple-flex
+			margin-bottom: 1rem
 			> li
-				display: inline-block
 				margin: 0
 				> a
 					display: block
