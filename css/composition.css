@@ -1568,8 +1568,9 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
           .products-set > ul > li > a > .photo > img,
           .products-set > ul > li > .product-wrapper > .photo > img {
             display: block;
-            width: 100%;
-            height: auto; }
+            width: calc(100% - 0.5rem);
+            height: auto;
+            margin-right: 0.5rem; }
         .products-set > ul > li > a > .description,
         .products-set > ul > li > .product-wrapper > .description {
           min-width: 12rem;
