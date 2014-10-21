@@ -13,6 +13,23 @@
 	> .store-finder,
 	> .to-payment
 		@extend %next-action-button
+	> .inactive-button
+		@extend %fn-gray-grad
+		color: $fn-gray-medium
+		font-weight: 600
+		+removeTransition()
+		&:hover,
+		&:focus,
+		&:active
+			color: $fn-gray-medium
+			font-weight: 600
+			@extend %fn-gray-grad
+			+box-shadow(0 2px 2px rgba(0, 0, 0, 0.25))
+			+removeTransition()
+		&:before
+			color: $fn-gray-medium
+			@extend %fn-gray-dark-grad
+			+removeTransition()
 	> .store-finder
 		&:before
 			content: "\e6b3"
