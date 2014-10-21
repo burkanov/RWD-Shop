@@ -19,6 +19,7 @@
 		<a class="fressnapf-logo" href="index.html">
 			<img src="img/fressnapf-logo.svg" alt="Fressnapf Logo"/>
 		</a>
+		<a href="index5.html" class="shopping-cart">14</a>
 	</header>
 
 	<div class="module navi-panel">
@@ -437,196 +438,109 @@
 
 	<div class="module main">
 
-		<a class="to-payment" href="index6.html"><span>Zur Kasse</span></a>
-
-		<div class="module cart">
-
-			<h2>
-				Warenkorb
-				<div>
-					<a class="module remember-button mini off">
-						<span>Auf die Merkliste</span>
-					</a>
-				</div>
-			</h2>
-
-			<div class="module products-set">		
-				<ul>
-					<li>
-						<div class="product-wrapper">
-							<div class="photo">
-								<img src="img/image3.jpg">
-							</div>
-							<div class="description">
-								<p class="title">Felix So gut wie es aussieht 8x400g Dose Rind &amp; Huhn</p>
-								<p class="subtitle">Subtitle</p>
-
-								<div class="module delivery-status ready">
-									<div class="indicator">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-									<div class="description">
-										2 - 3 Werktage
-									</div>
-								</div>
-
-								<p class="price-info">
-									St&uuml;ckpreis (inkl. MwSt.):<br/>
-									UVP <span class="old-price">13,32</span> &euro; <span class="new-price">8,90 &euro;</span>
-								</p>
-
-							</div>
-						</div>
-						<div class="module amount-control-bar">
-							<a class="delete"></a>
-							<a class="decrease"></a>
-							<span class="counter">2</span>
-							<a class="increase"></a>
-							<span class="sum">55,89 &euro;</span>
-						</div>
-					</li>
-					<li>
-						<div class="product-wrapper">
-							<div class="photo">
-								<img src="img/pr2.jpg">
-							</div>
-							<div class="description">
-								<p class="title">Felix So</p>
-
-								<div class="module delivery-status waiting-full">
-									<div class="indicator">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-									<div class="description">
-										5 - 7 Werktage
-									</div>
-								</div>
-
-								<p class="price-info">
-									St&uuml;ckpreis (inkl. MwSt.):<br/>
-									UVP <span class="old-price">13,32</span> &euro; <span class="new-price">8,90 &euro;</span>
-								</p>
-
-							</div>
-						</div>
-						<div class="module amount-control-bar minimum">
-							<a class="delete"></a>
-							<a class="decrease"></a>
-							<span class="counter">1</span>
-							<a class="increase"></a>
-							<span class="sum">4,23 &euro;</span>
-						</div>
-					</li>
-					<li>
-						<div class="product-wrapper">
-							<div class="photo">
-								<img src="img/pr1.jpg">
-							</div>
-							<div class="description">
-								<p class="title">Something else</p>
-
-								<div class="module delivery-status waiting">
-									<div class="indicator">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-									<div class="description">
-										7 - 12 Werktage
-									</div>
-								</div>
-
-								<p class="price-info">
-									St&uuml;ckpreis (inkl. MwSt.):<br/>
-									UVP <span class="old-price">43,98</span> &euro; <span class="new-price">5,21 &euro;</span>
-								</p>
-
-							</div>
-						</div>
-
-						<div class="special-offer">
-							3 "Something else"-Produkte kaufen und 10% sparen. <a href="#">Produkte ausw&auml;hlen</a>
-						</div>
-
-						<div class="module amount-control-bar">
-							<a class="delete"></a>
-							<a class="decrease"></a>
-							<span class="counter">2</span>
-							<a class="increase"></a>
-							<span class="sum">9,98 &euro;</span>
-						</div>
-					</li>
-				</ul>
+		<form class="module filter-selection" action="index2.html" method="get">
+			<div class="filer-headline-bar">
+				<a href="index2.html" class="back"><span>zur&uuml;ck</span></a>
+				<a href="#" class="delete-all"><span>Alle l&ouml;schen</span></a>
 			</div>
-
-			<form class="coupon" action="#" method="post">
-				<fieldset>
-					<legend>
-						<span>Gutschein einl&ouml;sen</span>
-					</legend>
-					<div>
-						<label>
-							<span>Gutschein Code</span>
-							<input type="text" name="coupon-code" id="coupon-code" placeholder="Gutschein Code eingeben"/>
-						</label>
-						<a class="form-submit-button">
-							<span>Einl&ouml;sen</span>
-						</a>
-					</div>
-				</fieldset>
-			</form>
-
-            <table class="module invoice-table">
-                <tbody class="coupon">
-                    <tr>
-                        <td colspan="2">
-                            <h2>Einzulösende Gutscheine</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Gutschein 1</td>
-                        <td><a class="remove-coupon"></a></td>
-                    </tr>
-                    <tr>
-                        <td>Gutschein 2</td>
-                        <td><a class="remove-coupon"></a></td>
-                    </tr>
-                </tbody>
-            </table>
-
-			<table class="module invoice-table">
-				<tbody>
-					<tr>
-						<td>Zwischensumme</td><td>43,44 &euro;</td>
-					</tr>
-					<tr>
-						<td>MwSt. 7%</td><td>5,67 &euro;</td>
-					</tr>
-					<tr>
-						<td>Lieferung</td><td>Gratis</td>
-					</tr>
-					<tr class="coupon-data">
-						<td class="description">
-							<span>Gutschein</span>
-						</td>
-						<td class="correction-sum">
-							-10 &euro;
-						</td>
-					</tr>
-					<tr>
-						<td class="sum">Summe</td><td class="sum">49,86</td>
-					</tr>
-				</tbody>
-			</table>
-
-		</div>
-
-		<a class="to-payment" href="index6.html"><span>Zur Kasse</span></a>
-
+			<h2 class="title">Filter</h2>
+			<ul class="filters-list">
+				<li>
+					<a href="index2_2">
+						<span>Preis</span>
+					</a>
+					<ul class="selected-filters">
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="p_5-to-10" value="p_5-to-10" checked />
+								<p>
+									<span>5 - 10 &euro;</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="p_10-to-20" value="p_10-to-20" checked />
+								<p>
+									<span>10 - 20 &euro;</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="index2_2">
+						<span>Marke</span>
+					</a>
+					<ul class="selected-filters">
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="selectgold" value="selectgold" checked />
+								<p>
+									<span>Select Gold</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="moments" value="moments" checked />
+								<p>
+									<span>Moments</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="index2_2">
+						<span>Geschmack</span>
+					</a>
+					<ul class="selected-filters">
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="rind" value="rind" checked />
+								<p>
+									<span>Rind</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="index2_2">
+						<span>Farbe</span>
+					</a>
+					<ul class="selected-filters">
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="schwarz" value="schwarz" checked />
+								<p>
+									<span>Schwarz</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="blau" value="blau" checked />
+								<p>
+									<span>Blau</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="c-group unilable">
+								<input type="checkbox" name="braun" value="braun" checked />
+								<p>
+									<span>Braun</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<a class="apply form-submit-button"><span>Filter anwenden</span></a>
+		</form>
+			
 		<footer>
 
 			<ul class="module payment-options">
@@ -710,7 +624,7 @@
 	</div>
 
 	<script type="text/javascript">
-	var categoryName = 'Home > Katze > Füttern';
+	var pageName = 'Home > Katze > Füttern';
 	</script>
 	
 	<script src="js/vendor/modernizr/modernizr.js"></script>
