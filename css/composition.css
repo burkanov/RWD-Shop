@@ -174,7 +174,7 @@ a:active {
 .navi:not(.central) > li > a, .navi:not(.central) > li > div > .second-level-navi > li > a, .navi.central > li > a, .navi.central > li > div > .second-level-navi > li > a, .filter-selection > .filters-list > li > a, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
+footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-top, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
 .main > .to-payment, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .address .continue, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue, .post-purchase > .create-new-account > .send, .post-purchase > .forward, .payment > [data-subform="credit-card-info"] > .continue,
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .filter-selection > .apply, .main > .product-video, .main > .list-map-switch > .list-view,
@@ -222,7 +222,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
+footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-top, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
 .main > .to-payment, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .address .continue, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue, .post-purchase > .create-new-account > .send, .post-purchase > .forward, .payment > [data-subform="credit-card-info"] > .continue,
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .filter-selection > .apply, .main > .product-video, .main > .list-map-switch > .list-view,
@@ -283,7 +283,7 @@ a {
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
+footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-top, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
 .main > .to-payment, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .address .continue, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue, .post-purchase > .create-new-account > .send, .post-purchase > .forward, .payment > [data-subform="credit-card-info"] > .continue,
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .filter-selection > .apply, .main > .product-video, .main > .list-map-switch > .list-view,
@@ -309,21 +309,21 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .delivery > .unilable:hover, .payment > .unilable:hover, .addresses-correction > ul > li > .option:hover, .addresses-correction > .create-new-address:hover, .main > .store-finder:hover,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .products-set > .button-to-top:hover, .login-dispatcher > .contact > .call:hover, .delivery > .unilable:hover, .payment > .unilable:hover, .addresses-correction > ul > li > .option:hover, .addresses-correction > .create-new-address:hover, .main > .store-finder:hover,
   .main > .to-payment:hover, .login-dispatcher > .ld-section > .login:hover,
   .login-dispatcher > .ld-section > .signup:hover, .pass-recovery > .request > .send:hover, .address .continue:hover, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue:hover, .post-purchase > .create-new-account > .send:hover, .post-purchase > .forward:hover, .payment > [data-subform="credit-card-info"] > .continue:hover,
   .payment > [data-subform="bank-booking-info"] > .continue:hover, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate:hover, .filter-selection > .apply:hover, .main > .product-video:hover, .main > .list-map-switch > .list-view:hover,
   .main > .list-map-switch > .map-view:hover, .search.store-locator > .search-wrapper > .locator:hover, .products-set > .load-more-products:hover, .cart > .coupon > fieldset > div > .form-submit-button:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .delivery > .unilable:focus, .payment > .unilable:focus, .addresses-correction > ul > li > .option:focus, .addresses-correction > .create-new-address:focus, .main > .store-finder:focus,
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .products-set > .button-to-top:focus, .login-dispatcher > .contact > .call:focus, .delivery > .unilable:focus, .payment > .unilable:focus, .addresses-correction > ul > li > .option:focus, .addresses-correction > .create-new-address:focus, .main > .store-finder:focus,
   .main > .to-payment:focus, .login-dispatcher > .ld-section > .login:focus,
   .login-dispatcher > .ld-section > .signup:focus, .pass-recovery > .request > .send:focus, .address .continue:focus, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue:focus, .post-purchase > .create-new-account > .send:focus, .post-purchase > .forward:focus, .payment > [data-subform="credit-card-info"] > .continue:focus,
   .payment > [data-subform="bank-booking-info"] > .continue:focus, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate:focus, .filter-selection > .apply:focus, .main > .product-video:focus, .main > .list-map-switch > .list-view:focus,
   .main > .list-map-switch > .map-view:focus, .search.store-locator > .search-wrapper > .locator:focus, .products-set > .load-more-products:focus, .cart > .coupon > fieldset > div > .form-submit-button:focus, .store-finder-list > .store > .route > .route-calculation:focus, footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .delivery > .unilable:active, .payment > .unilable:active, .addresses-correction > ul > li > .option:active, .addresses-correction > .create-new-address:active, .main > .store-finder:active,
+  footer > .help-link:active, .filtering > .filtering-area:active, .products-set > .button-to-top:active, .login-dispatcher > .contact > .call:active, .delivery > .unilable:active, .payment > .unilable:active, .addresses-correction > ul > li > .option:active, .addresses-correction > .create-new-address:active, .main > .store-finder:active,
   .main > .to-payment:active, .login-dispatcher > .ld-section > .login:active,
   .login-dispatcher > .ld-section > .signup:active, .pass-recovery > .request > .send:active, .address .continue:active, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue:active, .post-purchase > .create-new-account > .send:active, .post-purchase > .forward:active, .payment > [data-subform="credit-card-info"] > .continue:active,
   .payment > [data-subform="bank-booking-info"] > .continue:active, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate:active, .filter-selection > .apply:active, .main > .product-video:active, .main > .list-map-switch > .list-view:active,
@@ -332,14 +332,14 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .delivery > .unilable:hover, .payment > .unilable:hover, .addresses-correction > ul > li > .option:hover, .addresses-correction > .create-new-address:hover, .main > .store-finder:hover,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .products-set > .button-to-top:hover, .login-dispatcher > .contact > .call:hover, .delivery > .unilable:hover, .payment > .unilable:hover, .addresses-correction > ul > li > .option:hover, .addresses-correction > .create-new-address:hover, .main > .store-finder:hover,
   .main > .to-payment:hover, .login-dispatcher > .ld-section > .login:hover,
   .login-dispatcher > .ld-section > .signup:hover, .pass-recovery > .request > .send:hover, .address .continue:hover, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue:hover, .post-purchase > .create-new-account > .send:hover, .post-purchase > .forward:hover, .payment > [data-subform="credit-card-info"] > .continue:hover,
   .payment > [data-subform="bank-booking-info"] > .continue:hover, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate:hover, .filter-selection > .apply:hover, .main > .product-video:hover, .main > .list-map-switch > .list-view:hover,
   .main > .list-map-switch > .map-view:hover, .search.store-locator > .search-wrapper > .locator:hover, .products-set > .load-more-products:hover, .cart > .coupon > fieldset > div > .form-submit-button:hover, .store-finder-list > .store > .route > .route-calculation:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .delivery > .unilable:focus, .payment > .unilable:focus, .addresses-correction > ul > li > .option:focus, .addresses-correction > .create-new-address:focus, .main > .store-finder:focus,
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .products-set > .button-to-top:focus, .login-dispatcher > .contact > .call:focus, .delivery > .unilable:focus, .payment > .unilable:focus, .addresses-correction > ul > li > .option:focus, .addresses-correction > .create-new-address:focus, .main > .store-finder:focus,
   .main > .to-payment:focus, .login-dispatcher > .ld-section > .login:focus,
   .login-dispatcher > .ld-section > .signup:focus, .pass-recovery > .request > .send:focus, .address .continue:focus, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue:focus, .post-purchase > .create-new-account > .send:focus, .post-purchase > .forward:focus, .payment > [data-subform="credit-card-info"] > .continue:focus,
   .payment > [data-subform="bank-booking-info"] > .continue:focus, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate:focus, .filter-selection > .apply:focus, .main > .product-video:focus, .main > .list-map-switch > .list-view:focus,
@@ -352,7 +352,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .delivery > .unilable:active, .payment > .unilable:active, .addresses-correction > ul > li > .option:active, .addresses-correction > .create-new-address:active, .main > .store-finder:active,
+  footer > .help-link:active, .filtering > .filtering-area:active, .products-set > .button-to-top:active, .login-dispatcher > .contact > .call:active, .delivery > .unilable:active, .payment > .unilable:active, .addresses-correction > ul > li > .option:active, .addresses-correction > .create-new-address:active, .main > .store-finder:active,
   .main > .to-payment:active, .login-dispatcher > .ld-section > .login:active,
   .login-dispatcher > .ld-section > .signup:active, .pass-recovery > .request > .send:active, .address .continue:active, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue:active, .post-purchase > .create-new-account > .send:active, .post-purchase > .forward:active, .payment > [data-subform="credit-card-info"] > .continue:active,
   .payment > [data-subform="bank-booking-info"] > .continue:active, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate:active, .filter-selection > .apply:active, .main > .product-video:active, .main > .list-map-switch > .list-view:active,
@@ -364,7 +364,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .delivery-options > span,
   footer > .return-options > span,
   footer > .newsletter-link > span,
-  footer > .help-link > span, .filtering > .filtering-area > span, .login-dispatcher > .contact > .call > span, .delivery > .unilable > span, .payment > .unilable > span, .addresses-correction > ul > li > .option > span, .addresses-correction > .create-new-address > span, .main > .store-finder > span,
+  footer > .help-link > span, .filtering > .filtering-area > span, .products-set > .button-to-top > span, .login-dispatcher > .contact > .call > span, .delivery > .unilable > span, .payment > .unilable > span, .addresses-correction > ul > li > .option > span, .addresses-correction > .create-new-address > span, .main > .store-finder > span,
   .main > .to-payment > span, .login-dispatcher > .ld-section > .login > span,
   .login-dispatcher > .ld-section > .signup > span, .pass-recovery > .request > .send > span, .address .continue > span, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue > span, .post-purchase > .create-new-account > .send > span, .post-purchase > .forward > span, .payment > [data-subform="credit-card-info"] > .continue > span,
   .payment > [data-subform="bank-booking-info"] > .continue > span, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate > span, .filter-selection > .apply > span, .main > .product-video > span, .main > .list-map-switch > .list-view > span,
@@ -377,7 +377,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address {
+footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-top, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
@@ -389,15 +389,15 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   footer > .delivery-options > span,
   footer > .return-options > span,
   footer > .newsletter-link > span,
-  footer > .help-link > span, .filtering > .filtering-area > span, .login-dispatcher > .contact > .call > span, .delivery > .unilable > span, .payment > .unilable > span, .addresses-correction > ul > li > .option > span, .addresses-correction > .create-new-address > span {
+  footer > .help-link > span, .filtering > .filtering-area > span, .products-set > .button-to-top > span, .login-dispatcher > .contact > .call > span, .delivery > .unilable > span, .payment > .unilable > span, .addresses-correction > ul > li > .option > span, .addresses-correction > .create-new-address > span {
     padding-top: 0.05rem; }
   footer > .delivery-options:hover,
   footer > .return-options:hover,
   footer > .newsletter-link:hover,
-  footer > .help-link:hover, .filtering > .filtering-area:hover, .login-dispatcher > .contact > .call:hover, .delivery > .unilable:hover, .payment > .unilable:hover, .addresses-correction > ul > li > .option:hover, .addresses-correction > .create-new-address:hover, footer > .delivery-options:focus,
+  footer > .help-link:hover, .filtering > .filtering-area:hover, .products-set > .button-to-top:hover, .login-dispatcher > .contact > .call:hover, .delivery > .unilable:hover, .payment > .unilable:hover, .addresses-correction > ul > li > .option:hover, .addresses-correction > .create-new-address:hover, footer > .delivery-options:focus,
   footer > .return-options:focus,
   footer > .newsletter-link:focus,
-  footer > .help-link:focus, .filtering > .filtering-area:focus, .login-dispatcher > .contact > .call:focus, .delivery > .unilable:focus, .payment > .unilable:focus, .addresses-correction > ul > li > .option:focus, .addresses-correction > .create-new-address:focus {
+  footer > .help-link:focus, .filtering > .filtering-area:focus, .products-set > .button-to-top:focus, .login-dispatcher > .contact > .call:focus, .delivery > .unilable:focus, .payment > .unilable:focus, .addresses-correction > ul > li > .option:focus, .addresses-correction > .create-new-address:focus {
     background-color: white;
     color: #196428;
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 1px #eaedec, inset 0 1px 1px #edeeed;
@@ -406,15 +406,15 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
     footer > .delivery-options:hover:before,
     footer > .return-options:hover:before,
     footer > .newsletter-link:hover:before,
-    footer > .help-link:hover:before, .filtering > .filtering-area:hover:before, .login-dispatcher > .contact > .call:hover:before, .delivery > .unilable:hover:before, .payment > .unilable:hover:before, .addresses-correction > ul > li > .option:hover:before, .addresses-correction > .create-new-address:hover:before, footer > .delivery-options:focus:before,
+    footer > .help-link:hover:before, .filtering > .filtering-area:hover:before, .products-set > .button-to-top:hover:before, .login-dispatcher > .contact > .call:hover:before, .delivery > .unilable:hover:before, .payment > .unilable:hover:before, .addresses-correction > ul > li > .option:hover:before, .addresses-correction > .create-new-address:hover:before, footer > .delivery-options:focus:before,
     footer > .return-options:focus:before,
     footer > .newsletter-link:focus:before,
-    footer > .help-link:focus:before, .filtering > .filtering-area:focus:before, .login-dispatcher > .contact > .call:focus:before, .delivery > .unilable:focus:before, .payment > .unilable:focus:before, .addresses-correction > ul > li > .option:focus:before, .addresses-correction > .create-new-address:focus:before {
+    footer > .help-link:focus:before, .filtering > .filtering-area:focus:before, .products-set > .button-to-top:focus:before, .login-dispatcher > .contact > .call:focus:before, .delivery > .unilable:focus:before, .payment > .unilable:focus:before, .addresses-correction > ul > li > .option:focus:before, .addresses-correction > .create-new-address:focus:before {
       color: #196428; }
   footer > .delivery-options:active,
   footer > .return-options:active,
   footer > .newsletter-link:active,
-  footer > .help-link:active, .filtering > .filtering-area:active, .login-dispatcher > .contact > .call:active, .delivery > .unilable:active, .payment > .unilable:active, .addresses-correction > ul > li > .option:active, .addresses-correction > .create-new-address:active {
+  footer > .help-link:active, .filtering > .filtering-area:active, .products-set > .button-to-top:active, .login-dispatcher > .contact > .call:active, .delivery > .unilable:active, .payment > .unilable:active, .addresses-correction > ul > li > .option:active, .addresses-correction > .create-new-address:active {
     background-color: #999999;
     -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.35);
@@ -478,7 +478,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
+footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-top, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
 .main > .to-payment, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .address .continue, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue, .post-purchase > .create-new-account > .send, .post-purchase > .forward, .payment > [data-subform="credit-card-info"] > .continue,
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .filter-selection > .apply, .main > .product-video, .main > .list-map-switch > .list-view,
@@ -511,7 +511,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .filter
 footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .remember-button:before {
+footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-top, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .inactive-button, .main > .inactive-button:hover, .main > .inactive-button:focus, .main > .inactive-button:active, .remember-button:before {
   background-color: rgba(219, 221, 221, 0);
   background: -moz-linear-gradient(top, rgba(219, 221, 221, 0) 0%, #dbdddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(219, 221, 221, 0)), color-stop(100%, #dbdddd));
@@ -520,6 +520,16 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   background: -ms-linear-gradient(top, rgba(219, 221, 221, 0) 0%, #dbdddd 100%);
   background: linear-gradient(to bottom, rgba(219, 221, 221, 0) 0%, #dbdddd 100%);
   background-color: #f7f7f7; }
+
+.main > .inactive-button:before {
+  background-color: rgba(179, 181, 181, 0);
+  background: -moz-linear-gradient(top, rgba(179, 181, 181, 0) 0%, #b3b5b5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(179, 181, 181, 0)), color-stop(100%, #b3b5b5));
+  background: -webkit-linear-gradient(top, rgba(179, 181, 181, 0) 0%, #b3b5b5 100%);
+  background: -o-linear-gradient(top, rgba(179, 181, 181, 0) 0%, #b3b5b5 100%);
+  background: -ms-linear-gradient(top, rgba(179, 181, 181, 0) 0%, #b3b5b5 100%);
+  background: linear-gradient(to bottom, rgba(179, 181, 181, 0) 0%, #b3b5b5 100%);
+  background-color: #cfcfcf; }
 
 .add-to-cart-button {
   background-color: rgba(231, 0, 31, 0);
@@ -611,7 +621,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before {
 .navi:not(.central) > li > div > .second-level-navi > li > span, .navi.central > li > a > span, .navi.central > li > div > .second-level-navi > li > a > span, .filter-selection > .filters-list > li > a > span, footer > .delivery-options,
 footer > .return-options,
 footer > .newsletter-link,
-footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
+footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-top, .login-dispatcher > .contact > .call, .delivery > .unilable, .payment > .unilable, .addresses-correction > ul > li > .option, .addresses-correction > .create-new-address, .main > .store-finder,
 .main > .to-payment, .login-dispatcher > .ld-section > .login,
 .login-dispatcher > .ld-section > .signup, .pass-recovery > .request > .send, .address .continue, .controlling > .invoice-wrapper > .invoice-table-wrapper > .continue, .post-purchase > .create-new-account > .send, .post-purchase > .forward, .payment > [data-subform="credit-card-info"] > .continue,
 .payment > [data-subform="bank-booking-info"] > .continue, .payment > [data-subform="bank-booking-info"] > .iban-calculator > .calculate, .filter-selection > .apply, .main > .product-video, .main > .list-map-switch > .list-view,
@@ -630,7 +640,7 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
 .ingredients > div ul h4,
 .product-details > div ul h4,
 .product-delivery-info > div ul h4, .main > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
-.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > section > .headline, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .store-finder-list > .store > .info > .store-title, .address > .invoice > .title,
+.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > h2, .ingredients > div > section > .headline, .ingredients > div > section h2, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .store-finder-list > .store > .info > .store-title, .address > .invoice > .title,
 .address > .delivery > .title, .controlling > .invoice-wrapper > .option > .title, .post-purchase > .title, .post-purchase > .create-new-account > .title, .payment > [data-subform="bank-booking-info"] > .account-owner .title, .addresses-correction > .title, .filter-selection > .title, .content > h2, .content > h3 {
   display: block;
   font-size: 1rem;
@@ -784,6 +794,8 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
   .address > .error.c-group, .controlling > .invoice-wrapper > .error.c-group, .filter-selection > .filters-list > li > .selected-filters > li > .error.c-group, .filter-selection > .filters-list.details > li > .error.c-group {
     border: 1px solid #e7001f;
     color: #e7001f; }
+  .address > .hidden.c-group, .controlling > .invoice-wrapper > .hidden.c-group, .filter-selection > .filters-list > li > .selected-filters > li > .hidden.c-group, .filter-selection > .filters-list.details > li > .hidden.c-group {
+    display: none; }
 
 .header {
   -webkit-transition: 500ms ease;
@@ -905,6 +917,32 @@ footer > .help-link, .filtering > .filtering-area, .login-dispatcher > .contact 
     transform: translate3d(80%, 0, 0);
     opacity: 0.25;
     filter: alpha(opacity=25); }
+  .main > .inactive-button {
+    color: #999999;
+    font-weight: 600;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none; }
+    .main > .inactive-button:hover, .main > .inactive-button:focus, .main > .inactive-button:active {
+      color: #999999;
+      font-weight: 600;
+      -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+      transition: none; }
+    .main > .inactive-button:before {
+      color: #999999;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+      transition: none; }
   .main > .store-finder:before {
     content: "\e6b3"; }
   .main > .products-suggestions {
@@ -1522,7 +1560,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 .breadcrumb {
   display: block;
   background-color: white;
-  font-weight: 800; }
+  font-weight: 400; }
   .breadcrumb > li {
     display: block;
     float: left; }
@@ -1546,6 +1584,11 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
           color: #196428;
           font-size: 0.75rem;
           right: -1.25rem; }
+  .breadcrumb > li:last-child {
+    font-weight: 800;
+    font-size: 1.3rem; }
+  .breadcrumb .new-row {
+    margin-top: -1rem; }
 
 .filtering {
   display: block;
@@ -1591,6 +1634,12 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     font-size: 1.25rem;
     text-align: center;
     padding: 0;
+    font-weight: normal;
+    margin-top: 1rem; }
+  .products-set > .button-to-top {
+    padding-top: 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
     font-weight: normal;
     margin-top: 1rem; }
   .products-set > ul {
@@ -2014,6 +2063,14 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   background-color: white;
   display: block;
   padding: 0.5rem 1rem; }
+  .ingredients > div > h2 {
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 0;
+    border-bottom: 1px solid #d4d2ce;
+    color: #196428; }
   .ingredients > div > select {
     width: 100%;
     height: 2rem;
@@ -2022,8 +2079,15 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     margin-top: 1rem; }
   .ingredients > div > section {
     display: block; }
-    .ingredients > div > section > .headline {
-      padding-top: 1rem; }
+    .ingredients > div > section > .headline, .ingredients > div > section h2 {
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: normal;
+      line-height: 1.25;
+      margin-bottom: 0;
+      border-bottom: 1px solid #d4d2ce;
+      color: #196428; }
 
 .bubble {
   display: none;
@@ -2258,7 +2322,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       display: block; }
     .store-finder-list > .store > .info > .store-title {
       color: #196428;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 1.5rem;
       line-height: 1.15;
       text-decoration: none;
@@ -2268,7 +2332,10 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     .store-finder-list > .store > .info > .address,
     .store-finder-list > .store > .info > .working-hours {
       display: block;
-      line-height: 1.25; }
+      line-height: 1.5;
+      padding: 0;
+      font-size: 1.2rem;
+      background-color: transparent; }
     .store-finder-list > .store > .info > .working-hours:before {
       content: "\e608";
       font-size: 0.85rem;

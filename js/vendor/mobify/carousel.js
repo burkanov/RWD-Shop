@@ -280,6 +280,7 @@ Mobify.UI.Carousel = (function($, Utils) {
 		}
 
 		function drag(e) {
+            return;
 			if (!dragging || canceled) return;
 
 			var newXY = Utils.getCursorPosition(e);

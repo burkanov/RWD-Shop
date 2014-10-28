@@ -81,7 +81,7 @@
 	};
 
 	var prepareScrollingGallery = function() {
-		$(".m-carousel").carousel();
+		$(".m-carousel").carousel({dragging: false});
 	};
 
 	var prepareCentralNavi = function() {
