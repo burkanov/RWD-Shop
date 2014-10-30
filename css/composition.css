@@ -84,7 +84,7 @@ footer > .help-link:before, .login-dispatcher > .contact > .call:before, .filter
 .navi:not(.central) > li.reptile > span:after, .navi:not(.central) > li.garden > a > span:after,
 .navi:not(.central) > li.garden > span:after, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="prev"]:before, .m-carousel > .m-carousel-controls.m-carousel-bulleted > a[data-slide="next"]:before, .social-bar.share > li.email > a:before, .rating > [class^="star-"]:before,
 .rating > [class*=" star-"]:before, .delivery-type.forwarding:before, .delivery-status > .indicator > span:before, .remember-button:before, .add-to-cart-button:after, .cart > .coupon > fieldset > legend:before, .amount-control-bar > .delete:before, .login-dispatcher > .ld-section > .advantages > li:before, .top-message:before, .store-finder-list > .store > .info > .working-hours:before, .store-finder-list > .store > .route > .distance:before, .checkout-progress-bar > .segment.future > .segment-data-wrapper > .counter:before, .checkout-progress-bar > .segment.done > .segment-data-wrapper > .counter:before, .invoice-table > tbody.coupon td > .remove-coupon:before, .post-purchase > .title:before, .delivery > .unilable.current:before, .payment > .unilable.current:before, .addresses-correction > ul > li.current > .option:before, .addresses-correction > ul > li:not(.invoice-address) > .edit:before,
-.addresses-correction > ul > li:not(.invoice-address) > .delete:before, .addresses-correction > .create-new-address > span:before, .filter-selection > .filters-list > li > .selected-filters > li > .c-group:after, [class*=" icon-"] {
+.addresses-correction > ul > li:not(.invoice-address) > .delete:before, .addresses-correction > .create-new-address > span:before, [class*=" icon-"] {
   font-family: "icomoon";
   speak: none;
   font-style: normal;
@@ -2758,63 +2758,67 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
         left: -1.5rem;
         top: 0.85rem; }
 
-.filter-selection > .filer-headline-bar {
-  padding: 0;
-  margin-top: 0.5rem; }
-  .filter-selection > .filer-headline-bar > .back,
-  .filter-selection > .filer-headline-bar > .delete-all {
-    width: calc(50% - 1rem);
-    margin: 0; }
-  .filter-selection > .filer-headline-bar > .back {
-    float: left; }
-  .filter-selection > .filer-headline-bar > .delete-all {
-    float: right;
-    text-align: right; }
-    .filter-selection > .filer-headline-bar > .delete-all:before {
-      content: "\e60a";
-      font-size: 1rem; }
-.filter-selection > .title {
-  margin-top: 0.5rem;
-  font-size: 1.25rem;
-  padding-bottom: 0.4rem;
-  text-align: center;
-  color: #196428; }
-.filter-selection > .filters-list {
-  display: block;
-  margin-bottom: 1rem; }
-  .filter-selection > .filters-list > li {
-    display: block;
+.filter-selection {
+  position: relative;
+  top: 3rem;
+  width: 100%;
+  background-color: #eae9e7;
+  display: none; }
+  .filter-selection > .filer-headline-bar {
+    padding: 0;
     margin-top: 0.5rem; }
-    .filter-selection > .filters-list > li > a {
-      position: relative; }
-      .filter-selection > .filters-list > li > a > span {
-        padding-left: 0.5rem; }
-    .filter-selection > .filters-list > li > .selected-filters {
-      margin-bottom: 1rem; }
-      .filter-selection > .filters-list > li > .selected-filters > li {
-        background-color: white;
-        border-top: 1px solid #d4d2ce; }
-        .filter-selection > .filters-list > li > .selected-filters > li > .c-group {
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          cursor: pointer; }
-          .filter-selection > .filters-list > li > .selected-filters > li > .c-group > input {
-            top: 0.85rem; }
-          .filter-selection > .filters-list > li > .selected-filters > li > .c-group:after {
-            content: "\e615";
-            position: absolute;
-            right: 1rem;
-            top: 1rem; }
-  .filter-selection > .filters-list.details > li {
-    margin: 0;
-    border-top: 1px solid #d4d2ce;
-    background-color: white; }
-    .filter-selection > .filters-list.details > li > .c-group {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      cursor: pointer; }
-      .filter-selection > .filters-list.details > li > .c-group > input {
-        top: 0.85rem; }
+    .filter-selection > .filer-headline-bar > .back,
+    .filter-selection > .filer-headline-bar > .delete-all {
+      width: calc(50% - 1rem);
+      margin: 0; }
+    .filter-selection > .filer-headline-bar > .back {
+      float: left; }
+    .filter-selection > .filer-headline-bar > .delete-all {
+      float: right;
+      text-align: right; }
+      .filter-selection > .filer-headline-bar > .delete-all:before {
+        content: "\e60a";
+        font-size: 1rem; }
+  .filter-selection > .title {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    color: #196428; }
+  .filter-selection > .filters-list {
+    display: block;
+    margin-bottom: 1rem; }
+    .filter-selection > .filters-list > li {
+      display: block;
+      margin-top: 0.5rem; }
+      .filter-selection > .filters-list > li > a {
+        position: relative; }
+        .filter-selection > .filters-list > li > a > span {
+          padding-left: 0.5rem; }
+      .filter-selection > .filters-list > li > .selected-filters {
+        margin-bottom: 1rem;
+        display: none; }
+        .filter-selection > .filters-list > li > .selected-filters > li {
+          background-color: white;
+          border-top: 1px solid #d4d2ce; }
+          .filter-selection > .filters-list > li > .selected-filters > li > .c-group {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            cursor: pointer; }
+            .filter-selection > .filters-list > li > .selected-filters > li > .c-group > input {
+              top: 0.85rem; }
+      .filter-selection > .filters-list > li.current > a > span:after {
+        content: "\e3b2"; }
+    .filter-selection > .filters-list.details > li {
+      margin: 0;
+      border-top: 1px solid #d4d2ce;
+      background-color: white; }
+      .filter-selection > .filters-list.details > li > .c-group {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        cursor: pointer; }
+        .filter-selection > .filters-list.details > li > .c-group > input {
+          top: 0.85rem; }
 
 .content {
   display: block;
