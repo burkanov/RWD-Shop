@@ -1,0 +1,15 @@
+// Standard styles for module
+
+.newsletter
+	> .unsubscribe
+		@extend %content-container
+		> .title
+			@extend %base-headline
+			font-size: 1.5rem
+		> label
+			@extend %checkbox-container
+			> .span
+				@extend %checkbox-container
+		> .form-submit-button
+			@extend %next-action-button
+
