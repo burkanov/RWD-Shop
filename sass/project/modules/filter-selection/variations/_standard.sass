@@ -6,6 +6,7 @@
 	width: 100%
 	background-color: $fn-almost-white
 	display: none
+	z-index: 100
 	> .filer-headline-bar
 		@extend %content-container
 		@extend %clearfix
@@ -32,6 +33,27 @@
 		padding-bottom: 0.4rem
 		text-align: center
 		color: $fn-green
+	> .remove
+		color: $fn-gray-medium
+	> .filters-applied
+		display: block
+		margin-bottom: 1rem
+		> li
+			background-color: $white
+			border-top: 1px solid $fn-gray-light
+			> .c-group
+				@extend %checkbox-container
+				padding-top: 1rem
+				padding-bottom: 1rem
+				cursor: pointer
+				> input
+					top: 0.85rem
+				&:after
+					content: "\e615"
+					@extend [class^="icon-"]
+					position: absolute
+					right: 1rem
+					top: 1rem
 	> .filters-list
 		display: block
 		margin-bottom: 1rem

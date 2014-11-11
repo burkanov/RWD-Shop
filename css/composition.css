@@ -640,7 +640,7 @@ footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-to
 .ingredients > div ul h4,
 .product-details > div ul h4,
 .product-delivery-info > div ul h4, .main > .products-suggestions > .headline, .product > .title, .variant-matrix > li > h3, .variant-matrix > li > ul > .product-single > .information > h4,
-.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > h2, .ingredients > div > section > .headline, .ingredients > div > section h2, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .store-finder-list > .store > .info > .store-title, .address > .invoice > .title,
+.variant-matrix > li > ul > .product-single > .ghost > .information > h4, .ingredients > div > h2, .ingredients > div h3, .ingredients > div h4, .ingredients > div > section > .headline, .ingredients > div > section h2, .bubble > strong, .cart > h2, .login-dispatcher > .ld-section > .title, .login-dispatcher > .contact > .title, .pass-recovery > .request > .title, .product-details > div > h2, .product-details > div h3, .product-details > div h4, .store-finder-list > .store > .info > .store-title, .address > .invoice > .title,
 .address > .delivery > .title, .controlling > .invoice-wrapper > .option > .title, .post-purchase > .title, .post-purchase > .create-new-account > .title, .payment > [data-subform="bank-booking-info"] > .account-owner .title, .addresses-correction > .title, .filter-selection > .title, .content > h1, .content > h2, .content > h3, .newsletter > .unsubscribe > .title {
   display: block;
   font-size: 1rem;
@@ -1637,11 +1637,17 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     font-weight: normal;
     margin-top: 1rem; }
   .products-set > .button-to-top {
-    padding-top: 0.5rem;
+    padding: 0;
+    height: 3rem;
     font-size: 1.25rem;
     text-align: center;
     font-weight: normal;
     margin-top: 1rem; }
+    .products-set > .button-to-top > span {
+      font-family: "frutiger-neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      display: block;
+      height: 1rem;
+      padding-top: 0.6rem; }
   .products-set > ul {
     margin-bottom: 0.5rem; }
     .products-set > ul > li {
@@ -1917,7 +1923,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
           display: block;
           color: #999999;
           font-size: 0.85rem;
-          text-align: right; }
+          text-align: right;
+          text-decoration: line-through; }
       .variant-matrix > li > ul > .product-single.active,
       .variant-matrix > li > ul > .product-single > .ghost.active {
         background-color: #f8ec1a; }
@@ -2066,11 +2073,12 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   background-color: white;
   display: block;
   padding: 0.5rem 1rem; }
-  .ingredients > div > h2 {
+  .ingredients > div > h2, .ingredients > div h3, .ingredients > div h4 {
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.25;
+    margin-top: 0.5rem;
     margin-bottom: 0;
     border-bottom: 1px solid #d4d2ce;
     color: #196428; }
@@ -2268,6 +2276,15 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   background-color: white;
   display: block;
   padding: 0.5rem 1rem; }
+  .product-details > div > h2, .product-details > div h3, .product-details > div h4 {
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid #d4d2ce;
+    color: #196428; }
 
 .product-ratings-overview > div {
   background-color: white;
@@ -2783,7 +2800,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   top: 3rem;
   width: 100%;
   background-color: #eae9e7;
-  display: none; }
+  display: none;
+  z-index: 100; }
   .filter-selection > .filer-headline-bar {
     padding: 0;
     margin-top: 0.5rem; }
@@ -2929,3 +2947,13 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
 
 .newsletter > .unsubscribe > .title {
   font-size: 1.5rem; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.25) url(../img/diagonal-pattern.png) repeat left top; }
