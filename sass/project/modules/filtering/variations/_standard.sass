@@ -15,7 +15,7 @@
 		font-size: 1rem
 		display: block
 		float: left
-		width: calc(50% - 0.25rem)
+		width: 49%
 		padding-left: 2.5rem
 		> select
 			@extend %away
@@ -42,3 +42,5 @@
 			&:focus,
 			&:active
 				background-color: transparentize($fn-gray-light, 0.5)
+		+ .filtering-area
+			float: right

@@ -1604,7 +1604,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     font-size: 1rem;
     display: block;
     float: left;
-    width: calc(50% - 0.25rem);
+    width: 49%;
     padding-left: 2.5rem; }
     .filtering > .filtering-area > select {
       font-size: 1rem; }
@@ -1627,6 +1627,8 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       cursor: default; }
       .filtering > .filtering-area.disabled:hover, .filtering > .filtering-area.disabled:focus, .filtering > .filtering-area.disabled:active {
         background-color: rgba(212, 210, 206, 0.5); }
+    .filtering > .filtering-area + .filtering-area {
+      float: right; }
 
 .products-set {
   margin-top: 0.5rem;
@@ -1664,7 +1666,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
         background-color: white;
         padding: 0.5rem;
         position: relative;
-        width: 100%; }
+        width: 98%; }
         .products-set > ul > li > a > .photo,
         .products-set > ul > li > a > .description,
         .products-set > ul > li > .product-wrapper > .photo,
