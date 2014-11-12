@@ -239,13 +239,19 @@ footer > .help-link, .filtering > .filtering-area, .products-set > .button-to-to
 
 footer > .footer-links > ul, .payment-options, .address > .invoice > .multi-holder,
 .address > .delivery > .multi-holder, .payment > [data-subform="credit-card-info"] > .multi-holder, .payment > [data-subform="bank-booking-info"] > .account-owner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row; }
   footer > .footer-links > ul > *, .payment-options > *, .address > .invoice > .multi-holder > *,
   .address > .delivery > .multi-holder > *, .payment > [data-subform="credit-card-info"] > .multi-holder > *, .payment > [data-subform="bank-booking-info"] > .account-owner > * {
+    -webkit-box-flex: auto;
+    -moz-box-flex: auto;
     -webkit-flex: auto;
+    -ms-flex: auto;
     flex: auto; }
 
 /* A place for links, buttons, tabs and other things that react on user input */
@@ -1604,7 +1610,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     font-size: 1rem;
     display: block;
     float: left;
-    width: 49%;
+    width: calc(50% - 0.25rem);
     padding-left: 2.5rem; }
     .filtering > .filtering-area > select {
       font-size: 1rem; }
@@ -1627,8 +1633,6 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       cursor: default; }
       .filtering > .filtering-area.disabled:hover, .filtering > .filtering-area.disabled:focus, .filtering > .filtering-area.disabled:active {
         background-color: rgba(212, 210, 206, 0.5); }
-    .filtering > .filtering-area + .filtering-area {
-      float: right; }
 
 .products-set {
   margin-top: 0.5rem;
@@ -1657,21 +1661,27 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       margin-top: 0.5rem; }
       .products-set > ul > li > a,
       .products-set > ul > li > .product-wrapper {
-        color: #333333;
-        text-decoration: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
         -webkit-flex-direction: row;
         flex-direction: row;
+        color: #333333;
+        text-decoration: none;
         background-color: white;
         padding: 0.5rem;
         position: relative;
-        width: 98%; }
+        width: 100%; }
         .products-set > ul > li > a > .photo,
         .products-set > ul > li > a > .description,
         .products-set > ul > li > .product-wrapper > .photo,
         .products-set > ul > li > .product-wrapper > .description {
+          -webkit-box-flex: auto;
+          -moz-box-flex: auto;
           -webkit-flex: auto;
+          -ms-flex: auto;
           flex: auto; }
         .products-set > ul > li > a > .photo,
         .products-set > ul > li > .product-wrapper > .photo {
@@ -1894,6 +1904,9 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
     display: block; }
     .variant-matrix > li > ul > .product-single,
     .variant-matrix > li > ul > .product-single > .ghost {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
       -webkit-flex-direction: row;
@@ -1908,7 +1921,10 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
       .variant-matrix > li > ul > .product-single > .action,
       .variant-matrix > li > ul > .product-single > .ghost > .information,
       .variant-matrix > li > ul > .product-single > .ghost > .action {
+        -webkit-box-flex: auto;
+        -moz-box-flex: auto;
         -webkit-flex: auto;
+        -ms-flex: auto;
         flex: auto;
         width: 50%; }
       .variant-matrix > li > ul > .product-single > .information,
@@ -2432,13 +2448,19 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
           font-weight: normal; }
 
 .checkout-progress-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
   margin: 0.5rem 0; }
   .checkout-progress-bar > .segment {
+    -webkit-box-flex: auto;
+    -moz-box-flex: auto;
     -webkit-flex: auto;
+    -ms-flex: auto;
     flex: auto;
     font-size: 1.25rem;
     line-height: 1; }

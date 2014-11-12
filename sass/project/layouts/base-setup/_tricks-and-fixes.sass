@@ -37,10 +37,6 @@
 	+box-sizing(border-box)
 
 %simple-flex
-	display: -webkit-flex
-	display: flex
-	-webkit-flex-direction: row
-	flex-direction: row
+	+flexbox()
 	> *
-		-webkit-flex: auto
-		flex: auto
+		+flex(auto)

@@ -32,20 +32,16 @@
 			> .product-wrapper
 				@extend %pure
 				@extend %clearfix
+				+flexbox()
 				color: $fn-gray
 				text-decoration: none
-				display: -webkit-flex
-				display: flex
-				-webkit-flex-direction: row
-				flex-direction: row
 				background-color: $white
 				padding: 0.5rem
 				position: relative
 				width: 100%
 				> .photo,
 				> .description
-					-webkit-flex: auto
-					flex: auto
+					+flex(auto)
 				> .photo
 					width: 100%
 					height: auto

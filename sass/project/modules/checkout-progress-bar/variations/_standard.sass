@@ -1,14 +1,10 @@
 // Standard styles for module
 
 .checkout-progress-bar
-	display: -webkit-flex
-	display: flex
-	-webkit-flex-direction: row
-	flex-direction: row
+	+flexbox()
 	margin: 0.5rem 0
 	> .segment
-		-webkit-flex: auto
-		flex: auto
+		+flex(auto)
 		font-size: 1.25rem
 		line-height: 1
 		> .segment-data-wrapper

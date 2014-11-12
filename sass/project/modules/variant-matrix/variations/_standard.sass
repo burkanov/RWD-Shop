@@ -17,10 +17,7 @@
 			display: block
 			> .product-single,
 			> .product-single > .ghost
-				display: -webkit-flex
-				display: flex
-				-webkit-flex-direction: row
-				flex-direction: row
+				+flexbox()
 				padding: 0.5rem
 				border-top: 1px solid $fn-gray-light
 				position: relative
@@ -28,8 +25,7 @@
 					border-top: none
 				> .information,
 				> .action
-					-webkit-flex: auto
-					flex: auto
+					+flex(auto)
 					width: 50%
 				> .information
 					line-height: 1.25
