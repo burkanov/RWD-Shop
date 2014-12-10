@@ -2526,7 +2526,7 @@ html.touch .navi > .m-content > .second-level-navi > li > a:hover > span, html.t
   flex-direction: row;
   margin: 0.5rem 0; }
   .checkout-progress-bar > .segment {
-    min-width: 25%;
+    min-width: 20%;
     -webkit-box-flex: auto;
     -moz-box-flex: auto;
     -webkit-flex: auto;
